@@ -1,0 +1,11 @@
+# Direct versions captured in the v5 experiment report/artifact metadata.
+# Transformers, torch, and platform wheel hashes were not captured; verify them
+# against the original environment before claiming a bit-for-bit recreation.
+# Python used by the recorded run: 3.12.1.
+sentence-transformers==6.0.0
+scikit-learn==1.8.0
+pandas==3.0.2
+numpy==2.0.0
+joblib==1.5.3
+fastapi==0.141.1
+uvicorn==0.52.4

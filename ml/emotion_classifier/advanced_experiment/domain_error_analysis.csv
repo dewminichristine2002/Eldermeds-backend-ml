@@ -1,0 +1,57 @@
+label,text,source,domain,predicted_label,confidence,error_category
+happiness,the visit from my grandson lifted my spirits,project_authored_independent_v3,eldermeds_conversation,neutral,0.4604593038489826,happiness_as_neutral
+happiness,today has given me several reasons to smile,project_authored_independent_v3,eldermeds_conversation,neutral,0.46352174510750055,happiness_as_neutral
+happiness,i am happier than i was yesterday,project_authored_independent_v3,eldermeds_conversation,neutral,0.5178263550084109,happiness_as_neutral
+happiness,sharing lunch with my neighbor was delightful,project_authored_independent_v3,eldermeds_conversation,anger,0.30499657541222913,happiness_as_anger
+happiness,the music brought back pleasant memories,project_authored_independent_v3,eldermeds_conversation,neutral,0.4670068759584173,happiness_as_neutral
+happiness,i feel content and pleased this evening,project_authored_independent_v3,eldermeds_conversation,sadness,0.4887474215389854,happiness_as_sadness
+happiness,that kind message brightened my morning,project_authored_independent_v3,eldermeds_conversation,anger,0.29196618438177707,happiness_as_anger
+sadness,i have felt low and tearful since breakfast,project_authored_independent_v3,eldermeds_conversation,loneliness,0.3389011279855464,sadness_as_loneliness
+sadness,the day seems heavy and nothing interests me,project_authored_independent_v3,eldermeds_conversation,anxiety,0.30327266463392283,sadness_as_anxiety
+sadness,i could not find much joy in anything today,project_authored_independent_v3,eldermeds_conversation,neutral,0.5394823198949636,sadness_as_neutral
+sadness,i have been feeling down all afternoon,project_authored_independent_v3,eldermeds_conversation,loneliness,0.393342322042766,sadness_as_loneliness
+sadness,i feel discouraged and unhappy tonight,project_authored_independent_v3,eldermeds_conversation,happiness,0.2692350537561837,sadness_as_happiness
+sadness,my heart feels heavy even though i am not alone,project_authored_independent_v3,eldermeds_conversation,loneliness,0.49528789300847,sadness_as_loneliness
+sadness,i did not want to get out of bed because i felt so low,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.3175175737661675,sadness_as_cognitive_fog
+sadness,there is a sadness i cannot seem to shake,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.5870521436569808,sadness_as_cognitive_fog
+loneliness,i wish there were somebody beside me this evening,project_authored_independent_v3,eldermeds_conversation,sadness,0.42546151185760533,loneliness_as_sadness
+loneliness,it has been days since i had a proper conversation,project_authored_independent_v3,eldermeds_conversation,happiness,0.3318119012391679,loneliness_as_happiness
+loneliness,i would love some company this afternoon,project_authored_independent_v3,eldermeds_conversation,happiness,0.550565063539681,loneliness_as_happiness
+anxiety,i feel uneasy and cannot settle my thoughts,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.6235057205461746,anxiety_as_cognitive_fog
+anxiety,my nerves are on edge this morning,project_authored_independent_v3,eldermeds_conversation,anger,0.45625784705172967,anxiety_as_anger
+anxiety,i cannot relax because i keep imagining problems,project_authored_independent_v3,eldermeds_conversation,anger,0.29593902278257456,anxiety_as_anger
+anxiety,i feel tense whenever the telephone rings,project_authored_independent_v3,eldermeds_conversation,loneliness,0.44695284635286325,anxiety_as_loneliness
+anxiety,i am restless and concerned about tomorrow,project_authored_independent_v3,eldermeds_conversation,sadness,0.33423224426718934,anxiety_as_sadness
+anger,i lost my temper when the machine failed again,project_authored_independent_v3,eldermeds_conversation,sadness,0.31912372798613203,anger_as_sadness
+cognitive_fog,the words blur together when i try to follow a page,project_authored_independent_v3,eldermeds_conversation,neutral,0.4036621751613521,cognitive_fog_as_neutral
+cognitive_fog,my thinking feels cloudy and slow this afternoon,project_authored_independent_v3,eldermeds_conversation,anxiety,0.25969119239436916,cognitive_fog_as_anxiety
+cognitive_fog,i lose the thread halfway through a conversation,project_authored_independent_v3,eldermeds_conversation,happiness,0.478856077657069,cognitive_fog_as_happiness
+cognitive_fog,it is unusually hard to focus on one thing today,project_authored_independent_v3,eldermeds_conversation,neutral,0.4119105112533406,cognitive_fog_as_neutral
+cognitive_fog,following the plot of this program takes too much concentration today,project_authored_independent_v3,eldermeds_conversation,sadness,0.25638812871648886,cognitive_fog_as_sadness
+cognitive_fog,my mind feels unclear despite being rested,project_authored_independent_v3,eldermeds_conversation,neutral,0.28272116179549667,cognitive_fog_as_neutral
+neutral,i am sitting in the living room now,project_authored_independent_v3,eldermeds_conversation,anger,0.455072986222231,neutral_as_anger
+happiness,finishing the puzzle left me pleased with myself,project_authored_independent,eldermeds_conversation,sadness,0.2372303992593508,happiness_as_sadness
+happiness,my sisters letter made the whole afternoon brighter,project_authored_independent,eldermeds_conversation,neutral,0.3775836484664387,happiness_as_neutral
+happiness,seeing the flowers open put me in a very good mood,project_authored_independent,eldermeds_conversation,anxiety,0.4278951981275959,happiness_as_anxiety
+happiness,i was delighted to hear that everyone is doing well,project_authored_independent,eldermeds_conversation,cognitive_fog,0.2286642088308355,happiness_as_cognitive_fog
+happiness,my walk went well and i came home feeling refreshed,project_authored_independent,eldermeds_conversation,sadness,0.23649486439242917,happiness_as_sadness
+happiness,i have been smiling since my friend surprised me,project_authored_independent,eldermeds_conversation,loneliness,0.23861386524698674,happiness_as_loneliness
+sadness,i have been close to tears for most of the morning,project_authored_independent,eldermeds_conversation,happiness,0.40282412695164965,sadness_as_happiness
+sadness,even my favorite program could not lift my low mood,project_authored_independent,eldermeds_conversation,happiness,0.43791939915960765,sadness_as_happiness
+sadness,the memories have left me with a heavy feeling,project_authored_independent,eldermeds_conversation,loneliness,0.599467872446075,sadness_as_loneliness
+loneliness,i would like to hear a familiar voice on the telephone,project_authored_independent,eldermeds_conversation,cognitive_fog,0.3234764196597105,loneliness_as_cognitive_fog
+loneliness,the quiet is hardest at night when i am by myself,project_authored_independent,eldermeds_conversation,cognitive_fog,0.34063035145020776,loneliness_as_cognitive_fog
+loneliness,i miss regular visits and the companionship they brought,project_authored_independent,eldermeds_conversation,neutral,0.4476007921285454,loneliness_as_neutral
+anxiety,my thoughts keep racing through everything that might go wrong,project_authored_independent,eldermeds_conversation,cognitive_fog,0.4406530417250454,anxiety_as_cognitive_fog
+anxiety,i feel tense and keep expecting unwelcome news,project_authored_independent,eldermeds_conversation,neutral,0.32210386907150446,anxiety_as_neutral
+anxiety,my concern has grown until it is difficult to relax,project_authored_independent,eldermeds_conversation,cognitive_fog,0.5339198101653664,anxiety_as_cognitive_fog
+anxiety,i keep going over the same fearful possibility in my mind,project_authored_independent,eldermeds_conversation,anger,0.28963130232182893,anxiety_as_anger
+anxiety,there is a sense of unease that i cannot explain,project_authored_independent,eldermeds_conversation,cognitive_fog,0.40047576915158906,anxiety_as_cognitive_fog
+anxiety,i am on edge whenever i think about leaving the house,project_authored_independent,eldermeds_conversation,loneliness,0.2778865793691578,anxiety_as_loneliness
+anger,i became cross when they moved my belongings without permission,project_authored_independent,eldermeds_conversation,neutral,0.355965223421636,anger_as_neutral
+anger,the unfair decision has left me simmering with anger,project_authored_independent,eldermeds_conversation,loneliness,0.27839226962154157,anger_as_loneliness
+cognitive_fog,i keep losing my place while trying to complete this form,project_authored_independent,eldermeds_conversation,anger,0.3174580884937039,cognitive_fog_as_anger
+cognitive_fog,i forget what i am saying halfway through the sentence today,project_authored_independent,eldermeds_conversation,sadness,0.31372921233057643,cognitive_fog_as_sadness
+cognitive_fog,i repeatedly lose the sequence while following the recipe,project_authored_independent,eldermeds_conversation,neutral,0.40343088524352844,cognitive_fog_as_neutral
+neutral,i had soup for dinner and washed the bowl afterward,project_authored_independent,eldermeds_conversation,anxiety,0.36341035644273884,neutral_as_anxiety
+neutral,i changed the calendar page at the start of the month,project_authored_independent,eldermeds_conversation,anger,0.35529946916563093,neutral_as_anger

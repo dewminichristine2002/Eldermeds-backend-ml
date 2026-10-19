@@ -1,0 +1,23 @@
+{
+  "created_by": "Stage 4 hardening protocol",
+  "random_seed": 42,
+  "origin": "unchanged 20% held-out partition from training_dataset_v2.csv",
+  "rows": 381,
+  "sha256_sorted_csv": "81c673cd2fdd896e8c813d4f13f09f024d6ab695ec1f71c07f30bb778d8dd413",
+  "class_support": {
+    "anger": 62,
+    "anxiety": 59,
+    "cognitive_fog": 61,
+    "happiness": 62,
+    "loneliness": 11,
+    "neutral": 62,
+    "sadness": 64
+  },
+  "prohibited_uses": [
+    "model_selection",
+    "hyperparameter_tuning",
+    "feature_selection",
+    "calibration",
+    "threshold_selection"
+  ]
+}

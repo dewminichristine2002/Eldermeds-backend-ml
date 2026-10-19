@@ -1,0 +1,13 @@
+{
+  "baseline_rows": 1904,
+  "development_rows_after_additions": 1582,
+  "locked_test_rows": 381,
+  "added_project_authored": 59,
+  "empty": 0,
+  "duplicate_texts": 0,
+  "conflicting_texts": 0,
+  "very_short_records": 44,
+  "exact_development_test_overlap": 0,
+  "near_duplicate_similarity_threshold": 0.85,
+  "near_duplicate_development_test_pairs": 0
+}

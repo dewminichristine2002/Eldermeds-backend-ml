@@ -1,0 +1,22 @@
+{
+  "exportedAt": "2026-05-28T10:50:45.499Z",
+  "privacy": {
+    "anonymized": true,
+    "consentRequired": true,
+    "piiStripped": [
+      "user_id",
+      "raw_input",
+      "emergency_contact",
+      "caregiver_details",
+      "exact_age"
+    ],
+    "differentialPrivacyAppliedOnAggregates": true
+  },
+  "reactionFeedback": [],
+  "checkFeedback": [],
+  "counts": {
+    "reactions": 0,
+    "checks": 0,
+    "consentedUsersOnly": true
+  }
+}

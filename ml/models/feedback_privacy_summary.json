@@ -1,0 +1,12 @@
+{
+  "source": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\ElderMeds\\backend\\ml\\data\\feedback_anonymized.json",
+  "epsilon": 1.0,
+  "mechanism": "laplace",
+  "rawSeverityCounts": {},
+  "privateSeverityCounts": {},
+  "rawPharmacistConfirmedCount": 0,
+  "privatePharmacistConfirmedCount": 2.2138,
+  "rawClinicalOverrideCount": 0,
+  "privateClinicalOverrideCount": 0.4702,
+  "totalReactions": 0
+}

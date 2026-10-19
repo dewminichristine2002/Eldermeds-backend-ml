@@ -1,0 +1,30 @@
+{
+  "completed_at_utc": "2026-08-24T03:13:41.220359+00:00",
+  "candidate_sha256": "8c93ccc4a87c975b5a58d3ef8a42be3efc41b71e52653f05879cf45e50d82ee7",
+  "minilm_identifier": "sentence-transformers/all-MiniLM-L6-v2",
+  "minilm_cached_snapshot": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "original_test_sha256": "81c673cd2fdd896e8c813d4f13f09f024d6ab695ec1f71c07f30bb778d8dd413",
+  "domain_test_sha256": "08cdb59dc101e0dfae1b94927d0a587218fdabbbede25d39c73263e125e3674d",
+  "original_rows": 381,
+  "domain_rows": 140,
+  "pure_model_only": true,
+  "results": {
+    "original": {
+      "test": "original_frozen_381",
+      "accuracy": 0.5459317585301837,
+      "macro_precision": 0.5551633710706356,
+      "macro_recall": 0.5888884839828314,
+      "macro_f1": 0.5648650357341979,
+      "weighted_f1": 0.5408848549048549
+    },
+    "domain": {
+      "test": "eldermeds_domain_140",
+      "accuracy": 0.8142857142857143,
+      "macro_precision": 0.8278231811412589,
+      "macro_recall": 0.8142857142857143,
+      "macro_f1": 0.8165781179245072,
+      "weighted_f1": 0.8165781179245071
+    }
+  },
+  "rerun_prohibited": true
+}

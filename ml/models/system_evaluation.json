@@ -1,0 +1,140 @@
+{
+  "section": "11.2_validation_protocol",
+  "datasets": [
+    "FAERS"
+  ],
+  "rows": 11868,
+  "target": "adr_event",
+  "classes": [
+    "no_adr",
+    "severe_adr"
+  ],
+  "validation_protocol": {
+    "train_test_split": "80/20 stratified on adr_event",
+    "cross_validation": "5-fold StratifiedKFold on training set (see train_baseline / compare_models)",
+    "threshold_tuning": "Youden's J on out-of-fold training probabilities (baseline_metrics.json)",
+    "calibration_evaluation": "Brier score + reliability diagram bins on 20% hold-out"
+  },
+  "holdout_accuracy": 0.9338668913226622,
+  "holdout_f1_weighted": 0.9337810409148884,
+  "holdout_roc_auc": 0.9843174474930887,
+  "holdout_mcc": 0.8679057276819826,
+  "holdout_brier_score": 0.047321577752519536,
+  "youdens_j": {
+    "optimal_threshold": 0.6139243245124817,
+    "youdens_j": 0.8740979180727896,
+    "tpr": 0.9411764705882353,
+    "fpr": 0.06707855251544571
+  },
+  "reliability_diagram": [
+    {
+      "mean_predicted_probability": 0.000643101825448293,
+      "observed_positive_fraction": 0.0
+    },
+    {
+      "mean_predicted_probability": 0.0010870020435769347,
+      "observed_positive_fraction": 0.0
+    },
+    {
+      "mean_predicted_probability": 0.0017233579935317365,
+      "observed_positive_fraction": 0.0
+    },
+    {
+      "mean_predicted_probability": 0.05399399617405123,
+      "observed_positive_fraction": 0.0546218487394958
+    },
+    {
+      "mean_predicted_probability": 0.4388676526551508,
+      "observed_positive_fraction": 0.4219409282700422
+    },
+    {
+      "mean_predicted_probability": 0.8333402718672772,
+      "observed_positive_fraction": 0.8270042194092827
+    },
+    {
+      "mean_predicted_probability": 0.9490749432760126,
+      "observed_positive_fraction": 0.9369747899159664
+    },
+    {
+      "mean_predicted_probability": 0.9884342913386188,
+      "observed_positive_fraction": 0.9873417721518988
+    },
+    {
+      "mean_predicted_probability": 0.9979960060823819,
+      "observed_positive_fraction": 1.0
+    },
+    {
+      "mean_predicted_probability": 0.9992740457298375,
+      "observed_positive_fraction": 1.0
+    }
+  ],
+  "calibration_bins": [
+    {
+      "mean_predicted_probability": 0.000643101825448293,
+      "observed_positive_fraction": 0.0
+    },
+    {
+      "mean_predicted_probability": 0.0010870020435769347,
+      "observed_positive_fraction": 0.0
+    },
+    {
+      "mean_predicted_probability": 0.0017233579935317365,
+      "observed_positive_fraction": 0.0
+    },
+    {
+      "mean_predicted_probability": 0.05399399617405123,
+      "observed_positive_fraction": 0.0546218487394958
+    },
+    {
+      "mean_predicted_probability": 0.4388676526551508,
+      "observed_positive_fraction": 0.4219409282700422
+    },
+    {
+      "mean_predicted_probability": 0.8333402718672772,
+      "observed_positive_fraction": 0.8270042194092827
+    },
+    {
+      "mean_predicted_probability": 0.9490749432760126,
+      "observed_positive_fraction": 0.9369747899159664
+    },
+    {
+      "mean_predicted_probability": 0.9884342913386188,
+      "observed_positive_fraction": 0.9873417721518988
+    },
+    {
+      "mean_predicted_probability": 0.9979960060823819,
+      "observed_positive_fraction": 1.0
+    },
+    {
+      "mean_predicted_probability": 0.9992740457298375,
+      "observed_positive_fraction": 1.0
+    }
+  ],
+  "per_class": {
+    "no_adr": {
+      "precision": 0.9493554327808471,
+      "recall": 0.909973521624007,
+      "f1-score": 0.9292474087426769,
+      "support": 1133.0
+    },
+    "severe_adr": {
+      "precision": 0.9208074534161491,
+      "recall": 0.9556809024979855,
+      "f1-score": 0.9379201265322262,
+      "support": 1241.0
+    },
+    "accuracy": 0.9338668913226622,
+    "macro avg": {
+      "precision": 0.9350814430984982,
+      "recall": 0.9328272120609963,
+      "f1-score": 0.9335837676374515,
+      "support": 2374.0
+    },
+    "weighted avg": {
+      "precision": 0.9344320787827047,
+      "recall": 0.9338668913226622,
+      "f1-score": 0.9337810409148884,
+      "support": 2374.0
+    }
+  }
+}

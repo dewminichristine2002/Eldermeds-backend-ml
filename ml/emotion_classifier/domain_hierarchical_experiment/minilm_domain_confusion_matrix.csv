@@ -1,0 +1,8 @@
+,happiness,sadness,loneliness,anxiety,anger,cognitive_fog,neutral
+happiness,19,0,0,0,0,0,1
+sadness,0,16,3,0,0,0,1
+loneliness,0,0,18,0,0,1,1
+anxiety,0,1,1,16,1,1,0
+anger,0,1,0,2,14,1,2
+cognitive_fog,0,1,0,0,0,16,3
+neutral,0,0,1,0,0,4,15

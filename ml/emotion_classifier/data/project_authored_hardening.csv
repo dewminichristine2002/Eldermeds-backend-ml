@@ -1,0 +1,60 @@
+text,label,source
+I lose track of what I am doing halfway through a simple task.,cognitive_fog,project_authored
+My thoughts feel muddled and I cannot organize them clearly.,cognitive_fog,project_authored
+I read the same paragraph several times but cannot follow it.,cognitive_fog,project_authored
+It is hard to keep my attention on our conversation today.,cognitive_fog,project_authored
+I walked into the kitchen and could not remember what I planned to do.,cognitive_fog,project_authored
+My mind feels cloudy even though I slept normally.,cognitive_fog,project_authored
+I start one chore and then forget which step comes next.,cognitive_fog,project_authored
+I cannot concentrate long enough to finish the newspaper article.,cognitive_fog,project_authored
+I keep losing the thread when someone explains something to me.,cognitive_fog,project_authored
+It takes extra effort to think through familiar tasks today.,cognitive_fog,project_authored
+My head feels unclear and decisions are difficult this morning.,cognitive_fog,project_authored
+I was making tea and suddenly lost track of the steps.,cognitive_fog,project_authored
+I cannot hold a thought in mind for very long today.,cognitive_fog,project_authored
+Following the television story has been difficult because my attention drifts.,cognitive_fog,project_authored
+I feel mentally slowed and have trouble putting my thoughts together.,cognitive_fog,project_authored
+Everything followed my normal routine today.,neutral,project_authored
+I had breakfast and completed my usual morning tasks.,neutral,project_authored
+The day has been ordinary with nothing unusual to report.,neutral,project_authored
+I took my medicine at the regular time.,neutral,project_authored
+I spent the afternoon doing my usual household chores.,neutral,project_authored
+Things have been steady and normal today.,neutral,project_authored
+I watched the news and then prepared lunch.,neutral,project_authored
+My day went as expected.,neutral,project_authored
+There is nothing in particular on my mind right now.,neutral,project_authored
+I followed the same schedule I normally follow.,neutral,project_authored
+Today has been uneventful.,neutral,project_authored
+I am doing about the same as usual.,neutral,project_authored
+I am irritated that this problem keeps happening.,anger,project_authored
+The repeated noise has been getting on my nerves.,anger,project_authored
+I felt angry when nobody listened to what I said.,anger,project_authored
+I am frustrated because the device will not work properly.,anger,project_authored
+That interruption annoyed me more than it should have.,anger,project_authored
+I am still upset and cross about how I was treated.,anger,project_authored
+Having to explain the same thing again is making me impatient.,anger,project_authored
+I became irritated when my plans were changed without asking.,anger,project_authored
+This delay is very frustrating.,anger,project_authored
+I feel my temper rising when that happens.,anger,project_authored
+I was annoyed by the careless mistake.,anger,project_authored
+I am angry about the way they spoke to me.,anger,project_authored
+The rooms feel empty now that everyone has gone home.,loneliness,project_authored
+I have not had anyone to share a cup of tea with lately.,loneliness,project_authored
+Evenings feel long when there is nobody here to talk with.,loneliness,project_authored
+I wish someone would stop by for a visit.,loneliness,project_authored
+I miss having another person nearby during the day.,loneliness,project_authored
+The telephone has not rung and I feel forgotten.,loneliness,project_authored
+I ate dinner alone again and missed having company.,loneliness,project_authored
+There is no one here to tell about my day.,loneliness,project_authored
+I feel cut off from the people I care about.,loneliness,project_authored
+The house has seemed too quiet since my family left.,loneliness,project_authored
+I would like somebody to sit and talk with me.,loneliness,project_authored
+I have been on my own all day and it feels difficult.,loneliness,project_authored
+I miss the sound of other people around the house.,loneliness,project_authored
+Nobody has visited this week and I feel alone.,loneliness,project_authored
+I wish I had company this afternoon.,loneliness,project_authored
+It feels as though everyone is busy somewhere else.,loneliness,project_authored
+I have not spoken with another person since yesterday.,loneliness,project_authored
+Sitting by myself for so long has made me feel isolated.,loneliness,project_authored
+I keep hoping a friend will call.,loneliness,project_authored
+I feel lonely even though I know my family cares about me.,loneliness,project_authored

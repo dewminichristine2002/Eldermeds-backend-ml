@@ -1,0 +1,123 @@
+{
+  "model_type": "XGBClassifier",
+  "model_role": "production",
+  "dataset": "FAERS",
+  "dataset_sources": [
+    "FAERS"
+  ],
+  "training_data": {
+    "primary": "FAERS (faers_adrs.csv)",
+    "augmentation": "SMOTE oversampling for minority severe ADR class"
+  },
+  "rows": 11868,
+  "target": "adr_event",
+  "n_jobs": 1,
+  "feature_columns": [
+    "patient_age",
+    "num_current_meds",
+    "ddi_pair_count",
+    "sider_adr_count",
+    "has_renal_disease",
+    "has_hepatic_disease",
+    "has_diabetes",
+    "has_cardiovascular",
+    "has_epilepsy",
+    "allergy_class_overlap",
+    "drug_hepatic_metabolism",
+    "drug_renal_excretion",
+    "nti_drug_flag",
+    "ddi_flag",
+    "rxnorm_matched",
+    "allergy_severity_max",
+    "ddi_severity_max",
+    "patient_sex",
+    "atc_class_encoded"
+  ],
+  "continuous_features": [
+    "patient_age",
+    "num_current_meds",
+    "ddi_pair_count",
+    "sider_adr_count"
+  ],
+  "binary_features": [
+    "has_renal_disease",
+    "has_hepatic_disease",
+    "has_diabetes",
+    "has_cardiovascular",
+    "has_epilepsy",
+    "allergy_class_overlap",
+    "drug_hepatic_metabolism",
+    "drug_renal_excretion",
+    "nti_drug_flag",
+    "ddi_flag",
+    "rxnorm_matched"
+  ],
+  "ordinal_features": [
+    "allergy_severity_max",
+    "ddi_severity_max"
+  ],
+  "categorical_features": [
+    "patient_sex",
+    "atc_class_encoded"
+  ],
+  "tuning": {
+    "method": "GridSearchCV",
+    "cv_folds": 5,
+    "scoring": "f1_weighted",
+    "smote": true,
+    "param_grid": {
+      "classifier__n_estimators": [
+        100,
+        200
+      ],
+      "classifier__max_depth": [
+        4,
+        6,
+        8
+      ],
+      "classifier__learning_rate": [
+        0.05,
+        0.1
+      ],
+      "classifier__subsample": [
+        0.8,
+        0.9
+      ]
+    },
+    "best_params": {
+      "learning_rate": 0.05,
+      "max_depth": 8,
+      "n_estimators": 200,
+      "subsample": 0.8
+    }
+  },
+  "probability_calibration": {
+    "method": "sigmoid",
+    "calibrator_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\ElderMeds\\backend\\ml\\models\\probability_calibrator.joblib",
+    "fit_protocol": "LogisticRegression (Platt-style) on logit-transformed 5-fold out-of-fold training probabilities"
+  },
+  "output": {
+    "adr_risk_probability_range": [
+      0,
+      1
+    ],
+    "shap_feature_importance": true,
+    "global_mdi_importance_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\ElderMeds\\backend\\ml\\models\\global_feature_importance.json",
+    "youdens_j_optimal_threshold": 0.48957131992832137,
+    "production_alias": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\ElderMeds\\backend\\ml\\models\\xgboost_production.joblib"
+  },
+  "threshold_tuning": {
+    "method": "youdens_j",
+    "description": "Optimal binary threshold from Youden's J on calibrated 5-fold out-of-fold training probabilities",
+    "youdens_j": {
+      "optimal_threshold": 0.48957131992832137,
+      "youdens_j": 0.8878181149374256,
+      "tpr": 0.9590890769850866,
+      "fpr": 0.07127096204766108
+    }
+  },
+  "comparative_study": {
+    "selected_over": "random_forest",
+    "rationale": "XGBoost achieved highest binary F1 and AUC-ROC on FAERS hold-out (Section 11.1)"
+  }
+}

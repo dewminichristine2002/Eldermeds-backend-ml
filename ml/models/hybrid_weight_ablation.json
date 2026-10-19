@@ -1,0 +1,436 @@
+{
+  "section": "13.1_weight_calibration_experiment",
+  "objective": "Phase_7_hybrid_risk_score",
+  "formula": "hybridScore = round(alpha * ruleScore + beta * mlDangerScore)",
+  "production_weights": {
+    "alpha_rule_engine": 0.6,
+    "beta_ml_engine": 0.4,
+    "rationale": {
+      "rule_engine": "Higher weight because clinical rules encode validated, evidence-based contraindications and remain the primary source of explainability and clinical accountability.",
+      "ml_engine": "Supplementary probabilistic signal for complex, non-linear interactions between patient features and drug properties not fully captured by explicit rules."
+    }
+  },
+  "validation": {
+    "method": "5-fold stratified CV on 80% train split (out-of-fold tuned Logistic Regression scores) + 20% held-out test",
+    "optimization_metric": "joint F1-weighted across Safe/Warning/Dangerous",
+    "thresholds": {
+      "warning": 20,
+      "dangerous": 55
+    },
+    "cv_weight_selection": {
+      "folds": [
+        {
+          "fold": 1,
+          "rows": 1899,
+          "best_alpha": 0.3,
+          "best_beta": 0.7,
+          "best_f1_weighted": 0.9593887562671306
+        },
+        {
+          "fold": 2,
+          "rows": 1899,
+          "best_alpha": 0.3,
+          "best_beta": 0.7,
+          "best_f1_weighted": 0.962066357480772
+        },
+        {
+          "fold": 3,
+          "rows": 1899,
+          "best_alpha": 0.3,
+          "best_beta": 0.7,
+          "best_f1_weighted": 0.9619053990122931
+        },
+        {
+          "fold": 4,
+          "rows": 1899,
+          "best_alpha": 0.3,
+          "best_beta": 0.7,
+          "best_f1_weighted": 0.9659882302117415
+        },
+        {
+          "fold": 5,
+          "rows": 1898,
+          "best_alpha": 0.3,
+          "best_beta": 0.7,
+          "best_f1_weighted": 0.9641688709561017
+        }
+      ],
+      "weight_grid_cv": [
+        {
+          "alpha": 0.3,
+          "beta": 0.7,
+          "cv_f1_weighted_mean": 0.9627035227856078,
+          "cv_f1_weighted_std": 0.002234600921475774
+        },
+        {
+          "alpha": 0.2,
+          "beta": 0.8,
+          "cv_f1_weighted_mean": 0.9577527600893798,
+          "cv_f1_weighted_std": 0.0025788573182390618
+        },
+        {
+          "alpha": 0.4,
+          "beta": 0.6,
+          "cv_f1_weighted_mean": 0.9505224190955145,
+          "cv_f1_weighted_std": 0.0035813330554114163
+        },
+        {
+          "alpha": 0.1,
+          "beta": 0.9,
+          "cv_f1_weighted_mean": 0.9337817028997113,
+          "cv_f1_weighted_std": 0.005082313630496022
+        },
+        {
+          "alpha": 0.0,
+          "beta": 1.0,
+          "cv_f1_weighted_mean": 0.9004251197727757,
+          "cv_f1_weighted_std": 0.002238289531352291
+        },
+        {
+          "alpha": 0.5,
+          "beta": 0.5,
+          "cv_f1_weighted_mean": 0.6230878814020019,
+          "cv_f1_weighted_std": 0.010627205767374897
+        },
+        {
+          "alpha": 0.6,
+          "beta": 0.4,
+          "cv_f1_weighted_mean": 0.6014712972236926,
+          "cv_f1_weighted_std": 0.008204371992698295
+        },
+        {
+          "alpha": 0.7,
+          "beta": 0.3,
+          "cv_f1_weighted_mean": 0.5749188561863047,
+          "cv_f1_weighted_std": 0.008970121775289362
+        },
+        {
+          "alpha": 0.8,
+          "beta": 0.2,
+          "cv_f1_weighted_mean": 0.4741674706710649,
+          "cv_f1_weighted_std": 0.008679445022221935
+        },
+        {
+          "alpha": 0.9,
+          "beta": 0.1,
+          "cv_f1_weighted_mean": 0.3963377830068333,
+          "cv_f1_weighted_std": 0.005777956230805447
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.0,
+          "cv_f1_weighted_mean": 0.37138073658152815,
+          "cv_f1_weighted_std": 0.0051045611378249325
+        }
+      ],
+      "selected_by_cv_mean_f1_weighted": {
+        "alpha": 0.3,
+        "beta": 0.7,
+        "cv_f1_weighted_mean": 0.9627035227856078,
+        "cv_f1_weighted_std": 0.002234600921475774
+      }
+    },
+    "production_weights_rank_in_cv_grid": 7
+  },
+  "datasets": [
+    "FAERS"
+  ],
+  "rows_total": 11868,
+  "rows_train": 9494,
+  "rows_test": 2374,
+  "ml_model_artifact": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S2\\R26-SE-028 (1)\\R26-SE-028\\backend\\ml\\models\\fda_serious_baselines\\logistic_regression_tuned.joblib",
+  "fda_feature_projection": {
+    "source_dataset": "FAERS/OMOP proxy hybrid-evaluation dataset",
+    "target_schema": "FDA serious vs non-serious Logistic Regression feature schema",
+    "numeric_caps": {
+      "num_reactions": 0.0,
+      "num_drugs": 23.0,
+      "report_age_days": 0.0
+    }
+  },
+  "ablation_configurations": [
+    {
+      "configuration": "rule_only",
+      "alpha": 1.0,
+      "beta": 0.0,
+      "label": "Rule-only"
+    },
+    {
+      "configuration": "ml_only",
+      "alpha": 0.0,
+      "beta": 1.0,
+      "label": "ML-only"
+    },
+    {
+      "configuration": "hybrid_proposed",
+      "alpha": 0.6,
+      "beta": 0.4,
+      "label": "Proposed hybrid"
+    },
+    {
+      "configuration": "hybrid_equal",
+      "alpha": 0.5,
+      "beta": 0.5,
+      "label": "Equal weight"
+    }
+  ],
+  "heldout_test_configurations": [
+    {
+      "configuration": "rule_only",
+      "alpha": 1.0,
+      "beta": 0.0,
+      "f1_weighted": 0.3754497754765809,
+      "f1_macro": 0.41356544694220654,
+      "dangerous_recall": 0.08299758259468171,
+      "dangerous_precision": 0.8046875,
+      "per_class": {
+        "Safe": {
+          "precision": 0.4921956295525494,
+          "recall": 1.0,
+          "f1-score": 0.6596931659693166,
+          "support": 946.0
+        },
+        "Warning": {
+          "precision": 0.3395061728395062,
+          "recall": 0.5882352941176471,
+          "f1-score": 0.43052837573385516,
+          "support": 187.0
+        },
+        "Dangerous": {
+          "precision": 0.8046875,
+          "recall": 0.08299758259468171,
+          "f1-score": 0.15047479912344777,
+          "support": 1241.0
+        },
+        "accuracy": 0.4882055602358888,
+        "macro avg": {
+          "precision": 0.5454631007973519,
+          "recall": 0.5570776255707762,
+          "f1-score": 0.41356544694220654,
+          "support": 2374.0
+        },
+        "weighted avg": {
+          "precision": 0.6435222861742625,
+          "recall": 0.4882055602358888,
+          "f1-score": 0.3754497754765809,
+          "support": 2374.0
+        }
+      }
+    },
+    {
+      "configuration": "ml_only",
+      "alpha": 0.0,
+      "beta": 1.0,
+      "f1_weighted": 0.8899180855430544,
+      "f1_macro": 0.6588279670096296,
+      "dangerous_recall": 1.0,
+      "dangerous_precision": 1.0,
+      "per_class": {
+        "Safe": {
+          "precision": 0.8387096774193549,
+          "recall": 0.9894291754756871,
+          "f1-score": 0.9078564500484966,
+          "support": 946.0
+        },
+        "Warning": {
+          "precision": 0.4117647058823529,
+          "recall": 0.0374331550802139,
+          "f1-score": 0.06862745098039216,
+          "support": 187.0
+        },
+        "Dangerous": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1241.0
+        },
+        "accuracy": 0.9199663016006739,
+        "macro avg": {
+          "precision": 0.7501581277672359,
+          "recall": 0.6756207768519671,
+          "f1-score": 0.6588279670096296,
+          "support": 2374.0
+        },
+        "weighted avg": {
+          "precision": 0.8893931570508465,
+          "recall": 0.9199663016006739,
+          "f1-score": 0.8899180855430544,
+          "support": 2374.0
+        }
+      }
+    },
+    {
+      "configuration": "hybrid_proposed",
+      "alpha": 0.6,
+      "beta": 0.4,
+      "f1_weighted": 0.6027685319559033,
+      "f1_macro": 0.5203018953754129,
+      "dangerous_recall": 0.23529411764705882,
+      "dangerous_precision": 1.0,
+      "per_class": {
+        "Safe": {
+          "precision": 0.945054945054945,
+          "recall": 1.0,
+          "f1-score": 0.9717514124293786,
+          "support": 946.0
+        },
+        "Warning": {
+          "precision": 0.12210915818686402,
+          "recall": 0.7058823529411765,
+          "f1-score": 0.2082018927444795,
+          "support": 187.0
+        },
+        "Dangerous": {
+          "precision": 1.0,
+          "recall": 0.23529411764705882,
+          "f1-score": 0.38095238095238093,
+          "support": 1241.0
+        },
+        "accuracy": 0.5770850884582982,
+        "macro avg": {
+          "precision": 0.689054701080603,
+          "recall": 0.6470588235294118,
+          "f1-score": 0.5203018953754129,
+          "support": 2374.0
+        },
+        "weighted avg": {
+          "precision": 0.9089538292345921,
+          "recall": 0.5770850884582982,
+          "f1-score": 0.6027685319559033,
+          "support": 2374.0
+        }
+      }
+    },
+    {
+      "configuration": "hybrid_equal",
+      "alpha": 0.5,
+      "beta": 0.5,
+      "f1_weighted": 0.6254038205148224,
+      "f1_macro": 0.5345851214296599,
+      "dangerous_recall": 0.27074939564867045,
+      "dangerous_precision": 1.0,
+      "per_class": {
+        "Safe": {
+          "precision": 0.9403578528827038,
+          "recall": 1.0,
+          "f1-score": 0.9692622950819673,
+          "support": 946.0
+        },
+        "Warning": {
+          "precision": 0.12306201550387597,
+          "recall": 0.679144385026738,
+          "f1-score": 0.20836751435602954,
+          "support": 187.0
+        },
+        "Dangerous": {
+          "precision": 1.0,
+          "recall": 0.27074939564867045,
+          "f1-score": 0.42612555485098286,
+          "support": 1241.0
+        },
+        "accuracy": 0.5935130581297389,
+        "macro avg": {
+          "precision": 0.6878066227955265,
+          "recall": 0.6499645935584695,
+          "f1-score": 0.5345851214296599,
+          "support": 2374.0
+        },
+        "weighted avg": {
+          "precision": 0.9071571717465301,
+          "recall": 0.5935130581297389,
+          "f1-score": 0.6254038205148224,
+          "support": 2374.0
+        }
+      }
+    }
+  ],
+  "heldout_comparison_table": [
+    {
+      "configuration": "rule_only",
+      "alpha": 1.0,
+      "beta": 0.0,
+      "f1_weighted": 0.3754497754765809,
+      "f1_macro": 0.41356544694220654,
+      "dangerous_recall": 0.08299758259468171,
+      "dangerous_precision": 0.8046875,
+      "per_class_f1": {
+        "Safe": 0.6596931659693166,
+        "Warning": 0.43052837573385516,
+        "Dangerous": 0.15047479912344777
+      },
+      "per_class_support": {
+        "Safe": 946,
+        "Warning": 187,
+        "Dangerous": 1241
+      }
+    },
+    {
+      "configuration": "ml_only",
+      "alpha": 0.0,
+      "beta": 1.0,
+      "f1_weighted": 0.8899180855430544,
+      "f1_macro": 0.6588279670096296,
+      "dangerous_recall": 1.0,
+      "dangerous_precision": 1.0,
+      "per_class_f1": {
+        "Safe": 0.9078564500484966,
+        "Warning": 0.06862745098039216,
+        "Dangerous": 1.0
+      },
+      "per_class_support": {
+        "Safe": 946,
+        "Warning": 187,
+        "Dangerous": 1241
+      }
+    },
+    {
+      "configuration": "hybrid_proposed",
+      "alpha": 0.6,
+      "beta": 0.4,
+      "f1_weighted": 0.6027685319559033,
+      "f1_macro": 0.5203018953754129,
+      "dangerous_recall": 0.23529411764705882,
+      "dangerous_precision": 1.0,
+      "per_class_f1": {
+        "Safe": 0.9717514124293786,
+        "Warning": 0.2082018927444795,
+        "Dangerous": 0.38095238095238093
+      },
+      "per_class_support": {
+        "Safe": 946,
+        "Warning": 187,
+        "Dangerous": 1241
+      }
+    },
+    {
+      "configuration": "hybrid_equal",
+      "alpha": 0.5,
+      "beta": 0.5,
+      "f1_weighted": 0.6254038205148224,
+      "f1_macro": 0.5345851214296599,
+      "dangerous_recall": 0.27074939564867045,
+      "dangerous_precision": 1.0,
+      "per_class_f1": {
+        "Safe": 0.9692622950819673,
+        "Warning": 0.20836751435602954,
+        "Dangerous": 0.42612555485098286
+      },
+      "per_class_support": {
+        "Safe": 946,
+        "Warning": 187,
+        "Dangerous": 1241
+      }
+    }
+  ],
+  "heldout_best_configuration_by_f1_weighted": "ml_only",
+  "selected_production_weights_justified": {
+    "cv_best_alpha": 0.3,
+    "cv_best_beta": 0.7,
+    "proposed_alpha": 0.6,
+    "proposed_beta": 0.4,
+    "proposed_matches_cv_best": false,
+    "heldout_f1_weighted_proposed": 0.6027685319559033,
+    "heldout_f1_weighted_cv_best": 0.9584959072868394
+  },
+  "note": "rule_score comes from the proxy hybrid-evaluation dataset risk_score column or derived FAERS proxy. mlDangerScore is the tuned FDA Logistic Regression probability of class 1 (Serious) \u00d7 100, evaluated on a projected FDA-style feature frame built from the proxy calibration dataset."
+}

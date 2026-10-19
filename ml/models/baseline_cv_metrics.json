@@ -1,0 +1,13 @@
+{
+  "best_cv_f1_weighted_mean": 0.9441377964786396,
+  "best_params": {
+    "learning_rate": 0.05,
+    "max_depth": 8,
+    "n_estimators": 200,
+    "subsample": 0.8
+  },
+  "cv_folds": 5,
+  "refit_metric": "f1_weighted",
+  "search_method": "GridSearchCV",
+  "smote": true
+}

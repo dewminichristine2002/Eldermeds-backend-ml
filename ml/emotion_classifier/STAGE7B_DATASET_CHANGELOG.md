@@ -1,0 +1,3 @@
+# Stage 7B Dataset Changelog
+
+No new training dataset version has been created because there are no human review events. `development_dataset_v3.csv` and all other input CSVs remain unchanged. The builder is implemented in `annotation/dataset_builder.py`; it accepts only explicit adjudication or two independent agreeing human decisions, preserves original label evidence in the change manifest, applies agreed exclusions only with two reviewers, requires all seven classes to remain present, hashes all inputs/outputs, and keeps unresolved disagreements visible. Synthetic software fixtures test these rules; they are not dataset records and are not exported as training data.

@@ -1,0 +1,22 @@
+{
+  "warningMin": 20,
+  "dangerousMin": 50,
+  "selected_operating_point": {
+    "warning_threshold": 20,
+    "dangerous_threshold": 50,
+    "configuration": "grid_20_50",
+    "dangerous_false_negative_rate": 0.7437550362610797,
+    "dangerous_false_negatives": 923,
+    "dangerous_recall": 0.25624496373892025,
+    "dangerous_precision": 1.0,
+    "f1_weighted": 0.6172267543243973,
+    "selection_rule": {
+      "objective": "minimize Dangerous false-negative rate (FNR_D)",
+      "constraint": "Precision_D >= 0.99",
+      "latex": "T_D^* = \\arg\\min_T FNR_D(T) \\text{ s.t. } Precision_D(T) \\geq 0.99",
+      "warning_rationale": "After selecting T_D*=50, Warning threshold T_W=20 was set to preserve an interpretable intermediate-risk band (preferred T_W=20 when feasible)."
+    },
+    "production_defaults_updated": true
+  },
+  "source": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S2\\R26-SE-028 (1)\\R26-SE-028\\backend\\ml\\models\\threshold_sensitivity.json"
+}

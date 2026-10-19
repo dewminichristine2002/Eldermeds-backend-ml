@@ -1,0 +1,141 @@
+label,text,source,domain
+happiness,i woke up cheerful and ready for the day,project_authored_independent_v3,eldermeds_conversation
+happiness,the visit from my grandson lifted my spirits,project_authored_independent_v3,eldermeds_conversation
+happiness,i felt good after finishing my garden work,project_authored_independent_v3,eldermeds_conversation
+happiness,i enjoyed our conversation very much,project_authored_independent_v3,eldermeds_conversation
+happiness,today has given me several reasons to smile,project_authored_independent_v3,eldermeds_conversation
+happiness,i am happier than i was yesterday,project_authored_independent_v3,eldermeds_conversation
+happiness,sharing lunch with my neighbor was delightful,project_authored_independent_v3,eldermeds_conversation
+happiness,the music brought back pleasant memories,project_authored_independent_v3,eldermeds_conversation
+happiness,i feel content and pleased this evening,project_authored_independent_v3,eldermeds_conversation
+happiness,that kind message brightened my morning,project_authored_independent_v3,eldermeds_conversation
+sadness,i have felt low and tearful since breakfast,project_authored_independent_v3,eldermeds_conversation
+sadness,the day seems heavy and nothing interests me,project_authored_independent_v3,eldermeds_conversation
+sadness,i miss how things used to be and it hurts,project_authored_independent_v3,eldermeds_conversation
+sadness,i could not find much joy in anything today,project_authored_independent_v3,eldermeds_conversation
+sadness,i have been feeling down all afternoon,project_authored_independent_v3,eldermeds_conversation
+sadness,thinking about the loss made me cry again,project_authored_independent_v3,eldermeds_conversation
+sadness,i feel discouraged and unhappy tonight,project_authored_independent_v3,eldermeds_conversation
+sadness,my heart feels heavy even though i am not alone,project_authored_independent_v3,eldermeds_conversation
+sadness,i did not want to get out of bed because i felt so low,project_authored_independent_v3,eldermeds_conversation
+sadness,there is a sadness i cannot seem to shake,project_authored_independent_v3,eldermeds_conversation
+loneliness,no one has called and the silence feels difficult,project_authored_independent_v3,eldermeds_conversation
+loneliness,i wish there were somebody beside me this evening,project_authored_independent_v3,eldermeds_conversation
+loneliness,meals feel empty when i always eat by myself,project_authored_independent_v3,eldermeds_conversation
+loneliness,i have nobody nearby to share my news with,project_authored_independent_v3,eldermeds_conversation
+loneliness,the house became awfully quiet after the visitors left,project_authored_independent_v3,eldermeds_conversation
+loneliness,i miss having a companion to talk to each day,project_authored_independent_v3,eldermeds_conversation
+loneliness,i feel alone even in a room full of people,project_authored_independent_v3,eldermeds_conversation
+loneliness,i keep looking toward the door hoping someone will visit,project_authored_independent_v3,eldermeds_conversation
+loneliness,it has been days since i had a proper conversation,project_authored_independent_v3,eldermeds_conversation
+loneliness,i would love some company this afternoon,project_authored_independent_v3,eldermeds_conversation
+anxiety,i feel uneasy and cannot settle my thoughts,project_authored_independent_v3,eldermeds_conversation
+anxiety,i have been worrying that something bad may happen,project_authored_independent_v3,eldermeds_conversation
+anxiety,my nerves are on edge this morning,project_authored_independent_v3,eldermeds_conversation
+anxiety,i cannot relax because i keep imagining problems,project_authored_independent_v3,eldermeds_conversation
+anxiety,i feel tense whenever the telephone rings,project_authored_independent_v3,eldermeds_conversation
+anxiety,there is a nervous feeling in my stomach,project_authored_independent_v3,eldermeds_conversation
+anxiety,i keep checking everything because i am worried,project_authored_independent_v3,eldermeds_conversation
+anxiety,i am restless and concerned about tomorrow,project_authored_independent_v3,eldermeds_conversation
+anxiety,small uncertainties are making me very uneasy,project_authored_independent_v3,eldermeds_conversation
+anxiety,my mind keeps circling around the same worry,project_authored_independent_v3,eldermeds_conversation
+anger,i am furious that they ignored my request again,project_authored_independent_v3,eldermeds_conversation
+anger,the constant interruptions are really irritating me,project_authored_independent_v3,eldermeds_conversation
+anger,i became annoyed when the appointment was cancelled,project_authored_independent_v3,eldermeds_conversation
+anger,i am frustrated by having to repeat this task,project_authored_independent_v3,eldermeds_conversation
+anger,that rude comment made me angry,project_authored_independent_v3,eldermeds_conversation
+anger,i have had enough of this careless behavior,project_authored_independent_v3,eldermeds_conversation
+anger,the unnecessary delay is getting on my nerves,project_authored_independent_v3,eldermeds_conversation
+anger,i feel cross because nobody asked my opinion,project_authored_independent_v3,eldermeds_conversation
+anger,i lost my temper when the machine failed again,project_authored_independent_v3,eldermeds_conversation
+anger,i am still irritated about what happened earlier,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,i cannot keep track of the steps while preparing breakfast,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,the words blur together when i try to follow a page,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,i began a chore and then forgot what i was trying to finish,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,my thinking feels cloudy and slow this afternoon,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,i lose the thread halfway through a conversation,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,it is unusually hard to focus on one thing today,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,i cannot organize my thoughts well enough to make a simple plan,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,i repeatedly forget the next step of familiar activities,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,following the plot of this program takes too much concentration today,project_authored_independent_v3,eldermeds_conversation
+cognitive_fog,my mind feels unclear despite being rested,project_authored_independent_v3,eldermeds_conversation
+neutral,i completed my regular errands this morning,project_authored_independent_v3,eldermeds_conversation
+neutral,nothing out of the ordinary happened today,project_authored_independent_v3,eldermeds_conversation
+neutral,i ate lunch at noon and read the newspaper,project_authored_independent_v3,eldermeds_conversation
+neutral,everything is about the same as it normally is,project_authored_independent_v3,eldermeds_conversation
+neutral,i followed my standard schedule,project_authored_independent_v3,eldermeds_conversation
+neutral,the morning passed without any notable events,project_authored_independent_v3,eldermeds_conversation
+neutral,i am sitting in the living room now,project_authored_independent_v3,eldermeds_conversation
+neutral,i took a walk and returned home before dinner,project_authored_independent_v3,eldermeds_conversation
+neutral,my routine has been unchanged this week,project_authored_independent_v3,eldermeds_conversation
+neutral,there is nothing special to mention about today,project_authored_independent_v3,eldermeds_conversation
+happiness,i felt cheerful while listening to the birds this morning,project_authored_independent,eldermeds_conversation
+happiness,finishing the puzzle left me pleased with myself,project_authored_independent,eldermeds_conversation
+happiness,my sisters letter made the whole afternoon brighter,project_authored_independent,eldermeds_conversation
+happiness,i had a lovely time talking with the nurse today,project_authored_independent,eldermeds_conversation
+happiness,seeing the flowers open put me in a very good mood,project_authored_independent,eldermeds_conversation
+happiness,i am feeling hopeful and content after our chat,project_authored_independent,eldermeds_conversation
+happiness,the family photographs brought me a lot of joy,project_authored_independent,eldermeds_conversation
+happiness,i was delighted to hear that everyone is doing well,project_authored_independent,eldermeds_conversation
+happiness,my walk went well and i came home feeling refreshed,project_authored_independent,eldermeds_conversation
+happiness,i have been smiling since my friend surprised me,project_authored_independent,eldermeds_conversation
+sadness,i feel sorrowful when i think about the empty chair,project_authored_independent,eldermeds_conversation
+sadness,i have been close to tears for most of the morning,project_authored_independent,eldermeds_conversation
+sadness,even my favorite program could not lift my low mood,project_authored_independent,eldermeds_conversation
+sadness,i am disappointed and feeling rather miserable today,project_authored_independent,eldermeds_conversation
+sadness,the memories have left me with a heavy feeling,project_authored_independent,eldermeds_conversation
+sadness,i feel gloomy and do not want to do very much,project_authored_independent,eldermeds_conversation
+sadness,today has been painful since i heard the bad news,project_authored_independent,eldermeds_conversation
+sadness,i am unhappy even though people have tried to comfort me,project_authored_independent,eldermeds_conversation
+sadness,i lost interest in my usual hobbies because i feel so down,project_authored_independent,eldermeds_conversation
+sadness,there is an aching sadness with me this evening,project_authored_independent,eldermeds_conversation
+loneliness,i have spent the whole weekend without seeing another person,project_authored_independent,eldermeds_conversation
+loneliness,the rooms seem empty when there is nobody to share them,project_authored_independent,eldermeds_conversation
+loneliness,i miss having someone across the table at breakfast,project_authored_independent,eldermeds_conversation
+loneliness,i wish a relative would come and keep me company,project_authored_independent,eldermeds_conversation
+loneliness,not having anyone to speak with makes the hours drag,project_authored_independent,eldermeds_conversation
+loneliness,everyone has gone back to their own homes and i feel alone,project_authored_independent,eldermeds_conversation
+loneliness,i would like to hear a familiar voice on the telephone,project_authored_independent,eldermeds_conversation
+loneliness,the quiet is hardest at night when i am by myself,project_authored_independent,eldermeds_conversation
+loneliness,i miss regular visits and the companionship they brought,project_authored_independent,eldermeds_conversation
+loneliness,it feels like nobody has time to sit with me anymore,project_authored_independent,eldermeds_conversation
+anxiety,i feel apprehensive about the appointment and cannot settle,project_authored_independent,eldermeds_conversation
+anxiety,my thoughts keep racing through everything that might go wrong,project_authored_independent,eldermeds_conversation
+anxiety,i have a nervous feeling that will not ease,project_authored_independent,eldermeds_conversation
+anxiety,i am worried about the results and keep watching the clock,project_authored_independent,eldermeds_conversation
+anxiety,uncertainty about tomorrow is making me restless,project_authored_independent,eldermeds_conversation
+anxiety,i feel tense and keep expecting unwelcome news,project_authored_independent,eldermeds_conversation
+anxiety,my concern has grown until it is difficult to relax,project_authored_independent,eldermeds_conversation
+anxiety,i keep going over the same fearful possibility in my mind,project_authored_independent,eldermeds_conversation
+anxiety,there is a sense of unease that i cannot explain,project_authored_independent,eldermeds_conversation
+anxiety,i am on edge whenever i think about leaving the house,project_authored_independent,eldermeds_conversation
+anger,i am angry that my concerns were dismissed so quickly,project_authored_independent,eldermeds_conversation
+anger,their repeated lateness has made me thoroughly annoyed,project_authored_independent,eldermeds_conversation
+anger,i feel irritated each time the alarm sounds for no reason,project_authored_independent,eldermeds_conversation
+anger,it frustrates me when people decide things without including me,project_authored_independent,eldermeds_conversation
+anger,i am still furious about the disrespectful way they behaved,project_authored_independent,eldermeds_conversation
+anger,this broken equipment is making me lose my patience,project_authored_independent,eldermeds_conversation
+anger,i resent being told the same excuse yet again,project_authored_independent,eldermeds_conversation
+anger,i became cross when they moved my belongings without permission,project_authored_independent,eldermeds_conversation
+anger,the unfair decision has left me simmering with anger,project_authored_independent,eldermeds_conversation
+anger,i am fed up with asking for the problem to be fixed,project_authored_independent,eldermeds_conversation
+cognitive_fog,i cannot follow the instructions because each step slips from my mind,project_authored_independent,eldermeds_conversation
+cognitive_fog,i keep losing my place while trying to complete this form,project_authored_independent,eldermeds_conversation
+cognitive_fog,my thoughts are so hazy that i cannot arrange them in order,project_authored_independent,eldermeds_conversation
+cognitive_fog,i forget what i am saying halfway through the sentence today,project_authored_independent,eldermeds_conversation
+cognitive_fog,i started dressing and became confused about what came next,project_authored_independent,eldermeds_conversation
+cognitive_fog,concentrating on this simple conversation is unusually difficult,project_authored_independent,eldermeds_conversation
+cognitive_fog,i cannot remember the task i was doing only a moment ago,project_authored_independent,eldermeds_conversation
+cognitive_fog,my mind feels fogged and familiar decisions take too much effort,project_authored_independent,eldermeds_conversation
+cognitive_fog,i repeatedly lose the sequence while following the recipe,project_authored_independent,eldermeds_conversation
+cognitive_fog,reading is difficult because i cannot hold onto the meaning,project_authored_independent,eldermeds_conversation
+neutral,i watered the plants before making a sandwich for lunch,project_authored_independent,eldermeds_conversation
+neutral,i have an appointment scheduled for tuesday afternoon,project_authored_independent,eldermeds_conversation
+neutral,the newspaper arrived at the usual time this morning,project_authored_independent,eldermeds_conversation
+neutral,i folded the towels and placed them in the cupboard,project_authored_independent,eldermeds_conversation
+neutral,i watched one program and then turned off the television,project_authored_independent,eldermeds_conversation
+neutral,my medication box is on the kitchen counter,project_authored_independent,eldermeds_conversation
+neutral,i had soup for dinner and washed the bowl afterward,project_authored_independent,eldermeds_conversation
+neutral,the weather report says it may rain later,project_authored_independent,eldermeds_conversation
+neutral,i changed the calendar page at the start of the month,project_authored_independent,eldermeds_conversation
+neutral,i went to bed at my regular time last night,project_authored_independent,eldermeds_conversation

@@ -1,0 +1,64 @@
+{
+  "task": "Serious vs Non-serious adverse event report classification",
+  "target_column": "serious",
+  "summary": {
+    "dataset_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S2\\R26-SE-028 (1)\\R26-SE-028\\backend\\ml\\data\\fda_adverse_events_2015_2026_CLEAN.csv",
+    "rows_loaded": 528000,
+    "rows_used": 5000,
+    "sample_size": 5000,
+    "label_distribution": {
+      "0": 1259,
+      "1": 3741
+    },
+    "leakage_columns_present": [
+      "report_id",
+      "receive_date",
+      "quarter",
+      "serious_flags",
+      "is_fatal",
+      "is_hospitalized",
+      "is_life_threat",
+      "is_disabling",
+      "reaction_outcomes",
+      "patient_recovered",
+      "patient_weight_kg",
+      "brand_name",
+      "manufacturer",
+      "reactions",
+      "age_group",
+      "drug_count_category"
+    ],
+    "feature_columns": [
+      "year",
+      "month",
+      "primary_reaction",
+      "num_reactions",
+      "suspect_drug",
+      "drug_route",
+      "drug_indication",
+      "pharm_class",
+      "num_drugs",
+      "patient_age_years",
+      "patient_sex",
+      "country",
+      "report_age_days"
+    ]
+  },
+  "split": {
+    "train_rows": 4000,
+    "test_rows": 1000,
+    "train_label_distribution": {
+      "0": 1007,
+      "1": 2993
+    },
+    "test_label_distribution": {
+      "0": 252,
+      "1": 748
+    },
+    "numeric_caps": {
+      "num_reactions": 41.00999999999976,
+      "num_drugs": 55.0,
+      "report_age_days": 4055.0099999999998
+    }
+  }
+}

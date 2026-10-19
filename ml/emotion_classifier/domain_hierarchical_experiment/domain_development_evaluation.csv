@@ -1,0 +1,57 @@
+text,label,source,domain
+I felt cheerful after chatting with the pharmacist.,happiness,project_authored_domain_development,eldermeds_checkin
+The sunshine made my morning feel pleasant.,happiness,project_authored_domain_development,eldermeds_checkin
+I enjoyed preparing lunch and felt quite content.,happiness,project_authored_domain_development,eldermeds_checkin
+Hearing my favorite song put me in a good mood.,happiness,project_authored_domain_development,eldermeds_checkin
+I am pleased that I managed everything on my list.,happiness,project_authored_domain_development,eldermeds_checkin
+My neighbor visited and we had a lovely laugh.,happiness,project_authored_domain_development,eldermeds_checkin
+I feel hopeful about the coming week.,happiness,project_authored_domain_development,eldermeds_checkin
+That phone call left me smiling.,happiness,project_authored_domain_development,eldermeds_checkin
+I have felt miserable since I woke up.,sadness,project_authored_domain_development,eldermeds_checkin
+The memory made me tearful again today.,sadness,project_authored_domain_development,eldermeds_checkin
+I feel low even though my daughter is sitting with me.,sadness,project_authored_domain_development,eldermeds_checkin
+Nothing seems enjoyable while I feel this down.,sadness,project_authored_domain_development,eldermeds_checkin
+I am disappointed and my heart feels heavy.,sadness,project_authored_domain_development,eldermeds_checkin
+The bad news has left me deeply unhappy.,sadness,project_authored_domain_development,eldermeds_checkin
+I could not stop crying this afternoon.,sadness,project_authored_domain_development,eldermeds_checkin
+I feel gloomy despite having people around me.,sadness,project_authored_domain_development,eldermeds_checkin
+I wish there were someone here to share tea with.,loneliness,project_authored_domain_development,eldermeds_checkin
+The house feels empty when nobody comes to visit.,loneliness,project_authored_domain_development,eldermeds_checkin
+I have gone all day without a real conversation.,loneliness,project_authored_domain_development,eldermeds_checkin
+I miss having another person nearby in the evenings.,loneliness,project_authored_domain_development,eldermeds_checkin
+Everyone seems busy and I feel left on my own.,loneliness,project_authored_domain_development,eldermeds_checkin
+I keep hoping someone will telephone me.,loneliness,project_authored_domain_development,eldermeds_checkin
+Eating alone every day makes me miss companionship.,loneliness,project_authored_domain_development,eldermeds_checkin
+I would like a friend to sit and talk with me.,loneliness,project_authored_domain_development,eldermeds_checkin
+I am uneasy about what the doctor may say.,anxiety,project_authored_domain_development,eldermeds_checkin
+I keep worrying and cannot settle down.,anxiety,project_authored_domain_development,eldermeds_checkin
+My thoughts are clear but I feel nervous about tomorrow.,anxiety,project_authored_domain_development,eldermeds_checkin
+I am tense because something may go wrong.,anxiety,project_authored_domain_development,eldermeds_checkin
+The uncertainty has kept me restless all morning.,anxiety,project_authored_domain_development,eldermeds_checkin
+I cannot relax while I wait for the results.,anxiety,project_authored_domain_development,eldermeds_checkin
+I feel worried whenever I think about the journey.,anxiety,project_authored_domain_development,eldermeds_checkin
+There is a nervous feeling I cannot shake.,anxiety,project_authored_domain_development,eldermeds_checkin
+I am annoyed that the same issue happened again.,anger,project_authored_domain_development,eldermeds_checkin
+Being ignored like that made me angry.,anger,project_authored_domain_development,eldermeds_checkin
+This delay is frustrating and I am losing patience.,anger,project_authored_domain_development,eldermeds_checkin
+I feel irritated but not worried about the problem.,anger,project_authored_domain_development,eldermeds_checkin
+I am fed up with having to ask repeatedly.,anger,project_authored_domain_development,eldermeds_checkin
+Their rude response made me cross.,anger,project_authored_domain_development,eldermeds_checkin
+I am furious that they moved my things without asking.,anger,project_authored_domain_development,eldermeds_checkin
+The constant interruptions are getting on my nerves.,anger,project_authored_domain_development,eldermeds_checkin
+I lose track of the steps while doing a familiar chore.,cognitive_fog,project_authored_domain_development,eldermeds_checkin
+My mind feels cloudy and I cannot arrange my thoughts.,cognitive_fog,project_authored_domain_development,eldermeds_checkin
+I forget what I am doing halfway through the task.,cognitive_fog,project_authored_domain_development,eldermeds_checkin
+Following this conversation is unusually difficult today.,cognitive_fog,project_authored_domain_development,eldermeds_checkin
+I read the instructions but cannot hold their meaning in mind.,cognitive_fog,project_authored_domain_development,eldermeds_checkin
+I keep losing my place and cannot concentrate.,cognitive_fog,project_authored_domain_development,eldermeds_checkin
+My thoughts feel disorganized even though I am calm.,cognitive_fog,project_authored_domain_development,eldermeds_checkin
+I started making breakfast and forgot which step came next.,cognitive_fog,project_authored_domain_development,eldermeds_checkin
+I took my tablets and then made breakfast.,neutral,project_authored_domain_development,eldermeds_checkin
+The morning followed my usual schedule.,neutral,project_authored_domain_development,eldermeds_checkin
+I misplaced one spoon but found it in the drawer.,neutral,project_authored_domain_development,eldermeds_checkin
+I answered the door and then returned to my book.,neutral,project_authored_domain_development,eldermeds_checkin
+Nothing unusual has happened today.,neutral,project_authored_domain_development,eldermeds_checkin
+I watched television until it was time for lunch.,neutral,project_authored_domain_development,eldermeds_checkin
+The nurse is expected at three o'clock.,neutral,project_authored_domain_development,eldermeds_checkin
+I completed my ordinary household tasks.,neutral,project_authored_domain_development,eldermeds_checkin

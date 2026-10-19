@@ -1,0 +1,96 @@
+{
+  "experiment": "advanced_stage4_english",
+  "selected_production_model": "tfidf_linear_svm_calibrated_v3",
+  "v4_deployed": false,
+  "reason": "Both transformers underperformed fixed v3 on development Macro F1; final tests were not used to choose or rescue them.",
+  "transformer_development_winner": {
+    "architecture": "distilroberta",
+    "checkpoint": "distilbert/distilroberta-base",
+    "learning_rate": 3e-05,
+    "epochs": 5,
+    "seed": 42,
+    "result": {
+      "accuracy": 0.6851145038167938,
+      "macro_precision": 0.6718213287847854,
+      "macro_recall": 0.708218398851822,
+      "macro_f1": 0.6764128698024798,
+      "weighted_f1": 0.6895858356203114,
+      "best_epoch": 5.0,
+      "seconds": 963.7681587999978
+    },
+    "selection_basis": "development selection partition macro F1 only",
+    "final_tests_opened": false
+  },
+  "v3_development_reference": {
+    "accuracy": 0.8129770992366412,
+    "macro_f1": 0.8329144172009012,
+    "macro_recall": 0.8481725417439703
+  },
+  "original_test_metrics_preserved": {
+    "accuracy": 0.6141732283464567,
+    "macro_precision": 0.6366027789414886,
+    "macro_recall": 0.6490436426098437,
+    "macro_f1": 0.642234584944393,
+    "weighted_f1": 0.6117669601866313
+  },
+  "original_test_reopened": false,
+  "original_test_checksum_verified": true,
+  "domain_test_metrics": {
+    "accuracy": 0.6,
+    "macro_precision": 0.5990301855007738,
+    "macro_recall": 0.5999999999999999,
+    "macro_f1": 0.5869150969150968,
+    "weighted_f1": 0.5869150969150969
+  },
+  "domain_test_checksum": "08cdb59dc101e0dfae1b94927d0a587218fdabbbede25d39c73263e125e3674d",
+  "pure_model_domain_per_class": {
+    "happiness": {
+      "f1": 0.42424242424242425,
+      "support": 20
+    },
+    "sadness": {
+      "f1": 0.4864864864864865,
+      "support": 20
+    },
+    "loneliness": {
+      "f1": 0.6666666666666666,
+      "support": 20
+    },
+    "anxiety": {
+      "f1": 0.5454545454545454,
+      "support": 20
+    },
+    "anger": {
+      "f1": 0.7555555555555555,
+      "support": 20
+    },
+    "cognitive_fog": {
+      "f1": 0.55,
+      "support": 20
+    },
+    "neutral": {
+      "f1": 0.68,
+      "support": 20
+    }
+  },
+  "selected_routing_threshold": 0.5,
+  "threshold_selection_data": "development calibration partition only",
+  "hybrid_domain_metrics": {
+    "correctness": 0.6428571428571429,
+    "ml_coverage": 0.38571428571428573,
+    "fallback_rate": 0.6142857142857143,
+    "accepted_correctness": 0.8703703703703703,
+    "fallback_correctness": 0.5
+  },
+  "calibration_note": "Rejected transformer softmax was not operationally calibrated; retained v3 already uses five-fold development-only sigmoid calibration.",
+  "multiple_seed_note": "Not run: CPU cost was disproportionate after transformers clearly lost development selection.",
+  "deployment": {
+    "v3_artifact_bytes": 5394483,
+    "v3_mean_cpu_inference_ms": 5.262221000157297,
+    "transformer_tradeoff": "Hundreds of MB and multi-minute CPU training epochs; rejected before deployment."
+  },
+  "targets": {
+    "accuracy_0_80_genuinely_achieved_on_original_test": false,
+    "macro_f1_0_75_genuinely_achieved_on_original_test": false
+  }
+}

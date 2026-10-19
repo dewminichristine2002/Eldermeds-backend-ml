@@ -1,0 +1,154 @@
+{
+  "experiment": "report_age_days_feature_ablation",
+  "model": "logistic_regression",
+  "dataset_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S2\\R26-SE-028 (1)\\R26-SE-028\\backend\\ml\\data\\fda_adverse_events_2015_2026_CLEAN.csv",
+  "rows_used": 528000,
+  "sample_size": null,
+  "target_column": "serious",
+  "removed_feature": "report_age_days",
+  "decision_rule": "If removing report_age_days produces nearly identical performance, prefer the simpler 12-feature model.",
+  "shared_split": {
+    "train_rows": 422400,
+    "test_rows": 105600,
+    "train_label_distribution": {
+      "0": 106400,
+      "1": 316000
+    },
+    "test_label_distribution": {
+      "0": 26600,
+      "1": 79000
+    }
+  },
+  "full_model_a": {
+    "feature_count": 13,
+    "features": [
+      "year",
+      "month",
+      "primary_reaction",
+      "num_reactions",
+      "suspect_drug",
+      "drug_route",
+      "drug_indication",
+      "pharm_class",
+      "num_drugs",
+      "patient_age_years",
+      "patient_sex",
+      "country",
+      "report_age_days"
+    ],
+    "numeric_caps": {
+      "num_reactions": 41.0,
+      "num_drugs": 59.0,
+      "report_age_days": 4068.0
+    },
+    "metrics": {
+      "accuracy": 0.8990056818181819,
+      "precision": 0.9751095042758813,
+      "recall": 0.8876582278481012,
+      "f1": 0.9293310804095021,
+      "roc_auc": 0.9647587924716855,
+      "pr_auc": 0.9879706246837823,
+      "confusion_matrix": [
+        [
+          24810,
+          1790
+        ],
+        [
+          8875,
+          70125
+        ]
+      ]
+    }
+  },
+  "ablated_model_b": {
+    "feature_count": 12,
+    "features": [
+      "year",
+      "month",
+      "primary_reaction",
+      "num_reactions",
+      "suspect_drug",
+      "drug_route",
+      "drug_indication",
+      "pharm_class",
+      "num_drugs",
+      "patient_age_years",
+      "patient_sex",
+      "country"
+    ],
+    "numeric_caps": {
+      "num_reactions": 41.0,
+      "num_drugs": 59.0,
+      "report_age_days": 4068.0
+    },
+    "metrics": {
+      "accuracy": 0.899090909090909,
+      "precision": 0.9751258307611023,
+      "recall": 0.887759493670886,
+      "f1": 0.929393991598309,
+      "roc_auc": 0.9647422444560769,
+      "pr_auc": 0.9879609577553334,
+      "confusion_matrix": [
+        [
+          24811,
+          1789
+        ],
+        [
+          8867,
+          70133
+        ]
+      ]
+    }
+  },
+  "metric_delta_b_minus_a": {
+    "accuracy": 8.522727272719521e-05,
+    "precision": 1.6326485220985454e-05,
+    "recall": 0.00010126582278480178,
+    "f1": 6.291118880696889e-05,
+    "roc_auc": -1.6548015608575106e-05,
+    "pr_auc": -9.666928448837098e-06
+  },
+  "training_summary_reference": {
+    "dataset_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S2\\R26-SE-028 (1)\\R26-SE-028\\backend\\ml\\data\\fda_adverse_events_2015_2026_CLEAN.csv",
+    "rows_loaded": 528000,
+    "rows_used": 528000,
+    "sample_size": null,
+    "label_distribution": {
+      "0": 133000,
+      "1": 395000
+    },
+    "leakage_columns_present": [
+      "report_id",
+      "receive_date",
+      "quarter",
+      "serious_flags",
+      "is_fatal",
+      "is_hospitalized",
+      "is_life_threat",
+      "is_disabling",
+      "reaction_outcomes",
+      "patient_recovered",
+      "patient_weight_kg",
+      "brand_name",
+      "manufacturer",
+      "reactions",
+      "age_group",
+      "drug_count_category"
+    ],
+    "feature_columns": [
+      "year",
+      "month",
+      "primary_reaction",
+      "num_reactions",
+      "suspect_drug",
+      "drug_route",
+      "drug_indication",
+      "pharm_class",
+      "num_drugs",
+      "patient_age_years",
+      "patient_sex",
+      "country",
+      "report_age_days"
+    ]
+  }
+}

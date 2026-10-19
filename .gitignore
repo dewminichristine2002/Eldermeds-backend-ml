@@ -1,0 +1,2 @@
+# Large local training dataset (keep outside Git history)
+/ml/data/public/pills-detection-dataset/

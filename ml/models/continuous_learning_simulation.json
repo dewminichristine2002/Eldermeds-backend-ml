@@ -1,0 +1,49 @@
+{
+  "objective": "O7_continuous_learning",
+  "datasets": [
+    "medicine_safety_training_dataset.csv",
+    "medicine_safety_dataset.csv"
+  ],
+  "total_rows": 4150,
+  "simulation": {
+    "cycles": [
+      {
+        "name": "cycle_1",
+        "rows": 1660
+      },
+      {
+        "name": "cycle_2",
+        "rows": 1245
+      },
+      {
+        "name": "cycle_3",
+        "rows": 1245
+      }
+    ],
+    "stages": [
+      {
+        "train_rows": 1660,
+        "test_rows": 1245,
+        "f1_macro": 1.0,
+        "dangerous_recall": 1.0,
+        "stage": "initial_deploy",
+        "description": "Train on first 40% of checks; evaluate on next 30%."
+      },
+      {
+        "train_rows": 2905,
+        "test_rows": 1245,
+        "f1_macro": 0.9301893991280027,
+        "dangerous_recall": 0.9843342036553525,
+        "stage": "after_feedback_retrain",
+        "description": "Retrain on first 70% (simulated feedback corpus); evaluate on final 30%.",
+        "f1_improvement_vs_initial": -0.0698
+      }
+    ],
+    "drift_metrics": {
+      "psi_interaction_count_cycle1_vs_cycle3": 0.001178998080521059,
+      "psi_risk_score_cycle1_vs_cycle3": 0.542402366141029,
+      "drift_flag_psi_gt_0_2": true
+    },
+    "retraining_trigger_note": "In production, npm run ml:retrain exports reaction_logs + check history then retrains."
+  }
+}

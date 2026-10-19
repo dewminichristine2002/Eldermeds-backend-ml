@@ -1,0 +1,36 @@
+{
+  "objective": "phase_9_drift_monitoring",
+  "generatedAt": "2026-05-28T10:55:09.736388+00:00",
+  "datasets": [
+    "medicine_safety_training_dataset.csv",
+    "medicine_safety_dataset.csv"
+  ],
+  "metrics": {
+    "baseline_cv_f1_weighted": 0.9978107076812494,
+    "current_holdout_f1_weighted": 0.992686962825994,
+    "f1_drop_from_baseline": 0.0051,
+    "accuracy_drop_threshold": 0.02
+  },
+  "psi": {
+    "psi_risk_score": 0.0,
+    "psi_interaction_count": 0.0,
+    "drift_detected": false,
+    "psi_threshold": 0.2
+  },
+  "schedule": {
+    "quarterly_retrain_days": 90,
+    "days_since_last_retrain": 0.002337960925925926,
+    "quarterly_retrain_due": false
+  },
+  "feedback_corpus": {
+    "anonymized_reaction_rows": 0,
+    "feedback_export_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\ElderMeds\\backend\\ml\\data\\feedback_anonymized.json"
+  },
+  "triggers": {
+    "psi_drift_retrain": false,
+    "accuracy_drop_manual_review": false,
+    "quarterly_scheduled_retrain": false
+  },
+  "recommended_action": "monitor",
+  "retrain_command": "npm run ml:retrain"
+}

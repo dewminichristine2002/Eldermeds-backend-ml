@@ -1,0 +1,382 @@
+text,label,source,predicted_label,confidence,correct
+its cool looks like it has a dish drying place built in too,cognitive_fog,goemotions,cognitive_fog,0.4556665813194233,True
+aren’t they ‘staffordshire bull terriers’commonly calledstaffies in europe,cognitive_fog,goemotions,neutral,0.27567128016502923,False
+other than moose the american robin took me forever to find,neutral,goemotions,neutral,0.22877551820686445,True
+a thedonald poster trying to pass as a human being has to be one of the saddest things ive ever seen,sadness,goemotions,sadness,0.4266431672175563,True
+my heart feels heavy today,sadness,project_authored,sadness,0.4746273600934685,True
+college is a very lonely place very stressful very lonely name good luck out there man,loneliness,domain_relabel,loneliness,0.5518049715970001,True
+probably someone posted something along that in the 90df sub when people were asking why name were shopping at an expensive furniture store,neutral,goemotions,cognitive_fog,0.5078651168732052,False
+just eat it after lol im kidding but it would honestly be the best recycling option not that anyone is going to do it,happiness,goemotions,neutral,0.2820873363826478,False
+all good brother los lonely boys just came on and im jamming much love,loneliness,domain_relabel,loneliness,0.3640003430706287,True
+yes one of her fingers is getting a sore on it and there’s concern it may push her into needing braces,anxiety,goemotions,anxiety,0.380017512175247,True
+name “ i’m afraid if i don’t have money she’ll leave me” yuh you’re exactly right name,anxiety,goemotions,sadness,0.2805274228579023,False
+yeah it was a short poll because they thought not many people would vote no they can play it off like it but thats the case,neutral,goemotions,cognitive_fog,0.3985431586826739,False
+if youre taking money from lonely shutins you really arent doing anything different than most video game companies,loneliness,domain_relabel,sadness,0.20586657246163165,False
+ha youre right i dont know why i assume you were male sorry,sadness,goemotions,sadness,0.35483549744830467,True
+but questioning overwhelming evidence presented with a comprehensive explanation without any sort of counterargument is perhaps better called denying,neutral,goemotions,cognitive_fog,0.3199390772218215,False
+well duh he’s a scientist so he’s probably smarter than the average anti vaxxer,neutral,goemotions,anger,0.3391657412169425,False
+i did not know until now but apparently i have the gay mole,cognitive_fog,goemotions,cognitive_fog,0.32187598758970526,True
+and it’s super awkward with someone you barely know,anxiety,goemotions,anxiety,0.4883855918853772,True
+ok ill be glad to help you with your trip,happiness,goemotions,happiness,0.7948761529245633,True
+yeah no problem sorry about that,sadness,goemotions,sadness,0.38590956837210283,True
+what an idiot,anger,goemotions,anger,0.3481891031450017,True
+good for you human i hope you get the job,happiness,goemotions,happiness,0.8434886343188507,True
+lived in a suburb of san antonio never experienced anything close to prejudiceracismdifficulties,neutral,goemotions,cognitive_fog,0.545717718731493,False
+how did i not know this that show is so good,cognitive_fog,goemotions,cognitive_fog,0.6494522505419968,True
+we use that a lot in the uk too,anger,goemotions,neutral,0.37769116217806986,False
+sounds like a really bad time just wait till you have a nice time and place to trip,sadness,goemotions,anxiety,0.27474216686417297,False
+that was such awful bandaid application like what the fuck,anger,goemotions,anxiety,0.3114015835636341,False
+pretty nice to see concacaf signing for the cpl,happiness,goemotions,happiness,0.5315605970201631,True
+this is doubtfulhe just won with over 50 percent,cognitive_fog,goemotions,neutral,0.3962303562141262,False
+how do you get locked up by name lol,happiness,goemotions,neutral,0.38583383514268527,False
+we’re all bible on this blessed day,happiness,goemotions,neutral,0.3648880477492908,False
+me too except there’s no hookup i’m so lonely,loneliness,domain_relabel,loneliness,0.9214286086649761,True
+i disagree with many picks in this list,anger,goemotions,anger,0.5227179336264564,True
+name follows me on instagram so its ok,neutral,goemotions,neutral,0.3914305475946115,True
+31 here 2 weeks is ridiculous,anger,goemotions,anger,0.33931992596604255,True
+name was the same in crestwood scary as hell,anxiety,goemotions,anxiety,0.7505585274815185,True
+somers is full of bougie rich people and mansfield is all college kids,neutral,goemotions,cognitive_fog,0.46403735181990724,False
+noo hes so angry,anger,goemotions,anger,0.5696412172377017,True
+you’re so young i hope things improve for you stick to you plan,happiness,goemotions,happiness,0.752968616551222,True
+beyond that it affirms the idea that discipline and habit exist for as long as you maintain them which i find kinda funny,happiness,goemotions,cognitive_fog,0.31385941841758663,False
+im really sad and there is alot more goin on but i dont know how to tell it,sadness,goemotions,sadness,0.6482263934899442,True
+chill not everyone is perfect,anxiety,goemotions,anger,0.5975075915981042,False
+her reply is immoral and disgusting but it is also brilliant shes not trying to convince intelligent people shes trying to motivate angry jealous people,anger,goemotions,anger,0.7571213808418138,True
+where are my testicles name edit thanks for the silver,happiness,goemotions,happiness,0.312188055387491,True
+dont let loneliness get in the way of growth grow my man grow,loneliness,domain_relabel,loneliness,0.7767421806459106,True
+everyone is sad on this sub dont take it personally if you dont get any replies,sadness,goemotions,sadness,0.6061800829325854,True
+youre right i completely forgot the title,sadness,goemotions,sadness,0.28587760663138684,True
+or maybe he does and that’s why he scared of people thinking that he’s afraid of people finding them out,anxiety,goemotions,anxiety,0.74911739007371,True
+which one is it,cognitive_fog,goemotions,neutral,0.47383638775922093,False
+she has some really good dance moves honestly,neutral,goemotions,happiness,0.5458605852732688,False
+yeah and theres no better way to make a market more competitive than to regulate it more,neutral,goemotions,anger,0.3496482990977659,False
+see your mind is great you think like name and thats pretty cool hes a dang genious,happiness,goemotions,happiness,0.8169429408466027,True
+you can just say grownups use lubrica ohhh,neutral,goemotions,anger,0.22137647100579047,False
+fuck these calls,anger,goemotions,anger,0.8231815954362427,True
+ive isolated myself to the extent that i only focus my energy on myselfworkas lonely as it sounds its been such a breath of fresh air,loneliness,domain_relabel,loneliness,0.9698382195330763,True
+yeah i regret ever moving to leduc its one of the most backwoods proudtobeignorant communities ive ever seen,sadness,goemotions,sadness,0.3041287142817339,True
+no actually my therapist is amazing ive just had bad experiences with doctors in the past i meant im worried the doctor will say that,anxiety,goemotions,anxiety,0.34592668325484,True
+sorry i failed to mention im relatively new to the scene last 2 years only,sadness,goemotions,sadness,0.4839160820248892,True
+name lesnar sorry name,sadness,goemotions,neutral,0.27339330143611,False
+i love name and how openly she is in supporting him to run,happiness,goemotions,happiness,0.3292259897563929,True
+i almost feel sorry for the poor fellow because to me the fingers still look abnormally stubby,sadness,goemotions,sadness,0.5094301238752211,True
+name that is frightening,anxiety,goemotions,anxiety,0.883819601354083,True
+ice in his veins dl❄,neutral,goemotions,happiness,0.31880382929160317,False
+help im scared and want to go back,anxiety,goemotions,anxiety,0.8982559824350701,True
+i cant imagine who is the whole thing is so cringe,anxiety,goemotions,anxiety,0.3565831044383434,True
+i knew id see him here eventually i really like his animations theyre cute and funny,happiness,goemotions,happiness,0.6388736399667867,True
+yea even i felt those rocks,neutral,goemotions,happiness,0.24764854254897514,False
+come on this would be funny with a better caption,happiness,goemotions,neutral,0.2643710616171929,False
+continually push that as fact i never once did i responded to the corrected statistic that you provided,neutral,goemotions,cognitive_fog,0.3805912787984761,False
+hate this guys videos,anger,goemotions,anger,0.6630068155559443,True
+i’m afraid too it’s the not knowing what will happen that scares me,anxiety,goemotions,anxiety,0.9862037687680071,True
+break ups are painful and there’s no way to avoid that be honest with your current girl and end it,sadness,goemotions,sadness,0.6150685218854587,True
+yeah i sympathize with this sentiment the flow of michigan fans into the cfb subreddit this year was overwhelming even as a fan i was irritated,anger,goemotions,sadness,0.4644177893896792,False
+cured her depression didnt it,cognitive_fog,goemotions,sadness,0.4979481303963026,False
+im sure your kind is fine the way it is,neutral,goemotions,neutral,0.24215188655303796,True
+i see thanks again for taking the time im very isolated from the world so its good to finally talk to someone about those things,loneliness,domain_relabel,loneliness,0.5298775265778638,True
+this makes me feel so much better about the things i’ve done that make me cringe,happiness,goemotions,happiness,0.3230627826336434,True
+im glad to have made a bad time a little bit better stay safe,happiness,goemotions,happiness,0.31614534713140013,True
+i like it a lot,happiness,goemotions,happiness,0.8727353372994919,True
+bears beets baseball,neutral,goemotions,neutral,0.4296093603636179,True
+at least you can admit you value one innocent persons life over another what a shock its the rich politician over the security guard,anxiety,goemotions,anger,0.3863935178643168,False
+behold the great grain name beckons us to its chamber follow me my fellow birds into the abyss,anger,goemotions,happiness,0.26371459488720783,False
+some kind of situations you experienced that made you realize that or someone elses experience,cognitive_fog,goemotions,cognitive_fog,0.21948472170756272,True
+please sorry,sadness,goemotions,sadness,0.8104854792816535,True
+i see what you saw there,neutral,goemotions,cognitive_fog,0.576696991249524,False
+i forgot whether i took my medicine,cognitive_fog,project_authored,sadness,0.3244965892802496,False
+i am managing the day as usual,neutral,project_authored,neutral,0.4596522809014475,True
+will the full squads subs be announced before the league starts curious as to who teams put down as their subs,cognitive_fog,goemotions,neutral,0.5978912233506188,False
+im not even surecwhat it is why do people hate it,cognitive_fog,goemotions,cognitive_fog,0.3915039261571271,True
+hes playing you on not just this point and you eat it up,neutral,goemotions,anger,0.33007910271181823,False
+this wasnt exactly aimed at the national brain trust,anger,goemotions,cognitive_fog,0.27276613780542824,False
+£10 for copy pasting a wall of text from rgamerghazi why would i want to do that,anger,goemotions,neutral,0.360909450617602,False
+im afraid of having a sit down with them amd not being heard but i might have to for my safety,anxiety,goemotions,anxiety,0.8105740330504253,True
+i am getting so nervous watching this,anxiety,goemotions,anxiety,0.7739512080090285,True
+ah lol just run then,happiness,goemotions,cognitive_fog,0.29999494723729875,False
+my first thought was what is a name then i realized i was being dumb,cognitive_fog,goemotions,cognitive_fog,0.2990346851001581,True
+tell what i’m confused,cognitive_fog,goemotions,cognitive_fog,0.6828171594746936,True
+is that guildford there always seems to be plenty of zombielike pedestrians around town,cognitive_fog,goemotions,anxiety,0.40531197481293996,False
+put down that you are a starting forward and love incinerating 100 bills stay strong my asia brah,neutral,goemotions,happiness,0.48005460868714167,False
+i’m sorry you have to deal with that,sadness,goemotions,anger,0.450151298485054,False
+just learn to talk to yourself like name and youll only be a little lonely,loneliness,domain_relabel,loneliness,0.9798017409241699,True
+how old are you do you get free housing and healthcare,cognitive_fog,goemotions,neutral,0.3104478072046742,False
+dont worry ill help you,anxiety,goemotions,sadness,0.5111971539163042,False
+pregnancy test no matter how old i am i am still embarrassed,anxiety,goemotions,anxiety,0.6011535571286047,True
+fuuuuck thats rough,anger,goemotions,anger,0.6130394560882629,True
+doh right in front of my face and i missed it,sadness,goemotions,cognitive_fog,0.35449038752571566,False
+sir that is a popular opinion im too afraid of what sort of trade will happen to want one,anxiety,goemotions,anxiety,0.5796412991019928,True
+that’s true thank you,happiness,goemotions,happiness,0.677811910099788,True
+i am feeling better and more relaxed,happiness,project_authored,happiness,0.1962754828727325,True
+worst president ever,anger,goemotions,anger,0.3753039909935262,True
+plus of course raging at a system that requires that they consider other people who might even be the dreaded name or foid as human beings,neutral,goemotions,anger,0.3216560409176962,False
+oof that’s terrible,anxiety,goemotions,anger,0.5012458568266659,False
+less frugal right,cognitive_fog,goemotions,neutral,0.4324849589670308,False
+blame the person who made the rules not the enforce i am sticking with blaming both,anger,goemotions,anger,0.7363832579157689,True
+i feel hurt and empty,sadness,project_authored,loneliness,0.6413562121462435,False
+same thing happend to me i still sometimes fix their things if they are polite but say screw it when they angrily shout to fix their crap,neutral,goemotions,anger,0.8042579345016896,False
+i feel left out i never get invited to our new world order meetings with our elders of zion,sadness,goemotions,loneliness,0.39055699200007327,False
+alright then im glad to hear that i hope its handled in any case,happiness,goemotions,happiness,0.42278652429378694,True
+im just really sad all that cake was wasted,sadness,goemotions,sadness,0.8272784368252483,True
+i didnt see it either i feel like the kid at the birthday party that didnt get a piece of cake,sadness,goemotions,sadness,0.4005510334101026,True
+maybe hes too lazy to take it off,neutral,goemotions,anger,0.5785001106083257,False
+that’d be amazing,happiness,goemotions,happiness,0.36294197197099554,True
+lmao the first thing i did after reading is trying to do it,neutral,goemotions,cognitive_fog,0.2711223144169974,False
+theyre taking one for the team those brave creatures,sadness,goemotions,neutral,0.3026121320037311,False
+stay in bed and binge watch a new show my suggestion brooklyn 99,neutral,goemotions,happiness,0.2653607488956579,False
+good job,happiness,goemotions,happiness,0.8131026466640263,True
+well she specified conservative next,neutral,goemotions,neutral,0.41125914998060836,True
+as a kpop stan and a army i am very disappointed,sadness,goemotions,anxiety,0.3045620455616047,False
+are you claiming that the entire biology and geology communities have been lying for centuries,cognitive_fog,goemotions,neutral,0.37225871123649235,False
+completely correct but he might have lost control blown a tire etc or maybe just panicked human error,anxiety,goemotions,cognitive_fog,0.49383708685497674,False
+thank you i’ll contact you tomorrow,happiness,goemotions,happiness,0.5273165390897919,True
+i dont live there just have family there,anger,goemotions,cognitive_fog,0.2442381475954752,False
+i hope you bundle up too mr president,happiness,goemotions,happiness,0.37760365018467523,True
+pretty fucking brutal when your starting front court is 010 from the field whatever i figured we would split this back to back anyway good game for our big 3,anger,goemotions,anger,0.292916539688945,True
+school board trustees are leeches of the system in any district its the most unnecessary position that does nothing more than continuous damage,anger,goemotions,anger,0.5360936722052102,True
+this just made my day thanks for the laugh,happiness,goemotions,happiness,0.7240179863277231,True
+very disappointed to find out that you can’t play ncaa football on ps4 wack,sadness,goemotions,sadness,0.6199695355692167,True
+omg this sub is gonna be my saving grace for the rest of the year thank you so much,happiness,goemotions,happiness,0.8822697360702313,True
+this is amazing and terrifiying,anxiety,goemotions,happiness,0.8206148441605149,False
+lol try harder next time bud your swearing really shows who is actually mad here and your stupidity is starting to get really grating,happiness,goemotions,anger,0.8175926509132597,False
+as a fan of cinder i really want to see name do more i like this answer to the prompt feels oddly nice,neutral,goemotions,happiness,0.6135374575222058,False
+i dont know i did message him many times but he didnt reply me i am worried about him i asked his mother about him,anxiety,goemotions,anxiety,0.290479833444102,True
+name i hope this permanent,happiness,goemotions,neutral,0.5380359462002934,False
+thats the point,neutral,goemotions,neutral,0.28791550441225333,True
+plenty of places to build more damns in the wcape actually damns are not the way forward what do you propose,cognitive_fog,goemotions,anger,0.3340256948954836,False
+its fishphobic,neutral,goemotions,anxiety,0.5708928711956218,False
+my exact reaction,neutral,goemotions,cognitive_fog,0.39317453278717357,False
+i feel good and calm today,happiness,project_authored,happiness,0.2783859106116053,True
+miner rewards are being reduced from 3 to 2 eth per block why would that indicate a sell off,cognitive_fog,goemotions,neutral,0.28716164689254076,False
+ahhh yes the i can be making close to 6 figures job that no one will ever disclose highly doubt it bro,cognitive_fog,goemotions,anxiety,0.305112597140572,False
+gonna be at the game lets get this win boys,happiness,goemotions,neutral,0.3409195131436051,False
+that’s awesome what do you do if you don’t mind me asking,cognitive_fog,goemotions,cognitive_fog,0.2951865528565514,True
+prosciutto pizza is nice but how can you fuck it up so badly that it ends up here,anger,goemotions,anger,0.3383337964315275,True
+waterspouts might be one of nature’s most beautiful dangerous things,anxiety,goemotions,anxiety,0.2619754367347093,True
+get outta here and delete your post cause youre sure gonna look dumb in front of a lot of people other than me,anger,goemotions,anger,0.30612750635853647,True
+no thats not standard its a common house rule and is often published in the instructions as an alternate rule as well,anger,goemotions,neutral,0.4300369345818495,False
+its embarrassing,anxiety,goemotions,anxiety,0.7165793541571694,True
+well she was completely and utterly heartbroken by my stupidity so theres that,sadness,goemotions,sadness,0.6655691873988041,True
+oh poor guy that’s so sad i can see why she is an ex friend,sadness,goemotions,sadness,0.7755589296677098,True
+mate imagine reacting so poorly to be called out to calling anyone who has been discussing ozil and sven unreasonable,sadness,goemotions,anger,0.6142449686910729,False
+the fact that name the other principal in the original story has gotten out of this unscathed is annoying,anger,goemotions,anger,0.30472043232347557,True
+indian malai kofta at bombay house also balaji caffe in west jordan for some authentic south indian fare,neutral,goemotions,cognitive_fog,0.42499267159791093,False
+the math so far appears to indicate something more damning the question im curious about is whether the information will come out before summer,cognitive_fog,goemotions,cognitive_fog,0.43874262645590933,True
+the dryer sounds like a fire hazard to me,anxiety,goemotions,anxiety,0.2886346154329571,True
+its when you rock back and forth like an autist or do other repetitive movements because it feels natural to do so,neutral,goemotions,neutral,0.3084740535809883,True
+i dont think they are morons at all they know exactly what they are doing they just hope people dont notice it,anxiety,goemotions,anger,0.4329748041757914,False
+i’m sorry your city blows,sadness,goemotions,anger,0.44896241158448313,False
+i can watch test cricket this would be no problems honestly though im annoyed i missed it hopefully theres a re run,anger,goemotions,sadness,0.2826139111340205,False
+pretty fuking sure exit scam,anger,goemotions,anger,0.26535357448118974,True
+he was afraid of flying,anxiety,goemotions,anxiety,0.7622783940283133,True
+this doesnt solve the problem of people using controllers they make it harder for everyone low rank or not,anger,goemotions,anger,0.32384579524341134,True
+you mean antiintelligent,cognitive_fog,goemotions,neutral,0.29202228820554466,False
+very scary,anxiety,goemotions,anxiety,0.969643315214065,True
+heres a little comment from the yellow vests facebook page not at all,neutral,goemotions,cognitive_fog,0.22285182287922695,False
+so the time of death would be when the doctor confirms them dead,cognitive_fog,goemotions,neutral,0.34992424496405583,False
+there mostly isnt any nature merely found a way to encourage the behaviour that leads to babies aka sex,neutral,goemotions,anger,0.28896565620780346,False
+oh what an unlucky woman that mother of his,sadness,goemotions,anxiety,0.31401928445782745,False
+is that too bad though,cognitive_fog,goemotions,anxiety,0.4280633875906379,False
+the wolves have been bad for so long that i actually did completely give up watching basketball,sadness,goemotions,sadness,0.476658486294132,True
+i agree with everything yet society and its stupid outdated conservative norms see it otherwise,anger,goemotions,anger,0.5197616695318675,True
+1 keep doing exactly what we have been doing for the last 24 years 2 expropriate the land 3 4 economic growth,cognitive_fog,goemotions,neutral,0.31404521211545455,False
+im painfully aware of that having bought a freesync monitor with my nvidia graphics card,sadness,goemotions,happiness,0.28262396522680694,False
+well that didnt take long sorry for your loss,sadness,goemotions,sadness,0.8935776944837449,True
+srsly mountains in netherlands,cognitive_fog,goemotions,neutral,0.46580527167410213,False
+from his username i can tell he lives in a city close to me im sorry everyone vermont has better to offer than the likes of him,sadness,goemotions,happiness,0.4405287468088676,False
+if my dog were as ugly as you id shave its butt and tell it to walk backwards,anger,goemotions,anger,0.32634974133971323,True
+i am anxious about everything,anxiety,project_authored,anxiety,0.8810044926156514,True
+wait do they really have 500 people ive always assumed they are an indie developer group of like 20 people,cognitive_fog,goemotions,neutral,0.40880806766995165,False
+the applause came from name and his group,neutral,goemotions,neutral,0.3646083014105907,True
+because you can just leave her and start a new life for yourself if she does not want to abort but you do it’s her problem,neutral,goemotions,anger,0.283471307118838,False
+its a careful boundary between them seeing you as one of those parents and taking you seriously,anger,goemotions,anger,0.37763215796281563,True
+it was complimentary was it a fly quiet possibly,cognitive_fog,goemotions,neutral,0.22750965230714842,False
+this ones ironic,neutral,goemotions,anger,0.3920315795250583,False
+oh god going to a social event with someone and never leaving their side is me at almost every social event i go to,anxiety,goemotions,loneliness,0.6829860868736224,False
+its hard to make friends i sit alone,sadness,goemotions,loneliness,0.9652706271909224,False
+bye dude,neutral,goemotions,sadness,0.3281116578442932,False
+did you have to make this picture yourself because it’s just wonderful,cognitive_fog,goemotions,cognitive_fog,0.3458448080916955,True
+would destroying the business bring them both closer together,cognitive_fog,goemotions,cognitive_fog,0.3737510948397263,True
+this is the kind of thing that makes me want to low key record every single one of my lyftuber rides,sadness,goemotions,happiness,0.4932741141111158,False
+right just like the shock i had in elementary school when i learned the kkk was started by name,anxiety,goemotions,cognitive_fog,0.32123895865105784,False
+even if you were all good my dude shouldnt comment on something too quickly lol,sadness,goemotions,happiness,0.6933613734739049,False
+im really enjoying season 3 but this would ruin it for me,happiness,goemotions,anxiety,0.4040302916978008,False
+anyone with a mirror,cognitive_fog,goemotions,loneliness,0.4062924611025032,False
+yet i still feel lonely doing it,loneliness,domain_relabel,loneliness,0.8680216982757125,True
+im very confused by this comment id do it for 2500mo,cognitive_fog,goemotions,cognitive_fog,0.3485444767711643,True
+that awkward moment when someone already used shell as a pun earlier,anxiety,goemotions,anxiety,0.3818455093046912,True
+nah rest is pretty cringe too,anxiety,goemotions,anger,0.3314002608903142,False
+protesting in general is an emotional response people’s attachment to their cause grows stronger in the face of confrontation and adversity,cognitive_fog,goemotions,anger,0.35532203571374277,False
+i get scared just reading your flair,anxiety,goemotions,anxiety,0.93924436669973,True
+any advice on if i should keep trying to start up some text conversations or just forget about that stuff for now,cognitive_fog,goemotions,cognitive_fog,0.30175445487098346,True
+i really miss ag,sadness,goemotions,sadness,0.40402443581115904,True
+i agree theres no denying hes handled it pretty badly though,sadness,goemotions,anger,0.5335720755419623,False
+name done fucked up,anger,goemotions,neutral,0.3267624505251607,False
+im working on it but there is always the fear lurking around,anxiety,goemotions,anxiety,0.9530561189544211,True
+this sounds like fainting get your blood pressuresugars checked,anxiety,goemotions,anxiety,0.34579185912773813,True
+dont worry they are the best surgeons in the hospital and they will remove the tumor in no time,happiness,goemotions,anxiety,0.4407792331849617,False
+posting onion boy here is basically cheating,anger,goemotions,anger,0.3926974369768228,True
+name is a fucking god,neutral,goemotions,anger,0.3223162922413725,False
+the nice nice is really cringy for some reason,anxiety,goemotions,happiness,0.5328139517882635,False
+shut that soft ass shit up,anger,goemotions,anger,0.7524833444070683,True
+yas mom was done talking wasnt she,cognitive_fog,goemotions,anger,0.3266247814523958,False
+please don’t murder me,anxiety,goemotions,anger,0.29214811771686117,False
+yes boys,happiness,goemotions,neutral,0.5647140228724269,False
+damn i fell for the myth thanks for pointing it out,happiness,goemotions,happiness,0.23460711734326464,True
+im kind of struggling tonight bored lonely man,loneliness,domain_relabel,loneliness,0.6309132472688743,True
+too lazy to type out himher 3x that and i dont give a fuck,anger,goemotions,anger,0.5142919201739853,True
+sir excuse me my mother says i am a very handsome young man,sadness,goemotions,neutral,0.3326304742214226,False
+yikes thats cringe,anxiety,goemotions,anxiety,0.3402303822661171,True
+little scrub didnt even make it through the first week of nn19,sadness,goemotions,sadness,0.40273742294760334,True
+get more crushes,neutral,goemotions,neutral,0.3004238420771434,True
+i’m embarrassed how long it took for me to figure this out 🤦🏼‍♀️,anxiety,goemotions,cognitive_fog,0.34099183621210666,False
+sorry i meant c,sadness,goemotions,neutral,0.3316313692840715,False
+goddamn id tap the fuck out if i was that other guy,anger,goemotions,anger,0.40231666836227387,True
+great article thanks for posting,happiness,goemotions,happiness,0.7905817897067424,True
+omg how have a i never heard this before absolutely dying you can tell name just lost it off mic 🤣,cognitive_fog,goemotions,sadness,0.346143240340193,False
+ha me too i’m afraid we’ve been called out,anxiety,goemotions,anxiety,0.47927968613806815,True
+uh no he hates name not in a kayfabe way he doesnt like name at all,anger,goemotions,anger,0.5474485216940218,True
+thank you this is great your post has helped as i was on the mernda line about to get off at clifton hill,happiness,goemotions,happiness,0.8152405159955602,True
+nice rifle i have a t3 in 7mm rem mag n mine would suck as a shtf rifle but its great for hunting,anger,goemotions,happiness,0.3991386103603912,False
+duck tales whooh ooh every day theyre out there making duck tales whooh ooh tales of daring do bad and good luck tales whooh ooh,neutral,goemotions,happiness,0.33053644350176287,False
+pretty frustrating that when it matters most winning comes down to who cheats the most aggressively,anger,goemotions,anger,0.7937706253320167,True
+70 now thats a good price,happiness,goemotions,neutral,0.3291886187875003,False
+who cares honestly,anger,goemotions,sadness,0.3919625496759812,False
+instead well buy players like drinkwater bakayoko and zappacosta,neutral,goemotions,neutral,0.28874787780378647,True
+this show has completely gone downhill can’t believe i waited a month to be disappointed smh,sadness,goemotions,sadness,0.4602936559662484,True
+wow i didnt really expect both the explosion and him to live,sadness,goemotions,anxiety,0.2882213758254384,False
+i am panicking a little today,anxiety,project_authored,anxiety,0.7301744985808248,True
+you must be heartbroken i’m so sorry can you start seeing a therapist,sadness,goemotions,sadness,0.7619181330302774,True
+so in other words he wooooshed,neutral,goemotions,anger,0.2279610175040836,False
+thanks bot,happiness,goemotions,happiness,0.7673816112758851,True
+im moving to the uk in 2 weeks this terrifies me,anxiety,goemotions,anxiety,0.47065431465866486,True
+wow here in brazil people say the opposite of this phrase also makes me mad,cognitive_fog,goemotions,anger,0.5535697071081512,False
+great post i have tried online dating in the past and ive noticed these things before,cognitive_fog,goemotions,happiness,0.4722298807704346,False
+happened this afternoon january 21 2019 in the central southeast area so frustrating,anger,goemotions,anger,0.5292890865736131,True
+sounds pretty typical from toyota really been hearing the same story from too many people sad really because they were always the best,sadness,goemotions,sadness,0.48955953979185923,True
+omg how did they do that i mean killed petunias my pot is from bunnings as well,cognitive_fog,goemotions,cognitive_fog,0.35753041810319597,True
+really i was in new york last week and had to stand in the freezing cold to pump gas twice,cognitive_fog,goemotions,cognitive_fog,0.3648362866660981,True
+name fucking name are you done yet racist motherfucker you’re not helping society,anger,goemotions,anger,0.5054836882036318,True
+makes me sad at how brain damage effects boxers so much,sadness,goemotions,sadness,0.4774293555295531,True
+such a nasty woman,anger,goemotions,anger,0.5776655841587623,True
+i’m scared to fall asleep——,anxiety,goemotions,anxiety,0.930330340026262,True
+this is a stupid idea one of the first things caught will be a wiki quote,anger,goemotions,cognitive_fog,0.3999643185539711,False
+she went backwards on the board,neutral,goemotions,neutral,0.3874603360101391,True
+today has been peaceful and nice,happiness,project_authored,neutral,0.32824070900975705,False
+you told me it was pointless to point it out youre the idiot,anger,goemotions,anger,0.5843978529671956,True
+the fact that this podcast isnt called ztargeting dios balls disappoints me greatly,sadness,goemotions,happiness,0.3767158444258659,False
+i feel fine at the moment,neutral,project_authored,sadness,0.48375064114221455,False
+i dont care about name story but i surprisingly found myself liking bristols,anger,goemotions,happiness,0.3663310156301437,False
+i totally read that wrong and was about to shout colby 2012,cognitive_fog,goemotions,sadness,0.4990742916917146,False
+thanks well do our best,happiness,goemotions,happiness,0.9293479339785801,True
+i feel annoyed and tense today,anger,project_authored,sadness,0.3273326743076536,False
+for some reason im imagining a hauty french snorting laugh,happiness,goemotions,anxiety,0.5030866144370432,False
+i love this trend,happiness,goemotions,happiness,0.5735414739138953,True
+some drugs people are just scary some drugs tend to bring out whats bubbling under the surface so in that way yeah,anxiety,goemotions,anxiety,0.6955900672423475,True
+who the fuck reads news papers anymore baby boomers this kind of crap is totally written by a journalist in need of a safe place,anger,goemotions,anger,0.4473226235353614,True
+still can’t blame him we’ve all been there,anger,goemotions,sadness,0.470379770855342,False
+acestream is a great tool just a shame that its closed source makes it a bit scarier for me to use,anxiety,goemotions,happiness,0.35444845002971553,False
+my mum had this i got to pick things i wanted from inside and we’d make them together nice memories,happiness,goemotions,happiness,0.588934817890154,True
+aha this is my fear that the gloss over key elements because they want to target a wider audience,anxiety,goemotions,anxiety,0.3774346130444945,True
+having this issue as well it really does me in,sadness,goemotions,anger,0.2567187182560604,False
+kids cant have fun anymore,sadness,goemotions,neutral,0.2743204075045983,False
+always upvote funhaus,neutral,goemotions,happiness,0.6166623253536135,False
+thats the problem you have with this mule kick in zombies has exactly what he wants xd,cognitive_fog,goemotions,happiness,0.2633817209598931,False
+im glad name was there for us,happiness,goemotions,happiness,0.7663313546100511,True
+its always been marfeles was 30 years ago when i first visited,cognitive_fog,goemotions,cognitive_fog,0.2995297884936637,True
+looks great but am i the only one who cant hear anything,cognitive_fog,goemotions,loneliness,0.2541960552959561,False
+my balls shrunk up looking at that,anxiety,goemotions,neutral,0.3109702765695768,False
+given that youre not a conservative and this isnt a debate sub how about you just get the hell out and stay out,anger,goemotions,anger,0.39890164094187747,True
+i wonder what was stopping that barber using the lightning network for payments,cognitive_fog,goemotions,cognitive_fog,0.2809579704527278,True
+omg i could cry at this,anxiety,goemotions,sadness,0.4873775441448485,False
+i hate when people down vote to hell when someone has a different yet valid opinion,anger,goemotions,anger,0.6168841583916975,True
+nice job censoring ualexneverafter right there,anger,goemotions,anger,0.3906608571578993,True
+soylent green,neutral,goemotions,neutral,0.360971496833395,True
+i confirm my increased by around 20 every year for the last 3 years,cognitive_fog,goemotions,happiness,0.561965576386926,False
+they know a lot of people arent paying attention to the quieter news that doesnt get sensationalized,neutral,goemotions,anger,0.24230074737674706,False
+name redeemed herself,neutral,goemotions,neutral,0.49144491843548477,True
+he may have i was more worried about the running and shooting the ar one handed off to the side,anxiety,goemotions,cognitive_fog,0.33254680396980624,False
+i feel nervous and tired,anxiety,project_authored,anxiety,0.7285108719163952,True
+you should have asked this question 15 years ago sadly,sadness,goemotions,sadness,0.31287182865771057,True
+the problem i had was them painting the majority of men under this flag and then saying some are changing most men are not predators,neutral,goemotions,anger,0.3635276810127826,False
+we accept the love we think we deserve perks of being a wallflower,neutral,goemotions,neutral,0.34414755533842734,True
+well good they should know theyve pissed me off,anger,goemotions,anger,0.7045725982584486,True
+she is a horrible person and that is what makes her so relatable in real life,anxiety,goemotions,sadness,0.38657121024222885,False
+i was so happy for cowboy,happiness,goemotions,happiness,0.6101532052711006,True
+i fail to see the downside of that,sadness,goemotions,anxiety,0.25223247033224133,False
+and only 300 a night beautiful but expensive,sadness,goemotions,neutral,0.3397026629615197,False
+you realize this is the university right not the hospital theyre not the same entity,cognitive_fog,goemotions,cognitive_fog,0.38255807172783945,True
+well first of all slurs,neutral,goemotions,cognitive_fog,0.25196643412767644,False
+ive been asked this in a similar situation as well interviewer was female and i would bet it was female in ops case too,cognitive_fog,goemotions,cognitive_fog,0.35730108448820025,True
+im glad you have someone to help you out perhaps over time youll find it easier,happiness,goemotions,happiness,0.6548600148333329,True
+really some of my postscomments have been visited by bots how do i kill them,cognitive_fog,goemotions,anger,0.384266880075831,False
+having two world class gks is amazing lol,happiness,goemotions,happiness,0.6410573549987588,True
+done that body dysmorphia makes them look the same to me 🤷,cognitive_fog,goemotions,happiness,0.3966162234628753,False
+thanks i love him,happiness,goemotions,happiness,0.9316104630896026,True
+do i just need to watch just some or all of them oh and what about his books i gotta buy them too right,cognitive_fog,goemotions,cognitive_fog,0.407487386159899,True
+i tried to send this to a friend but name knocked it away,sadness,goemotions,sadness,0.39436938148951856,True
+ap can tell them to leave and then call the cops if they dont solicitingbegging is not allowed on target property,anger,goemotions,neutral,0.4770509609306107,False
+🙄 i hate these people,anger,goemotions,anger,0.6011767182006846,True
+and then the rest of that thread devolves into name supporters arguing against and downvoting anyone who disagrees with the wall or hates name,anger,goemotions,anger,0.4614405254671771,True
+well she will not be able to do it with name,neutral,goemotions,neutral,0.4098604468588337,True
+mommy bad man,anxiety,goemotions,anger,0.38568672121882625,False
+this is so scary but true,anxiety,goemotions,anxiety,0.8087194407673104,True
+is this a metaphor for life,cognitive_fog,goemotions,neutral,0.43875092019264333,False
+it’s called concern trolling don’t be so gullible and quick to politicize everything,anger,goemotions,anger,0.4604357025881242,True
+o shame,anxiety,goemotions,sadness,0.6964715406209616,False
+yeah its that scream guy you always see in that painting he also played bass for name,neutral,goemotions,cognitive_fog,0.31478277281198835,False
+when you watch game reviews and youtube thinks you hate women and minorities,neutral,goemotions,anger,0.6065121079787786,False
+dont tell yourself those lies they only serve to keep that weight in place were all lucky to have you youre a gem,anger,goemotions,sadness,0.27428622285172366,False
+sure sorry for late response,sadness,goemotions,sadness,0.522839635821377,True
+go to bed,neutral,goemotions,neutral,0.5021899249087772,True
+i would pay good coin to read that love story,happiness,goemotions,happiness,0.4650231430752161,True
+i feel mad and emotionally heated,anger,project_authored,anger,0.3780152011213396,True
+maybe im out of the loop can we get a little more detail please,neutral,goemotions,cognitive_fog,0.7960596053133661,False
+awesome glad you like it i need to get one this week now,happiness,goemotions,happiness,0.9082365388534456,True
+oh i would refuse to do anything really nasty with profanity or violence,anger,goemotions,anger,0.7129946629152074,True
+why cant name get a call these last few games,cognitive_fog,goemotions,neutral,0.4480995572233143,False
+if you want to start a family you cant just pass up 20k no matter how nice your current school is,cognitive_fog,goemotions,cognitive_fog,0.21913124751238108,True
+my blood pressure edit im just happy to be here,happiness,goemotions,happiness,0.6207325813475041,True
+i have this in my waiting list i cant wait to see it,happiness,goemotions,happiness,0.30649457786806483,True
+don’t wait take control of your life back and leave you know that’s what’s going to happen,neutral,goemotions,sadness,0.2836257640311524,False
+i’m pretty sure someone once said the name name and the word pig appear the same number of times as well how would u respond,cognitive_fog,goemotions,neutral,0.4364004590206619,False
+sad my condolences to her family,sadness,goemotions,sadness,0.9017816541084126,True
+im a five star man as name clicks one star over and over,neutral,goemotions,neutral,0.48724275443263615,True
+i couldn’t agree with you more,anger,goemotions,anger,0.7268723539767508,True
+my heart is breaking for that little girl,sadness,goemotions,sadness,0.47870798144845716,True
+are you promoting sex outside of marriage,cognitive_fog,goemotions,neutral,0.37146119583217896,False
+i work from home but i still get up early for me time house is nice and quiet at 6am,happiness,goemotions,neutral,0.25162227391559605,False
+haha good theory but not the case im completely aware of when im intoxicated or not,anger,goemotions,cognitive_fog,0.29640032781834347,False
+the cruise boat one similar where the water goes well over the porthole scares the everloving shit out of me every time,anxiety,goemotions,anxiety,0.7153323540621134,True
+i love name i really love him xx,happiness,goemotions,happiness,0.7662215335663466,True
+actually mommy needs to grow up and manage her own feelings,neutral,goemotions,anger,0.37924248005647676,False
+hey me too good luck tomorrow,happiness,goemotions,happiness,0.4853566780887721,True
+i hate this arm swing thing either try to sync up or just stop doing it,anger,goemotions,anger,0.45893676875220674,True
+this is like the third repost of this but yes very sad indeed,sadness,goemotions,sadness,0.8637732062287994,True
+i almost felt sorry for him almost,sadness,goemotions,sadness,0.8879247904464536,True
+doing gods work,neutral,goemotions,neutral,0.4773398657554433,True
+its almost as if everyone is too afraid to be politically incorrect to admit that height and race are a factor,anxiety,goemotions,anxiety,0.5363986688445783,True
+you did the right thing you’re not ready to settle down so you stopped wasting her time,cognitive_fog,goemotions,anger,0.46611852048416413,False
+yes my so does that unfortunately the requirements are stricter and i cant,sadness,goemotions,neutral,0.28453306036747567,False
+omg id cry if this was my store,sadness,goemotions,sadness,0.35365530423886293,True
+thank you i appreciate your kind offer,happiness,goemotions,happiness,0.8859083603997131,True
+my grandmotherinlaw does this i’m sorry to anyone in the va beach area,sadness,goemotions,sadness,0.30932870160414633,True
+and name got blessed with a locationbot cat fact there is no justice in the world,sadness,goemotions,neutral,0.3016803712885223,False
+careful they scare away easily but they will be back and in greater numbers,anxiety,goemotions,anxiety,0.8753481830630111,True
+yep and the buns seemed so much fresher then last time i went years ago it was terribly disappointing,sadness,goemotions,cognitive_fog,0.29989601809806665,False
+sorry i have to ask your age before i yell you,sadness,goemotions,anger,0.24963471827280623,False
+you have zero evidence that anything in this story is fabricated your blind cop hatred just really really wants you to believe that,anger,goemotions,anger,0.4996551653631222,True
+dude couldn’t see he had a spool of hair growing on his face,cognitive_fog,goemotions,anxiety,0.3729474741821705,False
+sorry about your poor trolling 310,sadness,goemotions,anger,0.49504386699061054,False
+i’m gonna do lsd again in 2 weeks,neutral,goemotions,sadness,0.33849999843260675,False
+honestly i really liked being 32 the 30s in general have been great happy birthday,happiness,goemotions,happiness,0.8095729288682066,True
+nice quote not sure if it was worth the time to pull up though,cognitive_fog,goemotions,happiness,0.39776757214003994,False
+it would probably be horrifying if we tried when a bug causes an integer overflow and resets our aggression levels,anxiety,goemotions,anxiety,0.572072928247334,True
+this was posted at the exact same time as another guy posted it on here and that scares me,anxiety,goemotions,anxiety,0.8530765225277479,True
+havent played in forever but name solo was my jam back in the day glad to hear damage tanks are still good,happiness,goemotions,happiness,0.5212580543666069,True
+yea i was gonna say that looks pretty good to me,cognitive_fog,goemotions,happiness,0.6483901306886533,False
+i’m also glad i’m not the only one that swears a lot at the bastard objects,happiness,goemotions,anger,0.4127095937731047,False
+they dont here it i have a room that is pretty isolated,loneliness,domain_relabel,loneliness,0.6263475888949089,True
+man i love canada🇨🇦,happiness,goemotions,happiness,0.8896627912422763,True
+interesting thanks for clarifying,happiness,goemotions,cognitive_fog,0.47282246020960694,False
+everything feels fine and positive today,happiness,project_authored,sadness,0.33255276766778313,False

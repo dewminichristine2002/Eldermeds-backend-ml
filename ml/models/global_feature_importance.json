@@ -1,0 +1,86 @@
+{
+  "method": "xgboost_gain_importance",
+  "description": "XGBoost global feature importance (gain-based MDI fallback)",
+  "features": [
+    {
+      "feature": "atc_class_encoded_J",
+      "mdi_importance": 0.07679661363363266
+    },
+    {
+      "feature": "sider_adr_count",
+      "mdi_importance": 0.069517582654953
+    },
+    {
+      "feature": "atc_class_encoded_T",
+      "mdi_importance": 0.05749158933758736
+    },
+    {
+      "feature": "atc_class_encoded_M",
+      "mdi_importance": 0.05403890088200569
+    },
+    {
+      "feature": "drug_hepatic_metabolism",
+      "mdi_importance": 0.03980649262666702
+    },
+    {
+      "feature": "atc_class_encoded_L",
+      "mdi_importance": 0.039058420807123184
+    },
+    {
+      "feature": "atc_class_encoded_C",
+      "mdi_importance": 0.03536372259259224
+    },
+    {
+      "feature": "atc_class_encoded_O",
+      "mdi_importance": 0.03481365740299225
+    },
+    {
+      "feature": "patient_sex_female",
+      "mdi_importance": 0.03473430499434471
+    },
+    {
+      "feature": "atc_class_encoded_E",
+      "mdi_importance": 0.03299202769994736
+    },
+    {
+      "feature": "atc_class_encoded_H",
+      "mdi_importance": 0.030321292579174042
+    },
+    {
+      "feature": "atc_class_encoded_B",
+      "mdi_importance": 0.028979411348700523
+    },
+    {
+      "feature": "atc_class_encoded_P",
+      "mdi_importance": 0.028081171214580536
+    },
+    {
+      "feature": "rxnorm_matched",
+      "mdi_importance": 0.02604527398943901
+    },
+    {
+      "feature": "atc_class_encoded_I",
+      "mdi_importance": 0.025728801265358925
+    },
+    {
+      "feature": "nti_drug_flag",
+      "mdi_importance": 0.025381145998835564
+    },
+    {
+      "feature": "ddi_flag",
+      "mdi_importance": 0.02499127946794033
+    },
+    {
+      "feature": "patient_sex_unknown",
+      "mdi_importance": 0.024523258209228516
+    },
+    {
+      "feature": "atc_class_encoded_D",
+      "mdi_importance": 0.024338971823453903
+    },
+    {
+      "feature": "atc_class_encoded_N",
+      "mdi_importance": 0.02387620136141777
+    }
+  ]
+}

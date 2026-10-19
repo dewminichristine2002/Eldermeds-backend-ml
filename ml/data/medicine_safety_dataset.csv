@@ -1,0 +1,102 @@
+medicine_check_id,user_id,input_method,raw_input,medicine_name,normalized_drug_name,rxnorm_cui,ingredient_name,therapeutic_class,dose,frequency,risk_score,risk_level,side_effect_count,severe_side_effect_count,side_effect_match_count,interaction_count,max_interaction_severity,knowledge_sources,medicine_check_created_at,age,gender,has_medicine_allergy,known_allergies_text,chronic_diseases_text,current_medications_text,emergency_contact,caregiver_details,q_past_reaction,q_reaction_symptoms,q_medicine_name,q_doctor_advice,q_antibiotic_painkiller_reaction,reaction_count,has_reaction_log,has_severe_reaction_log
+172,6,manual,Panadol,Panadol,panadol,202432,Panadol,RxNorm BN,,,12,Safe,0,0,0,0,none,RxNorm|SIDER,Tue May 12 2026 15:17:16 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+171,6,scan,"OCR / prescription text:
+Atenolol 50mg tablets 30
+Femara 2.5mg tablets 14
+Docusate Plus Senna 100mg tablets 20",atenolol,atenolol,1202,atenolol,RxNorm IN,,,10,Safe,15,2,0,0,none,RxNorm|SIDER,Tue May 12 2026 12:50:38 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+170,6,voice,panadol,panadol,panadol,202432,Panadol,RxNorm BN,,,10,Safe,0,0,0,0,none,RxNorm|SIDER,Tue May 12 2026 12:37:38 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+169,6,manual,New medicines (not on profile yet): No,4-aminobenzoic acid,4-aminobenzoic acid,74,4-aminobenzoic acid,RxNorm IN,2mg,2 times a day,11,Safe,0,0,0,0,none,RxNorm|SIDER,Tue May 12 2026 12:34:44 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+168,6,manual,New medicines (not on profile yet): No,4-aminobenzoic acid,4-aminobenzoic acid,74,4-aminobenzoic acid,RxNorm IN,2mg,2 times a day,9,Safe,0,0,0,0,none,RxNorm|SIDER,Tue May 12 2026 12:04:46 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+167,12,scan,"OCR / prescription text:
+Atenolol 50mg table
+Femara 2.5mg tablets
+Docusate Plus Senna 100)",atenolol,atenolol,1202,atenolol,RxNorm IN,,,27,Warning,15,2,0,1,low,RxNorm|SIDER|DDInter,Mon May 11 2026 19:08:31 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+166,12,scan,"OCR / prescription text:
+_
+| 198/25 h
+MEDOFLORAN
+Terbinafine hydrochloride tabl",terbinafine hydrochloride,terbinafine hydrochloride,235838,terbinafine hydrochloride,RxNorm PIN,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Mon May 11 2026 18:55:40 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+165,14,manual,Panadol 500 MG Oral Tablet,Panadol 500 MG Oral Tablet,panadol oral tablet,200977,Panadol 500 MG Oral Tablet,RxNorm SY,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Mon May 11 2026 10:48:10 GMT+0530 (India Standard Time),67,Female,true,"Sulfa drugs, Ciprofloxacin","Type 2 Diabetes, kidney disease, Hypertension, arthritis","Metformin, Losartan, Insulin, Vitamin D",,,Yes,"Skin rash, Swelling of lips, Dizziness",No,"Yes: Sulfa based antibiotics, Strong NSAIDs",Yes,0,0,0
+164,14,manual,loratadine,loratadine,loratadine,28889,loratadine,RxNorm IN,,,29,Warning,15,1,0,3,low,RxNorm|SIDER|DDInter,Sun May 10 2026 23:56:06 GMT+0530 (India Standard Time),67,Female,true,"Sulfa drugs, Ciprofloxacin","Type 2 Diabetes, kidney disease, Hypertension, arthritis","Metformin, Losartan, Insulin, Vitamin D",,,Yes,"Skin rash, Swelling of lips, Dizziness",No,"Yes: Sulfa based antibiotics, Strong NSAIDs",Yes,0,0,0
+163,14,manual,Vitamin C,Vitamin C,ascorbic acid chewable tablet,141991,ascorbic acid 200 MG Chewable Tablet,RxNorm SCD,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Sun May 10 2026 23:13:41 GMT+0530 (India Standard Time),67,Female,true,"Sulfa drugs, Ciprofloxacin","Type 2 Diabetes, kidney disease, Hypertension, arthritis","Metformin, Losartan, Insulin, Vitamin D",,,Yes,"Skin rash, Swelling of lips, Dizziness",No,"Yes: Sulfa based antibiotics, Strong NSAIDs",Yes,0,0,0
+162,14,manual,Panadol,Panadol,panadol,202432,Panadol,RxNorm BN,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Sun May 10 2026 23:12:16 GMT+0530 (India Standard Time),67,Female,true,"Sulfa drugs, Ciprofloxacin","Type 2 Diabetes, kidney disease, Hypertension, arthritis","Metformin, Losartan, Insulin, Vitamin D",,,Yes,"Skin rash, Swelling of lips, Dizziness",No,"Yes: Sulfa based antibiotics, Strong NSAIDs",Yes,0,0,0
+161,14,manual,Paracetamol,Paracetamol,paracetamol,2670,Paracetamol,Analgesic,,,27,Warning,3,2,0,0,none,RxNorm|SIDER,Sun May 10 2026 17:29:28 GMT+0530 (India Standard Time),67,Female,true,"Sulfa drugs, Ciprofloxacin","Type 2 Diabetes, kidney disease, Hypertension, arthritis","Metformin, Losartan, Insulin, Vitamin D",,,Yes,"Skin rash, Swelling of lips, Dizziness",No,"Yes: Sulfa based antibiotics, Strong NSAIDs",Yes,0,0,0
+160,12,voice,panadol,panadol,panadol,202432,Panadol,RxNorm BN,,,32,Warning,0,0,0,0,none,RxNorm|SIDER,Sun May 10 2026 15:03:21 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+159,12,scan,"OCR / prescription text:
+No. 18, Station Road, Nugegoda,
+Sri Lanka.
+Tel: 011 282 3838
+Receipt No : CCP/2405/01876
+Date 1 24/05/2024
+Time + 10:42 AM
+Cashier + Nadeeshani
+Patient Name : Mr. S. Perera
+Item Qty Unit Price Total
+(LKR) (LKR)
+Atenclol 50mg tablets 30 12.00 360.00
+Femara 2.5mg tablets 14 185.00 2,590.00
+Docusate Plus Senna 100mg tablets 20 18.00 360.00
+Subtotal 3,310.00
+Discount -110.00
+Grand Total 3,200.00
+Cash Paid 3,200.00
+Balance 0.00
+Thank you. Visit again!
+Please use medicines as directed by your doctor.",Femara,femara,203769,Femara,RxNorm BN,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Sun May 10 2026 15:00:09 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+158,12,scan,"OCR / prescription text:
+No. 18, Station Road, Nugegoda,
+Sri Lanka.
+Tel: 011 282 3838
+Receipt No : CCP/2405/01876
+Date 1 24/05/2024
+Time + 10:42 AM
+Cashier + Nadeeshani
+Patient Name : Mr. S. Perera
+Item Qty Unit Price Total
+(LKR) (LKR)
+Atenclol 50mg tablets 30 12.00 360.00
+Femara 2.5mg tablets 14 185.00 2,590.00
+Docusate Plus Senna 100mg tablets 20 18.00 360.00
+Subtotal 3,310.00
+Discount -110.00
+Grand Total 3,200.00
+Cash Paid 3,200.00
+Balance 0.00
+Thank you. Visit again!
+Please use medicines as directed by your doctor.",docusate,docusate,82003,docusate,RxNorm IN,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Sun May 10 2026 14:59:22 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+157,6,manual,Penicillin,Penicillin,penicillin g,7980,penicillin G,RxNorm IN,,,75,Dangerous,0,0,0,0,none,RxNorm|SIDER,Sun May 10 2026 14:34:33 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+156,6,manual,amoxicillin,amoxicillin,amoxicillin,723,amoxicillin,RxNorm IN,,,75,Dangerous,15,1,0,1,low,RxNorm|SIDER|DDInter,Sun May 10 2026 14:34:08 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+155,6,manual,sulfamethoxazole,sulfamethoxazole,sulfamethoxazole,10180,sulfamethoxazole,RxNorm IN,,,75,Dangerous,15,1,0,0,none,RxNorm|SIDER,Sun May 10 2026 14:33:44 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+154,6,manual,sulfamethoxazole / trimethoprim,sulfamethoxazole / trimethoprim,sulfamethoxazole / trimethoprim,10831,sulfamethoxazole / trimethoprim,RxNorm MIN,,,75,Dangerous,0,0,0,0,none,RxNorm|SIDER,Sun May 10 2026 14:33:04 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+153,6,manual,ibuprofen,ibuprofen,ibuprofen,5640,ibuprofen,RxNorm IN,,,82,Dangerous,15,4,0,2,high,RxNorm|SIDER|DDInter,Sun May 10 2026 14:32:03 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+152,6,manual,diclofenac,diclofenac,diclofenac,3355,diclofenac,RxNorm IN,,,80,Dangerous,15,1,0,2,high,RxNorm|SIDER|DDInter,Sun May 10 2026 14:31:26 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+151,6,manual,morphine,morphine,morphine,7052,morphine,RxNorm IN,,,75,Dangerous,15,4,0,1,high,RxNorm|SIDER|DDInter,Sun May 10 2026 14:30:38 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+150,6,manual,tramadol,tramadol,tramadol,10689,tramadol,RxNorm IN,,,25,Warning,15,0,0,0,none,RxNorm|SIDER,Sun May 10 2026 14:30:05 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+149,6,manual,metformin,metformin,metformin,6809,metformin,RxNorm IN,,,16,Safe,15,0,0,1,low,RxNorm|SIDER|DDInter,Sun May 10 2026 14:29:35 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+148,6,manual,Vitamin D,Vitamin D,vitamin d,11253,vitamin D,RxNorm IN,,,9,Safe,0,0,0,0,none,RxNorm|SIDER,Sun May 10 2026 14:29:09 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+147,6,manual,cetirizine,cetirizine,cetirizine,20610,cetirizine,RxNorm IN,,,25,Warning,15,1,0,1,medium,RxNorm|SIDER|DDInter,Sun May 10 2026 14:28:24 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+146,6,manual,omeprazole,omeprazole,omeprazole,7646,omeprazole,RxNorm IN,,,20,Safe,15,1,0,1,low,RxNorm|SIDER|DDInter,Sun May 10 2026 14:27:48 GMT+0530 (India Standard Time),72,Female,true,"Penicillin, Sulfa drugs","Chronic back pain, Osteoarthritis, Insomnia, Hypertension","Panadol 5mg, Asprin 20mg, Opana 20mg, temazepam 20mg, Vitamin C 20mg",,,Yes,"Skin rash after antibiotics, Mild itching","Yes: Penicillin, amoxicillin, sulfamethoxazole, Ibuprofen","Yes: Avoid penicillin antibiotics, avoid sulfa- based medicines, avoid excessive NSAID use",Yes,0,0,0
+123,12,scan,"OCR / prescription text:
+Tn EE 1.
+O MEDOFLORAN2S
+Terbinafine hydrochloride tablets",Terbinafine hydrochloride tablets,rid,35607,RID,RxNorm BN,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Sat May 09 2026 14:31:00 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+122,12,scan,"OCR / prescription text:
+C—
+- _—
+; - 14 tablets
+v .
+MEDOFLORAN 250mg
+fine hydrochloride tablets 250mg
+: Ea _ Se :
+ww ois ox Bah lt
+AF _
+ER 1 LT
+i ll . . Be 3 pe",C—,c—,,c—,,,,31,Warning,0,0,0,0,none,,Sat May 09 2026 14:28:58 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+121,12,voice,Paracetamol,Paracetamol,paracetamol,,paracetamol,,,,31,Warning,0,0,0,0,none,,Fri May 08 2026 22:01:43 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+120,12,voice,Paracetamol,Paracetamol,paracetamol,,paracetamol,,,,25,Warning,0,0,0,0,none,,Fri May 08 2026 18:22:39 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+119,12,voice,panadol,panadol,panadol,202432,Panadol,RxNorm BN,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Fri May 08 2026 16:53:15 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+118,12,manual,ibuprofen,ibuprofen,ibuprofen,5640,ibuprofen,RxNorm IN,,,60,Dangerous,15,4,0,3,medium,RxNorm|SIDER|DDInter,Fri May 08 2026 13:36:20 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+117,12,manual,Panadol,Panadol,panadol,202432,Panadol,RxNorm BN,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Fri May 08 2026 13:35:49 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+116,12,manual,Panadol,Panadol,panadol,202432,Panadol,RxNorm BN,,,25,Warning,0,0,0,0,none,RxNorm|SIDER,Fri May 08 2026 12:42:52 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+115,12,manual,ibuprofen,ibuprofen,ibuprofen,5640,ibuprofen,RxNorm IN,,,60,Dangerous,15,4,0,3,medium,RxNorm|SIDER|DDInter,Fri May 08 2026 12:42:20 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0
+114,12,manual,Vitamin C,Vitamin C,vitamin c,,vitamin c,,,,25,Warning,0,0,0,0,none,,Fri May 08 2026 09:19:21 GMT+0530 (India Standard Time),72,Female,true,Penicillin,"Diabetes, Hypertension","Metformin, Losartan, Atorvastatin",0772226677,Himali,Yes,"Skin rash, swelling, breathing difficulty",Yes: Penicillin,Yes: Penicillin,Not sure,0,0,0

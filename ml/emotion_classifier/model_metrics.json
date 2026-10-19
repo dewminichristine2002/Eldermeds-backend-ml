@@ -1,0 +1,195 @@
+{
+  "selected_model": "logistic_regression",
+  "selection_metric": "f1_macro",
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.3453230518703003,
+      "precision_macro": 0.3206889437728705,
+      "recall_macro": 0.34066354259942716,
+      "f1_macro": 0.3184260217311264,
+      "classification_report": {
+        "anger": {
+          "precision": 0.31990521327014215,
+          "recall": 0.2846599894570374,
+          "f1-score": 0.301255230125523,
+          "support": 3794.0
+        },
+        "anxiety": {
+          "precision": 0.13070866141732285,
+          "recall": 0.34764397905759165,
+          "f1-score": 0.1899856938483548,
+          "support": 955.0
+        },
+        "cognitive_fog": {
+          "precision": 0.27275139294242506,
+          "recall": 0.33354964308890334,
+          "f1-score": 0.3001021748649832,
+          "support": 3082.0
+        },
+        "happiness": {
+          "precision": 0.5580046403712297,
+          "recall": 0.5138888888888888,
+          "f1-score": 0.5350389321468298,
+          "support": 4680.0
+        },
+        "loneliness": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "neutral": {
+          "precision": 0.42839951865222625,
+          "recall": 0.28312390647367586,
+          "f1-score": 0.34093085615782415,
+          "support": 6287.0
+        },
+        "sadness": {
+          "precision": 0.21436423598387688,
+          "recall": 0.2811148486304661,
+          "f1-score": 0.24324324324324326,
+          "support": 2081.0
+        },
+        "accuracy": 0.3453230518703003,
+        "macro avg": {
+          "precision": 0.2748762375196033,
+          "recall": 0.29199732222808045,
+          "f1-score": 0.27293659005525117,
+          "support": 20879.0
+        },
+        "weighted avg": {
+          "precision": 0.3798107385236537,
+          "recall": 0.3453230518703003,
+          "f1-score": 0.3545628271447811,
+          "support": 20879.0
+        }
+      }
+    },
+    "linear_svm": {
+      "accuracy": 0.34704727237894534,
+      "precision_macro": 0.3108930970876103,
+      "recall_macro": 0.3281814867072626,
+      "f1_macro": 0.3123772138998609,
+      "classification_report": {
+        "anger": {
+          "precision": 0.30715158924205377,
+          "recall": 0.26489193463363203,
+          "f1-score": 0.28446079818850833,
+          "support": 3794.0
+        },
+        "anxiety": {
+          "precision": 0.1328888888888889,
+          "recall": 0.31308900523560207,
+          "f1-score": 0.18658346333853354,
+          "support": 955.0
+        },
+        "cognitive_fog": {
+          "precision": 0.26905829596412556,
+          "recall": 0.27255029201817,
+          "f1-score": 0.27079303675048355,
+          "support": 3082.0
+        },
+        "happiness": {
+          "precision": 0.534185303514377,
+          "recall": 0.5358974358974359,
+          "f1-score": 0.53504,
+          "support": 4680.0
+        },
+        "loneliness": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "neutral": {
+          "precision": 0.40229885057471265,
+          "recall": 0.32845554318434866,
+          "f1-score": 0.361646234676007,
+          "support": 6287.0
+        },
+        "sadness": {
+          "precision": 0.21977565434150395,
+          "recall": 0.2542047092743873,
+          "f1-score": 0.2357397504456328,
+          "support": 2081.0
+        },
+        "accuracy": 0.34704727237894534,
+        "macro avg": {
+          "precision": 0.26647979750366596,
+          "recall": 0.2812984171776537,
+          "f1-score": 0.2677518976284522,
+          "support": 20879.0
+        },
+        "weighted avg": {
+          "precision": 0.36438875987019725,
+          "recall": 0.34704727237894534,
+          "f1-score": 0.3525191394782273,
+          "support": 20879.0
+        }
+      }
+    },
+    "multinomial_naive_bayes": {
+      "accuracy": 0.38862014464294264,
+      "precision_macro": 0.42044627844238014,
+      "recall_macro": 0.26211518781339943,
+      "f1_macro": 0.24641506560097662,
+      "classification_report": {
+        "anger": {
+          "precision": 0.36624775583482944,
+          "recall": 0.16130732735898787,
+          "f1-score": 0.22397072278133578,
+          "support": 3794.0
+        },
+        "anxiety": {
+          "precision": 0.5161290322580645,
+          "recall": 0.016753926701570682,
+          "f1-score": 0.032454361054766734,
+          "support": 955.0
+        },
+        "cognitive_fog": {
+          "precision": 0.33694181326116374,
+          "recall": 0.08079169370538611,
+          "f1-score": 0.130332373724156,
+          "support": 3082.0
+        },
+        "happiness": {
+          "precision": 0.5314285714285715,
+          "recall": 0.47692307692307695,
+          "f1-score": 0.5027027027027027,
+          "support": 4680.0
+        },
+        "loneliness": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 0.0
+        },
+        "neutral": {
+          "precision": 0.3500035875726483,
+          "recall": 0.7758867504374105,
+          "f1-score": 0.48239715189873417,
+          "support": 6287.0
+        },
+        "sadness": {
+          "precision": 0.4219269102990033,
+          "recall": 0.06102835175396444,
+          "f1-score": 0.10663308144416457,
+          "support": 2081.0
+        },
+        "accuracy": 0.38862014464294264,
+        "macro avg": {
+          "precision": 0.360382524379183,
+          "recall": 0.2246701609829138,
+          "f1-score": 0.2112129133722657,
+          "support": 20879.0
+        },
+        "weighted avg": {
+          "precision": 0.4064605608315476,
+          "recall": 0.38862014464294264,
+          "f1-score": 0.32998736519846905,
+          "support": 20879.0
+        }
+      }
+    }
+  }
+}

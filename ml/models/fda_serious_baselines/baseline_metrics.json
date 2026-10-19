@@ -1,0 +1,117 @@
+{
+  "task": "Serious vs Non-serious adverse event report classification",
+  "target_column": "serious",
+  "summary": {
+    "dataset_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S2\\R26-SE-028 (1)\\R26-SE-028\\backend\\ml\\data\\fda_adverse_events_2015_2026_CLEAN.csv",
+    "rows_loaded": 528000,
+    "rows_used": 528000,
+    "sample_size": null,
+    "label_distribution": {
+      "0": 133000,
+      "1": 395000
+    },
+    "leakage_columns_present": [
+      "report_id",
+      "receive_date",
+      "quarter",
+      "serious_flags",
+      "is_fatal",
+      "is_hospitalized",
+      "is_life_threat",
+      "is_disabling",
+      "reaction_outcomes",
+      "patient_recovered",
+      "patient_weight_kg",
+      "brand_name",
+      "manufacturer",
+      "reactions",
+      "age_group",
+      "drug_count_category"
+    ],
+    "feature_columns": [
+      "year",
+      "month",
+      "primary_reaction",
+      "num_reactions",
+      "suspect_drug",
+      "drug_route",
+      "drug_indication",
+      "pharm_class",
+      "num_drugs",
+      "patient_age_years",
+      "patient_sex",
+      "country",
+      "report_age_days"
+    ]
+  },
+  "split": {
+    "train_rows": 422400,
+    "test_rows": 105600,
+    "train_label_distribution": {
+      "0": 106400,
+      "1": 316000
+    },
+    "test_label_distribution": {
+      "0": 26600,
+      "1": 79000
+    },
+    "numeric_caps": {
+      "num_reactions": 41.0,
+      "num_drugs": 59.0,
+      "report_age_days": 4068.0
+    }
+  },
+  "baseline_metrics": {
+    "logistic_regression": {
+      "accuracy": 0.8990056818181819,
+      "precision": 0.9751095042758813,
+      "recall": 0.8876582278481012,
+      "f1": 0.9293310804095021,
+      "roc_auc": 0.9647587924716855,
+      "confusion_matrix": [
+        [
+          24810,
+          1790
+        ],
+        [
+          8875,
+          70125
+        ]
+      ]
+    },
+    "random_forest": {
+      "accuracy": 0.8857386363636364,
+      "precision": 0.9074881285766467,
+      "recall": 0.9434430379746835,
+      "f1": 0.9251163656674735,
+      "roc_auc": 0.946345612924717,
+      "confusion_matrix": [
+        [
+          19002,
+          7598
+        ],
+        [
+          4468,
+          74532
+        ]
+      ]
+    },
+    "xgboost": {
+      "accuracy": 0.8892613636363637,
+      "precision": 0.9148852232660206,
+      "recall": 0.939367088607595,
+      "f1": 0.9269645377668412,
+      "roc_auc": 0.9474517088607595,
+      "confusion_matrix": [
+        [
+          19696,
+          6904
+        ],
+        [
+          4790,
+          74210
+        ]
+      ]
+    }
+  }
+}

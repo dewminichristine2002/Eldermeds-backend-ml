@@ -1,0 +1,142 @@
+{
+  "evaluation_note": "Binary severe ADR classifier \u2014 production XGBoost with GridSearchCV (F1-weighted) and SMOTE oversampling, with sigmoid probability calibration.",
+  "cross_validation_best": {
+    "best_cv_f1_weighted_mean": 0.9441377964786396,
+    "best_params": {
+      "learning_rate": 0.05,
+      "max_depth": 8,
+      "n_estimators": 200,
+      "subsample": 0.8
+    },
+    "cv_folds": 5,
+    "refit_metric": "f1_weighted",
+    "search_method": "GridSearchCV",
+    "smote": true
+  },
+  "holdout_test_20pct": {
+    "no_adr": {
+      "precision": 0.9519852262234534,
+      "recall": 0.909973521624007,
+      "f1-score": 0.9305054151624549,
+      "support": 1133.0
+    },
+    "severe_adr": {
+      "precision": 0.9209914794732765,
+      "recall": 0.9580983078162773,
+      "f1-score": 0.9391785150078988,
+      "support": 1241.0
+    },
+    "accuracy": 0.9351305812973884,
+    "macro avg": {
+      "precision": 0.936488352848365,
+      "recall": 0.9340359147201421,
+      "f1-score": 0.9348419650851769,
+      "support": 2374.0
+    },
+    "weighted avg": {
+      "precision": 0.9357833560815116,
+      "recall": 0.9351305812973884,
+      "f1-score": 0.9350392470530178,
+      "support": 2374.0
+    },
+    "f1_weighted": 0.9350392470530178,
+    "roc_auc": 0.9843174474930887,
+    "probability_calibration": {
+      "method": "sigmoid",
+      "cv_folds": 5,
+      "raw_brier_score": 0.047321577752519536,
+      "calibrated_brier_score": 0.0473537628582908
+    }
+  },
+  "holdout_confusion_matrix": {
+    "labels": [
+      "no_adr",
+      "severe_adr"
+    ],
+    "matrix": [
+      [
+        1031,
+        102
+      ],
+      [
+        52,
+        1189
+      ]
+    ]
+  },
+  "validation_protocol": {
+    "train_test_split": "80/20 stratified on adr_event",
+    "cross_validation": "5-fold StratifiedKFold on training set (GridSearchCV)",
+    "threshold_tuning": "Youden's J statistic on calibrated out-of-fold training probabilities",
+    "calibration": "Sigmoid calibration fitted on out-of-fold training probabilities; Brier score and reliability diagram on 20% hold-out test set"
+  },
+  "youdens_j_threshold": {
+    "optimal_threshold": 0.48957131992832137,
+    "youdens_j": 0.8878181149374256,
+    "tpr": 0.9590890769850866,
+    "fpr": 0.07127096204766108
+  },
+  "calibration": {
+    "brier_score": 0.0473537628582908,
+    "reliability_diagram": [
+      {
+        "mean_predicted_probability": 0.0005466047473281296,
+        "observed_positive_fraction": 0.0
+      },
+      {
+        "mean_predicted_probability": 0.0009353304188310113,
+        "observed_positive_fraction": 0.0
+      },
+      {
+        "mean_predicted_probability": 0.0015001411864991611,
+        "observed_positive_fraction": 0.0
+      },
+      {
+        "mean_predicted_probability": 0.0520710929805011,
+        "observed_positive_fraction": 0.0546218487394958
+      },
+      {
+        "mean_predicted_probability": 0.44101773174521425,
+        "observed_positive_fraction": 0.4219409282700422
+      },
+      {
+        "mean_predicted_probability": 0.8403164597516498,
+        "observed_positive_fraction": 0.8270042194092827
+      },
+      {
+        "mean_predicted_probability": 0.9529608303915323,
+        "observed_positive_fraction": 0.9369747899159664
+      },
+      {
+        "mean_predicted_probability": 0.9897321875807801,
+        "observed_positive_fraction": 0.9873417721518988
+      },
+      {
+        "mean_predicted_probability": 0.9982950762895262,
+        "observed_positive_fraction": 1.0
+      },
+      {
+        "mean_predicted_probability": 0.9993993658711486,
+        "observed_positive_fraction": 1.0
+      }
+    ]
+  },
+  "holdout_threshold_reference": {
+    "description": "Reference Youden's J computed on hold-out calibrated probabilities for diagnostics only; not used for runtime classification.",
+    "youdens_j": {
+      "optimal_threshold": 0.6201123870272295,
+      "youdens_j": 0.8740979180727896,
+      "tpr": 0.9411764705882353,
+      "fpr": 0.06707855251544571
+    }
+  },
+  "target": "adr_event",
+  "hybrid_inference": {
+    "formula": "hybridScore = round(0.6 * ruleScore + 0.4 * mlDangerScore)",
+    "mlDangerScore": "adr_risk_probability * 100",
+    "thresholds": {
+      "warning": 20,
+      "dangerous": 55
+    }
+  }
+}

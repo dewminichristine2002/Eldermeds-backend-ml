@@ -1,0 +1,6 @@
+schema_version,sample_id,participant_group_id,session_id,turn_number,question_id,question_bank_version,question,answer,previous_turns_json,consent_or_use_authorization_reference,data_origin,source_provenance,dataset_split,emotion_label,annotation_source,annotation_status,annotation_guideline_version,annotation_reviewers_json,annotation_reason
+,,,,,,,,,,,,,,,,pending,,[],
+,,,,,,,,,,,,,,,,pending,,[],
+,,,,,,,,,,,,,,,,pending,,[],
+,,,,,,,,,,,,,,,,pending,,[],
+,,,,,,,,,,,,,,,,pending,,[],

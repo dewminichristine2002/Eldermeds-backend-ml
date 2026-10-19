@@ -1,0 +1,17 @@
+{
+  "domain_development_rows": 56,
+  "support": {
+    "anger": 8,
+    "anxiety": 8,
+    "cognitive_fog": 8,
+    "happiness": 8,
+    "loneliness": 8,
+    "neutral": 8,
+    "sadness": 8
+  },
+  "sha256": "2f21886ce8efb98cfc5d1ad95c127955be9ed013568dc365b524b164621a4814",
+  "near_duplicate_threshold": 0.85,
+  "known_exact_final_test_leakage": 0,
+  "known_near_final_test_leakage": 0,
+  "review_note": "Reviewer columns intentionally blank; independent human reviewers were unavailable."
+}

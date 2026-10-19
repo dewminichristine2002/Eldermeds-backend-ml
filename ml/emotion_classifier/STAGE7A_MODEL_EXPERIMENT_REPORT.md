@@ -1,0 +1,5 @@
+# Stage 7A Existing Candidate Replay
+
+Stage 7A replayed the existing calibrated MiniLM v5 artifact against the exact recorded 316-row validation partition. It did not retrain or retune the candidate and did not read a locked or project evaluation set. Artifact SHA-256: `46af71869bb39902742a42a66e37a57e9166858c6bb5b0f28a04fae8da37d115`. Validation prediction mismatches versus the saved v5 predictions: **0**. Accuracy: **0.6266**; macro-F1: **0.6599**. These remain model-selection validation metrics.
+
+The replay environment is Python 3.12.1, scikit-learn 1.9.0, pandas 3.0.5. The recorded build environment was scikit-learn 1.8.0 and pandas 3.0.2. `joblib` emitted estimator version warnings during load. Exact replay is useful evidence, but rebuilding or promoting this artifact requires a pinned, matching environment and a compatibility review. Existing runtime continues to select v4; v3 remains the rollback. No new candidate was trained because the existing eligible labels have already been used for model selection and no human-reviewed labels were available to form a genuinely new training candidate.

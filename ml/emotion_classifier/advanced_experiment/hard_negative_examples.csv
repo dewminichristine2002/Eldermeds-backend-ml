@@ -1,0 +1,41 @@
+text,label,source,domain,boundary_family
+I misplaced my reading glasses once but found them beside the newspaper.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_cognitive_fog
+I was distracted by the doorbell and then returned to cooking normally.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_cognitive_fog
+I forgot one name briefly but remembered it a moment later.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_cognitive_fog
+I put the keys in a different drawer today and later found them.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_cognitive_fog
+I paused the program to answer the telephone and resumed it afterward.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_cognitive_fog
+I am worried about tomorrow but I can still think and follow every task.,anxiety,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+My attention is clear even though I feel nervous about the appointment.,anxiety,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+I keep imagining a bad outcome but have no trouble concentrating.,anxiety,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+I feel uneasy while waiting for the call and know exactly what I am doing.,anxiety,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+Fear is keeping me awake although my thoughts remain organized.,anxiety,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+I cannot follow the recipe today but I do not feel worried or afraid.,cognitive_fog,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+My thoughts keep slipping away even though I feel calm.,cognitive_fog,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+I am not anxious but the steps of this familiar task will not stay in mind.,cognitive_fog,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+I feel mentally cloudy without any particular concern troubling me.,cognitive_fog,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+The conversation is hard to follow although I am emotionally settled.,cognitive_fog,project_authored_hard_negative,eldermeds_conversation,anxiety_vs_cognitive_fog
+I am frustrated with the delay but I am not frightened about it.,anger,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+The repeated mistake annoys me rather than making me nervous.,anger,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+I feel angry about being ignored and I am certain of what happened.,anger,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+This unfair rule irritates me but it does not worry me.,anger,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+I am impatient and cross because they are late again.,anger,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+I am nervous about speaking up but I am not angry with anyone.,anxiety,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+The uncertainty makes me uneasy rather than annoyed.,anxiety,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+I fear they may be late but I do not blame them.,anxiety,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+I am tense about the meeting without feeling irritated.,anxiety,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+I worry about the noise because it may signal a problem.,anxiety,project_authored_hard_negative,eldermeds_conversation,anger_vs_anxiety
+I feel sad about the loss even though family members are here with me.,sadness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+I have company today but the disappointing news still makes me unhappy.,sadness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+I am grieving while surrounded by people who care for me.,sadness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+My friend is beside me yet I still feel deeply down.,sadness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+The painful memory makes me tearful and companionship does not change it.,sadness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+I am not especially sad but I miss having somebody here to talk with.,loneliness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+My mood is all right but the lack of company feels isolating.,loneliness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+Nothing bad happened today; I simply wish someone had visited.,loneliness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+I feel the absence of conversation more than any sadness.,loneliness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+I would enjoy having another person nearby although I am not feeling down.,loneliness,project_authored_hard_negative,eldermeds_conversation,sadness_vs_loneliness
+I completed my chores and felt slightly tired afterward.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_sadness
+The cloudy weather continued while I followed my normal routine.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_sadness
+I stayed indoors today because rain was expected.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_sadness
+The house was quiet while I read my book as usual.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_sadness
+I did not have any special plans and spent the afternoon at home.,neutral,project_authored_hard_negative,eldermeds_conversation,neutral_vs_sadness

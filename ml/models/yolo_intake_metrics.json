@@ -1,0 +1,38 @@
+{
+  "model": "runs\\detect\\pill_detector\\weights\\best.pt",
+  "manifest": "data\\public\\pills-detection-count-manifest-dose.csv",
+  "expected_count": 2,
+  "confidence_threshold": 0.55,
+  "evaluated_images": 860,
+  "positive_class": "incorrect_medication_intake",
+  "negative_class": "correct_medication_intake",
+  "metrics": {
+    "accuracy": 0.9674418604651163,
+    "precision": 0.9886524822695035,
+    "recall_sensitivity": 0.9721059972105998,
+    "f1_score": 0.980309423347398,
+    "roc_auc": 0.9132993923788901,
+    "specificity": 0.9440559440559441,
+    "count_accuracy": 0.9093023255813953,
+    "confusion_matrix": {
+      "labels": [
+        "correct_intake",
+        "incorrect_intake"
+      ],
+      "matrix": [
+        [
+          135,
+          8
+        ],
+        [
+          20,
+          697
+        ]
+      ],
+      "tp": 697,
+      "tn": 135,
+      "fp": 8,
+      "fn": 20
+    }
+  }
+}

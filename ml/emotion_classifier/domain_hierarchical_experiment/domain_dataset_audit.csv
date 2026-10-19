@@ -1,0 +1,12 @@
+check,value
+domain_development_rows,56
+training_rows,2620
+training_exact_duplicates,0
+training_conflicting_labels,0
+domain_dev_exact_training_overlap,0
+domain_dev_exact_original_test_overlap,0
+domain_dev_exact_domain_test_overlap,0
+domain_dev_near_training_overlap_ge_0_85,0
+domain_dev_near_original_test_overlap_ge_0_85,0
+domain_dev_near_domain_test_overlap_ge_0_85,0
+short_training_records_le_2_tokens,34

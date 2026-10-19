@@ -1,0 +1,29 @@
+{
+  "model_version": "minilm_logistic_regression_v4",
+  "model_family": "MiniLM sentence embeddings with Logistic Regression",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_normalization": "L2 normalized",
+  "classifier": "LogisticRegression(C=1.0, class_weight='balanced', max_iter=2000, random_state=42, solver='lbfgs')",
+  "artifact_path": "domain_hierarchical_experiment/candidate_model.joblib",
+  "artifact_sha256": "8c93ccc4a87c975b5a58d3ef8a42be3efc41b71e52653f05879cf45e50d82ee7",
+  "supported_classes": [
+    "happiness",
+    "sadness",
+    "loneliness",
+    "anxiety",
+    "anger",
+    "cognitive_fog",
+    "neutral"
+  ],
+  "confidence": "Logistic Regression predict_proba winning-class probability",
+  "confidence_threshold": 0.3,
+  "threshold_role": "software confidence-routing threshold; not clinical",
+  "threshold_selection_data": "completed development calibration partition only",
+  "domain_test_accuracy": 0.8143,
+  "domain_test_macro_f1": 0.8166,
+  "original_test_accuracy": 0.5459,
+  "original_test_macro_f1": 0.5649,
+  "scope_note": "Domain-optimized model. Performance is higher on ElderMeds conversational English than on the broader external-domain test.",
+  "rollback_model_version": "tfidf_linear_svm_calibrated_v3",
+  "final_tests_rerun": false
+}

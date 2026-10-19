@@ -1,0 +1,5 @@
+# Stage 8 Context Data Schema
+
+Schema version `eldermeds-context-emotion-1.0` is represented in `context_dataset_schema.json` and enforced by `context_dataset_schema.py`. It requires a pseudonymous participant-group ID assigned only to real consented records, session ID, positive turn index, current question/answer, at most two chronological previous question/answer turns, a seven-class label, human annotation source, and reviewed/adjudicated status. Previous turns must match both participant and session and precede the target turn. Text fields are capped at 2,000 characters. Labels are never concatenated into model input.
+
+`context_builder.py` preserves legacy formatting plus explicit answer-only, question+answer, and multi-turn formats. The multi-turn builder preserves negation/order and rejects wrong-session, wrong-participant, future, duplicate, or unsorted structured turns. It enforces tokenizer-aware limits when a compatible tokenizer is supplied, with a bounded word/character fallback. Synthetic test fixtures are clearly synthetic and are never model training records.

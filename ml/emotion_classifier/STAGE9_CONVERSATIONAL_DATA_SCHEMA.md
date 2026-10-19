@@ -1,0 +1,9 @@
+# Stage 9 Conversational Emotion Data Schema
+
+Schema: `eldermeds-context-emotion-1.1`, enforced by `context_dataset_schema.py` and described by `context_dataset_schema_stage9.json`. Stage 8 schema 1.0 remains readable for model-input unit tests; it is not eligible for Stage 9 training unless it is re-collected/enriched with the required provenance and annotation evidence.
+
+Each turn stores a pseudonymous `sample_id`, `participant_group_id`, `session_id`, 1-based `turn_index`, actual `question_id`, exact question-bank content version, current question and answer, and up to two earlier question-answer turns. Previous turns must belong to the same participant and session, be earlier and chronologically ordered, and match the source turn in the dataset. Dataset validation rejects duplicate IDs, duplicate turn indices, session-owner conflicts, invalid fields, direct email/phone-like contact details, and unresolved/mismatched prior-turn references. It reports exact and character-TF-IDF near duplicates; training groups duplicate families and participant groups before splitting.
+
+Research eligibility also requires `data_origin=consented_participant`, an opaque consent/use authorization reference, source provenance, question-bank identity, a versioned human guideline, and either two independent agreeing reviewers or a valid third-reviewer adjudication. Model-generated labels, single reviews, synthetic fixtures, public single-turn rows, unknown provenance, and frozen evaluation splits are rejected for supervised training. The authorization document and any re-identification key are never stored in this file; keep them in separate access-controlled systems.
+
+`dataset_split` is `unassigned` at annotation time. Training creates deterministic participant/session/duplicate-family-disjoint manifests containing hashes rather than raw identifiers. Independent evaluation data must be separately curated and marked `independent_test`.

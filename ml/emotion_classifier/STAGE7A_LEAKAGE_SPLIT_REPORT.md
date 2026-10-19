@@ -1,0 +1,5 @@
+# Stage 7A Leakage-Safe Split Report
+
+The replay uses the existing immutable v5 manifest `v5_experiments/20261008T175725Z/split_manifest.csv` (SHA-256 recorded in the Stage 7A inventory). The split is deterministic, text-family grouped, and contains fit 949, calibration 317, and validation 316 records. The recorded method groups exact normalized text and character TF-IDF near duplicates at cosine similarity 0.90 before the stratified group partitions are formed. No group crosses partitions according to the originating experiment report.
+
+The v5 development file hash matches the original experiment. The Stage 7A replay loaded only the recorded validation rows for prediction and did not access locked or project evaluation sets. The original v5 validation was used to select among candidates, so its metrics remain model-selection results and are not independent performance estimates. `locked_test_v2.csv` has already been exposed in prior work; it is not a fresh blind benchmark. No participant/session IDs exist, so participant-level separation could not be made.

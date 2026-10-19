@@ -1,0 +1,28 @@
+{
+  "rows": 140,
+  "class_support": {
+    "anger": 20,
+    "anxiety": 20,
+    "cognitive_fog": 20,
+    "happiness": 20,
+    "loneliness": 20,
+    "neutral": 20,
+    "sadness": 20
+  },
+  "source_support": {
+    "project_authored_independent": 70,
+    "project_authored_independent_v3": 70
+  },
+  "domain": "eldermeds_conversation",
+  "sha256_sorted_csv": "08cdb59dc101e0dfae1b94927d0a587218fdabbbede25d39c73263e125e3674d",
+  "exact_model_data_overlap": 0,
+  "near_duplicate_threshold": 0.85,
+  "near_duplicate_model_data_pairs": 0,
+  "prohibited_uses": [
+    "training",
+    "model_selection",
+    "hyperparameter_tuning",
+    "calibration",
+    "threshold_selection"
+  ]
+}

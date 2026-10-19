@@ -1,0 +1,8 @@
+# Runtime packages for the pill detector and intake motion scripts.
+numpy==1.26.4
+Pillow>=10,<12
+ultralytics>=8.4,<9
+opencv-contrib-python==4.11.0.86
+mediapipe==0.10.14
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1

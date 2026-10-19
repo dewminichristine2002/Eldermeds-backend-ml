@@ -1,0 +1,93 @@
+{
+  "section": "dissertation_confusion_matrices",
+  "model": "XGBClassifier (production)",
+  "datasets": [
+    "FAERS"
+  ],
+  "rows_total": 11868,
+  "holdout_rows": 2374,
+  "split": "80/20 stratified, random_state=42",
+  "binary_adr_event": {
+    "labels": [
+      "no_adr",
+      "severe_adr"
+    ],
+    "confusion_matrix": {
+      "rows": [
+        "no_adr",
+        "severe_adr"
+      ],
+      "columns": [
+        "no_adr",
+        "severe_adr"
+      ],
+      "values": [
+        [
+          1033,
+          100
+        ],
+        [
+          58,
+          1183
+        ]
+      ],
+      "interpretation": {
+        "tn": 1033,
+        "fp": 100,
+        "fn": 58,
+        "tp": 1183
+      }
+    },
+    "f1_weighted": 0.9333709661149434
+  },
+  "hybrid_3class": {
+    "formula": "round(0.6 * ruleScore + 0.4 * mlDangerScore)",
+    "thresholds": {
+      "warning": 25,
+      "dangerous": 60
+    },
+    "ground_truth": "risk_label_eval (DDI-derived Warning proxy)",
+    "labels": [
+      "Safe",
+      "Warning",
+      "Dangerous"
+    ],
+    "confusion_matrix": {
+      "rows": [
+        "Safe",
+        "Warning",
+        "Dangerous"
+      ],
+      "columns": [
+        "Safe",
+        "Warning",
+        "Dangerous"
+      ],
+      "values": [
+        [
+          844,
+          72,
+          0
+        ],
+        [
+          70,
+          144,
+          3
+        ],
+        [
+          73,
+          589,
+          579
+        ]
+      ]
+    },
+    "f1_weighted": 0.7000696512532169,
+    "class_distribution_holdout": {
+      "Dangerous": 1241,
+      "Safe": 916,
+      "Warning": 217
+    },
+    "warning_pct_holdout": 9.1
+  },
+  "f1_gap_explanation": "Binary F1 measures severe-ADR vs non-severe classification \u2014 the ML training target. Hybrid 3-class F1 measures Safe/Warning/Dangerous after blending rule scores with ML probabilities and applying clinical thresholds. The drop is expected: (1) Warning is a post-hoc DDI proxy with only ~8% of rows, (2) rule-score proxy does not fully match live P1\u2013P16 engine output, (3) three-class boundary errors (Safe\u2194Warning) do not affect binary severe-ADR detection."
+}

@@ -1,0 +1,8 @@
+label,count,target,target_met
+anger,400,400,True
+anxiety,384,500,False
+cognitive_fog,264,400,False
+happiness,500,500,True
+loneliness,72,400,False
+neutral,500,500,True
+sadness,500,500,True

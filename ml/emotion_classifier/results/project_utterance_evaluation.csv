@@ -1,0 +1,71 @@
+expected_emotion,text,predicted_emotion,confidence,pure_ml_correct,routing_source,hybrid_emotion,hybrid_correct
+happiness,I woke up cheerful and ready for the day.,happiness,0.5134795754279048,True,ml_model,happiness,True
+happiness,The visit from my grandson lifted my spirits.,neutral,0.4604593038489826,False,ml_model,neutral,False
+happiness,I felt good after finishing my garden work.,happiness,0.2922439490355996,True,rule_fallback,happiness,True
+happiness,I enjoyed our conversation very much.,happiness,0.6747353843093126,True,ml_model,happiness,True
+happiness,Today has given me several reasons to smile.,neutral,0.46352174510750055,False,ml_model,neutral,False
+happiness,I am happier than I was yesterday.,neutral,0.5178263550084109,False,ml_model,neutral,False
+happiness,Sharing lunch with my neighbor was delightful.,anger,0.30499657541222913,False,ml_model,anger,False
+happiness,The music brought back pleasant memories.,neutral,0.4670068759584173,False,ml_model,neutral,False
+happiness,I feel content and pleased this evening.,sadness,0.4887474215389854,False,ml_model,sadness,False
+happiness,That kind message brightened my morning.,anger,0.29196618438177707,False,rule_fallback,neutral,False
+sadness,I have felt low and tearful since breakfast.,loneliness,0.3389011279855464,False,ml_model,loneliness,False
+sadness,The day seems heavy and nothing interests me.,anxiety,0.30327266463392283,False,ml_model,anxiety,False
+sadness,I miss how things used to be and it hurts.,sadness,0.7981517643885048,True,ml_model,sadness,True
+sadness,I could not find much joy in anything today.,neutral,0.5394823198949636,False,ml_model,neutral,False
+sadness,I have been feeling down all afternoon.,loneliness,0.393342322042766,False,ml_model,loneliness,False
+sadness,Thinking about the loss made me cry again.,sadness,0.47108539640247804,True,ml_model,sadness,True
+sadness,I feel discouraged and unhappy tonight.,happiness,0.2692350537561837,False,rule_fallback,sadness,True
+sadness,My heart feels heavy even though I am not alone.,loneliness,0.49528789300847,False,ml_model,loneliness,False
+sadness,I did not want to get out of bed because I felt so low.,cognitive_fog,0.3175175737661675,False,ml_model,cognitive_fog,False
+sadness,There is a sadness I cannot seem to shake.,cognitive_fog,0.5870521436569808,False,ml_model,cognitive_fog,False
+loneliness,No one has called and the silence feels difficult.,loneliness,0.5496971496964909,True,ml_model,loneliness,True
+loneliness,I wish there were somebody beside me this evening.,sadness,0.42546151185760533,False,ml_model,sadness,False
+loneliness,Meals feel empty when I always eat by myself.,loneliness,0.43756680186147634,True,ml_model,loneliness,True
+loneliness,I have nobody nearby to share my news with.,loneliness,0.5924041578363158,True,ml_model,loneliness,True
+loneliness,The house became awfully quiet after the visitors left.,loneliness,0.4789114153683903,True,ml_model,loneliness,True
+loneliness,I miss having a companion to talk to each day.,loneliness,0.7301547290703742,True,ml_model,loneliness,True
+loneliness,I feel alone even in a room full of people.,loneliness,0.7203672263768741,True,ml_model,loneliness,True
+loneliness,I keep looking toward the door hoping someone will visit.,loneliness,0.43222014484500093,True,ml_model,loneliness,True
+loneliness,It has been days since I had a proper conversation.,happiness,0.3318119012391679,False,ml_model,happiness,False
+loneliness,I would love some company this afternoon.,happiness,0.550565063539681,False,ml_model,happiness,False
+anxiety,I feel uneasy and cannot settle my thoughts.,cognitive_fog,0.6235057205461746,False,ml_model,cognitive_fog,False
+anxiety,I have been worrying that something bad may happen.,anxiety,0.2890008699791535,True,rule_fallback,neutral,False
+anxiety,My nerves are on edge this morning.,anger,0.45625784705172967,False,ml_model,anger,False
+anxiety,I cannot relax because I keep imagining problems.,anger,0.29593902278257456,False,rule_fallback,anxiety,True
+anxiety,I feel tense whenever the telephone rings.,loneliness,0.44695284635286325,False,ml_model,loneliness,False
+anxiety,There is a nervous feeling in my stomach.,anxiety,0.7608174481991801,True,ml_model,anxiety,True
+anxiety,I keep checking everything because I am worried.,anxiety,0.3875046093699705,True,ml_model,anxiety,True
+anxiety,I am restless and concerned about tomorrow.,sadness,0.33423224426718934,False,ml_model,sadness,False
+anxiety,Small uncertainties are making me very uneasy.,anxiety,0.29834834310590164,True,rule_fallback,anxiety,True
+anxiety,My mind keeps circling around the same worry.,anxiety,0.33369184862328316,True,ml_model,anxiety,True
+anger,I am furious that they ignored my request again.,anger,0.3068850367906181,True,ml_model,anger,True
+anger,The constant interruptions are really irritating me.,anger,0.5843455477425131,True,ml_model,anger,True
+anger,I became annoyed when the appointment was cancelled.,anger,0.686833361697676,True,ml_model,anger,True
+anger,I am frustrated by having to repeat this task.,anger,0.7004120029936097,True,ml_model,anger,True
+anger,That rude comment made me angry.,anger,0.679518583245563,True,ml_model,anger,True
+anger,I have had enough of this careless behavior.,anger,0.5218512104498265,True,ml_model,anger,True
+anger,The unnecessary delay is getting on my nerves.,anger,0.5263348230124257,True,ml_model,anger,True
+anger,I feel cross because nobody asked my opinion.,anger,0.4778773603385947,True,ml_model,anger,True
+anger,I lost my temper when the machine failed again.,sadness,0.31912372798613203,False,ml_model,sadness,False
+anger,I am still irritated about what happened earlier.,anger,0.6147751719088601,True,ml_model,anger,True
+cognitive_fog,I cannot keep track of the steps while preparing breakfast.,cognitive_fog,0.5834654660739266,True,ml_model,cognitive_fog,True
+cognitive_fog,The words blur together when I try to follow a page.,neutral,0.4036621751613521,False,ml_model,neutral,False
+cognitive_fog,I began a chore and then forgot what I was trying to finish.,cognitive_fog,0.4321004827257718,True,ml_model,cognitive_fog,True
+cognitive_fog,My thinking feels cloudy and slow this afternoon.,anxiety,0.25969119239436916,False,rule_fallback,cognitive_fog,True
+cognitive_fog,I lose the thread halfway through a conversation.,happiness,0.478856077657069,False,ml_model,happiness,False
+cognitive_fog,It is unusually hard to focus on one thing today.,neutral,0.4119105112533406,False,ml_model,neutral,False
+cognitive_fog,I cannot organize my thoughts well enough to make a simple plan.,cognitive_fog,0.5338814857214238,True,ml_model,cognitive_fog,True
+cognitive_fog,I repeatedly forget the next step of familiar activities.,cognitive_fog,0.44581724237984954,True,ml_model,cognitive_fog,True
+cognitive_fog,Following the plot of this program takes too much concentration today.,sadness,0.25638812871648886,False,rule_fallback,cognitive_fog,True
+cognitive_fog,My mind feels unclear despite being rested.,neutral,0.28272116179549667,False,rule_fallback,cognitive_fog,True
+neutral,I completed my regular errands this morning.,neutral,0.4383484125762333,True,ml_model,neutral,True
+neutral,Nothing out of the ordinary happened today.,neutral,0.5676644925013639,True,ml_model,neutral,True
+neutral,I ate lunch at noon and read the newspaper.,neutral,0.4277857772777517,True,ml_model,neutral,True
+neutral,Everything is about the same as it normally is.,neutral,0.5810078939906282,True,ml_model,neutral,True
+neutral,I followed my standard schedule.,neutral,0.6571153385669561,True,ml_model,neutral,True
+neutral,The morning passed without any notable events.,neutral,0.44988357643273097,True,ml_model,neutral,True
+neutral,I am sitting in the living room now.,anger,0.455072986222231,False,ml_model,anger,False
+neutral,I took a walk and returned home before dinner.,neutral,0.3616354619412192,True,ml_model,neutral,True
+neutral,My routine has been unchanged this week.,neutral,0.5708665536979887,True,ml_model,neutral,True
+neutral,There is nothing special to mention about today.,neutral,0.6837651277788428,True,ml_model,neutral,True

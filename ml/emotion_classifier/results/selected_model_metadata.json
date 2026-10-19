@@ -1,0 +1,93 @@
+{
+  "model_version": "tfidf_linear_svm_calibrated_v3",
+  "selected_model": "linear_svm_calibrated",
+  "accepted": true,
+  "acceptance_rule": "macro_f1 improves; cognitive_fog and neutral do not decline; no class declines >0.05",
+  "selection_basis": "development-only 5-fold stratified CV macro F1",
+  "selected_config": {
+    "model": "linear_svm_calibrated",
+    "C": 0.5,
+    "word_ngram": [
+      1,
+      2
+    ],
+    "word_min_df": 1,
+    "sublinear_tf": true,
+    "char_ngram": [
+      3,
+      6
+    ],
+    "char_min_df": 1
+  },
+  "calibration": {
+    "method": "sigmoid",
+    "final_folds": 5,
+    "data": "development only; final held-out test excluded"
+  },
+  "confidence_threshold": 0.3,
+  "threshold_role": "software confidence-routing threshold; not clinical",
+  "threshold_selection_data": "development-only out-of-fold predictions",
+  "supported_classes": [
+    "happiness",
+    "sadness",
+    "loneliness",
+    "anxiety",
+    "anger",
+    "cognitive_fog",
+    "neutral"
+  ],
+  "random_seed": 42,
+  "locked_test_sha256": "81c673cd2fdd896e8c813d4f13f09f024d6ab695ec1f71c07f30bb778d8dd413",
+  "split": {
+    "development": 1582,
+    "test": 381
+  },
+  "cv_winner": {
+    "config_id": 3,
+    "model": "linear_svm_calibrated",
+    "C": 0.5,
+    "word_ngram": [
+      1,
+      2
+    ],
+    "word_min_df": 1,
+    "sublinear_tf": true,
+    "char_ngram": [
+      3,
+      6
+    ],
+    "char_min_df": 1,
+    "cv_accuracy_mean": 0.5992093599009702,
+    "cv_macro_precision_mean": 0.6417174838388565,
+    "cv_macro_recall_mean": 0.6250711404912475,
+    "cv_macro_f1_mean": 0.6306169798734145,
+    "cv_weighted_f1_mean": 0.6019269049519568,
+    "cv_macro_f1_std": 0.02978904391344666
+  },
+  "v2_test_metrics": {
+    "accuracy": 0.5826771653543307,
+    "macro_precision": 0.6145713571162167,
+    "macro_recall": 0.6212389400747054,
+    "macro_f1": 0.6163755640527031,
+    "weighted_f1": 0.5772246335002924
+  },
+  "hardened_test_metrics": {
+    "accuracy": 0.6141732283464567,
+    "macro_precision": 0.6366027789414886,
+    "macro_recall": 0.6490436426098437,
+    "macro_f1": 0.642234584944393,
+    "weighted_f1": 0.6117669601866313
+  },
+  "pure_ml_project_correctness": 0.5571428571428572,
+  "hybrid_project_metrics": {
+    "overall_correctness": 0.6142857142857143,
+    "ml_coverage": 0.8714285714285714,
+    "fallback_rate": 0.12857142857142856,
+    "ml_accepted_correctness": 0.5901639344262295,
+    "fallback_correctness": 0.7777777777777778
+  },
+  "loneliness_support": {
+    "development": 67,
+    "test": 11
+  }
+}

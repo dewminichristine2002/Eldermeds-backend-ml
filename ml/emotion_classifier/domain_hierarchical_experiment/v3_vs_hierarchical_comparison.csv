@@ -1,0 +1,4 @@
+model,dev_accuracy,dev_macro_f1,original_test_accuracy,original_test_macro_f1,domain_test_accuracy,domain_test_macro_f1,final_evaluation_status
+v3_production,0.7142857142857143,0.704678092559561,0.6141732283,0.6422345849,0.6,0.5869150969,preserved
+best_new_flat_minilm_logistic,0.8392857142857143,0.8355311355311356,,,,,not evaluated; gate failed
+best_hierarchy_a_minilm_linear_svm,0.7857142857142857,0.7893023876217153,,,,,not evaluated; gate failed

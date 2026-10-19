@@ -1,0 +1,51 @@
+{
+  "candidate": {
+    "architecture": "flat",
+    "representation": "minilm",
+    "family": "logistic_regression",
+    "seed_policy": [
+      42,
+      123,
+      2026
+    ]
+  },
+  "domain_development_metrics": {
+    "accuracy": 0.8392857142857143,
+    "macro_precision": 0.8523809523809524,
+    "macro_recall": 0.8392857142857143,
+    "macro_f1": 0.8355311355311356,
+    "weighted_f1": 0.8355311355311356,
+    "f1_cognitive_fog": 0.75,
+    "f1_neutral": 0.75,
+    "f1_anger": 1.0,
+    "f1_loneliness": 0.8
+  },
+  "v3_domain_development_metrics": {
+    "accuracy": 0.7142857142857143,
+    "macro_f1": 0.704678092559561,
+    "f1_cognitive_fog": 0.7777777777777778,
+    "f1_neutral": 0.7058823529411765,
+    "f1_anger": 0.7058823529411765,
+    "f1_loneliness": 0.8421052631578947
+  },
+  "seed_stability": {
+    "accuracy_mean": 0.8392857142857143,
+    "accuracy_std": 0.0,
+    "macro_f1_mean": 0.8355311355311356,
+    "macro_f1_std": 0.0
+  },
+  "promotion_gate_passed": false,
+  "promotion_rule": "macro F1 >= v3 + 0.02 and cognitive_fog/neutral do not decline",
+  "final_tests_opened": false,
+  "artifact_sha256": "8c93ccc4a87c975b5a58d3ef8a42be3efc41b71e52653f05879cf45e50d82ee7",
+  "minilm_checkpoint": "sentence-transformers/all-MiniLM-L6-v2",
+  "selected_development_threshold": 0.3,
+  "threshold_data": "development calibration partition only",
+  "candidate_startup_seconds": 0.5851625999785028,
+  "candidate_mean_cpu_inference_ms": 8.413282000110485,
+  "candidate_classifier_bytes": 22656,
+  "minilm_cache_bytes": 91578455,
+  "v4_deployed": false,
+  "recommendation": "retain_v3",
+  "final_test_reason": "Candidate failed promotion because cognitive_fog F1 declined from 0.7778 to 0.7500 despite strong overall development gains."
+}

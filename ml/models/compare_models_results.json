@@ -1,0 +1,329 @@
+{
+  "section": "11.1_algorithm_comparison",
+  "viva_rationale": "Random Forest as an ensemble tree method, XGBoost as a gradient boosting variant, and Logistic Regression as an interpretable linear baseline \u2014 together they represent a spectrum from simple to complex, allowing meaningful comparison.",
+  "algorithms": [
+    "random_forest",
+    "xgboost",
+    "logistic_regression"
+  ],
+  "datasets": [
+    "FAERS"
+  ],
+  "rows": 11868,
+  "target": "adr_event",
+  "binary_classes": [
+    "no_adr",
+    "severe_adr"
+  ],
+  "hybrid_evaluation": {
+    "formula": "hybridScore = round(0.6 * ruleScore + 0.4 * mlDangerScore)",
+    "alpha": 0.6,
+    "beta": 0.4,
+    "ground_truth_column": "risk_label_eval",
+    "note": "3-class labels are evaluation-only; all models train on binary adr_event."
+  },
+  "feature_columns": [
+    "patient_age",
+    "num_current_meds",
+    "ddi_pair_count",
+    "sider_adr_count",
+    "has_renal_disease",
+    "has_hepatic_disease",
+    "has_diabetes",
+    "has_cardiovascular",
+    "has_epilepsy",
+    "allergy_class_overlap",
+    "drug_hepatic_metabolism",
+    "drug_renal_excretion",
+    "nti_drug_flag",
+    "allergy_severity_max",
+    "ddi_severity_max",
+    "patient_sex",
+    "atc_class_encoded"
+  ],
+  "validation_protocol": {
+    "train_test_split": "80/20 stratified on adr_event",
+    "cross_validation": "5-fold StratifiedKFold on training set only",
+    "balancing": "SMOTE inside pipeline for all three models equally",
+    "holdout_metrics": "Accuracy, Precision, Recall, F1 (weighted + macro), AUC-ROC"
+  },
+  "implementations": [
+    {
+      "model": "random_forest",
+      "implementation": "sklearn RandomForestClassifier \u2014 primary proposed baseline"
+    },
+    {
+      "model": "xgboost",
+      "implementation": "XGBoost gradient boosting \u2014 strong tabular comparator"
+    },
+    {
+      "model": "logistic_regression",
+      "implementation": "sklearn LogisticRegression \u2014 interpretable linear baseline"
+    }
+  ],
+  "models": [
+    {
+      "model": "random_forest",
+      "model_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\ElderMeds\\backend\\ml\\models\\compare_random_forest.joblib",
+      "cv_f1_weighted_mean": 0.934578364212461,
+      "cv_f1_weighted_std": 0.0047760402892730374,
+      "cv_accuracy_mean": 0.9345904421993495,
+      "holdout": {
+        "accuracy": 0.9321819713563606,
+        "precision_weighted": 0.9321787987503644,
+        "recall_weighted": 0.9321819713563606,
+        "f1_weighted": 0.9321722617882124,
+        "precision_macro": 0.9321543243612516,
+        "recall_macro": 0.9319069053584751,
+        "f1_macro": 0.9320224570224971,
+        "roc_auc": 0.973508822213672,
+        "per_class": {
+          "no_adr": {
+            "precision": 0.9316163410301954,
+            "recall": 0.9258605472197705,
+            "f1-score": 0.9287295263390881,
+            "support": 1133.0
+          },
+          "severe_adr": {
+            "precision": 0.9326923076923077,
+            "recall": 0.9379532634971797,
+            "f1-score": 0.9353153877059059,
+            "support": 1241.0
+          },
+          "accuracy": 0.9321819713563606,
+          "macro avg": {
+            "precision": 0.9321543243612516,
+            "recall": 0.9319069053584751,
+            "f1-score": 0.9320224570224971,
+            "support": 2374.0
+          },
+          "weighted avg": {
+            "precision": 0.9321787987503644,
+            "recall": 0.9321819713563606,
+            "f1-score": 0.9321722617882124,
+            "support": 2374.0
+          }
+        }
+      },
+      "hybrid_3class_holdout": {
+        "alpha": 0.6,
+        "beta": 0.4,
+        "thresholds": {
+          "warning": 25,
+          "dangerous": 60
+        },
+        "f1_weighted": 0.6947523251381782,
+        "f1_macro": 0.6013540202567557,
+        "per_class": {
+          "Safe": {
+            "precision": 0.8587512794268168,
+            "recall": 0.915938864628821,
+            "f1-score": 0.8864236661384046,
+            "support": 916.0
+          },
+          "Warning": {
+            "precision": 0.18665018541409148,
+            "recall": 0.695852534562212,
+            "f1-score": 0.29434697855750486,
+            "support": 217.0
+          },
+          "Dangerous": {
+            "precision": 0.9693877551020408,
+            "recall": 0.45930701047542305,
+            "f1-score": 0.6232914160743576,
+            "support": 1241.0
+          },
+          "accuracy": 0.6571187868576243,
+          "macro avg": {
+            "precision": 0.6715964066476497,
+            "recall": 0.6903661365554853,
+            "f1-score": 0.6013540202567557,
+            "support": 2374.0
+          },
+          "weighted avg": {
+            "precision": 0.8551514179744965,
+            "recall": 0.6571187868576243,
+            "f1-score": 0.6947523251381782,
+            "support": 2374.0
+          }
+        }
+      }
+    },
+    {
+      "model": "xgboost",
+      "model_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\ElderMeds\\backend\\ml\\models\\compare_xgboost.joblib",
+      "cv_f1_weighted_mean": 0.9408842485695734,
+      "cv_f1_weighted_std": 0.005119895828422505,
+      "cv_accuracy_mean": 0.9409098904586797,
+      "holdout": {
+        "accuracy": 0.9342881213142376,
+        "precision_weighted": 0.9346830290381049,
+        "recall_weighted": 0.9342881213142376,
+        "f1_weighted": 0.9342188273594726,
+        "precision_macro": 0.9352161544653258,
+        "recall_macro": 0.9333837344680465,
+        "f1_macro": 0.9340317336816073,
+        "roc_auc": 0.9842104102761419,
+        "per_class": {
+          "no_adr": {
+            "precision": 0.9469350411710887,
+            "recall": 0.913503971756399,
+            "f1-score": 0.9299191374663073,
+            "support": 1133.0
+          },
+          "severe_adr": {
+            "precision": 0.9234972677595629,
+            "recall": 0.9532634971796938,
+            "f1-score": 0.9381443298969072,
+            "support": 1241.0
+          },
+          "accuracy": 0.9342881213142376,
+          "macro avg": {
+            "precision": 0.9352161544653258,
+            "recall": 0.9333837344680465,
+            "f1-score": 0.9340317336816073,
+            "support": 2374.0
+          },
+          "weighted avg": {
+            "precision": 0.9346830290381049,
+            "recall": 0.9342881213142376,
+            "f1-score": 0.9342188273594726,
+            "support": 2374.0
+          }
+        }
+      },
+      "hybrid_3class_holdout": {
+        "alpha": 0.6,
+        "beta": 0.4,
+        "thresholds": {
+          "warning": 25,
+          "dangerous": 60
+        },
+        "f1_weighted": 0.6997178230887778,
+        "f1_macro": 0.601176551043017,
+        "per_class": {
+          "Safe": {
+            "precision": 0.8504016064257028,
+            "recall": 0.9246724890829694,
+            "f1-score": 0.8859832635983264,
+            "support": 916.0
+          },
+          "Warning": {
+            "precision": 0.17964824120603015,
+            "recall": 0.6589861751152074,
+            "f1-score": 0.28232971372161897,
+            "support": 217.0
+          },
+          "Dangerous": {
+            "precision": 0.9948453608247423,
+            "recall": 0.4665592264302981,
+            "f1-score": 0.6352166758091059,
+            "support": 1241.0
+          },
+          "accuracy": 0.6609098567818029,
+          "macro avg": {
+            "precision": 0.6749650694854917,
+            "recall": 0.683405963542825,
+            "f1-score": 0.601176551043017,
+            "support": 2374.0
+          },
+          "weighted avg": {
+            "precision": 0.8645975706028465,
+            "recall": 0.6609098567818029,
+            "f1-score": 0.6997178230887778,
+            "support": 2374.0
+          }
+        }
+      }
+    },
+    {
+      "model": "logistic_regression",
+      "model_path": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\ElderMeds\\backend\\ml\\models\\compare_logistic_regression.joblib",
+      "cv_f1_weighted_mean": 0.6733086524154127,
+      "cv_f1_weighted_std": 0.008975531577727206,
+      "cv_accuracy_mean": 0.6737938163894146,
+      "holdout": {
+        "accuracy": 0.6537489469250211,
+        "precision_weighted": 0.6561006795845541,
+        "recall_weighted": 0.6537489469250211,
+        "f1_weighted": 0.6538091562080042,
+        "precision_macro": 0.6548048268946073,
+        "recall_macro": 0.6549127237735703,
+        "f1_macro": 0.653742803120635,
+        "roc_auc": 0.712584091780324,
+        "per_class": {
+          "no_adr": {
+            "precision": 0.6263200649878148,
+            "recall": 0.6804942630185349,
+            "f1-score": 0.6522842639593909,
+            "support": 1133.0
+          },
+          "severe_adr": {
+            "precision": 0.6832895888013998,
+            "recall": 0.6293311845286059,
+            "f1-score": 0.6552013422818792,
+            "support": 1241.0
+          },
+          "accuracy": 0.6537489469250211,
+          "macro avg": {
+            "precision": 0.6548048268946073,
+            "recall": 0.6549127237735703,
+            "f1-score": 0.653742803120635,
+            "support": 2374.0
+          },
+          "weighted avg": {
+            "precision": 0.6561006795845541,
+            "recall": 0.6537489469250211,
+            "f1-score": 0.6538091562080042,
+            "support": 2374.0
+          }
+        }
+      },
+      "hybrid_3class_holdout": {
+        "alpha": 0.6,
+        "beta": 0.4,
+        "thresholds": {
+          "warning": 25,
+          "dangerous": 60
+        },
+        "f1_weighted": 0.3414634397065186,
+        "f1_macro": 0.29375338916241217,
+        "per_class": {
+          "Safe": {
+            "precision": 0.5176184690157959,
+            "recall": 0.4650655021834061,
+            "f1-score": 0.4899367452558942,
+            "support": 916.0
+          },
+          "Warning": {
+            "precision": 0.07102502017756256,
+            "recall": 0.4055299539170507,
+            "f1-score": 0.12087912087912088,
+            "support": 217.0
+          },
+          "Dangerous": {
+            "precision": 0.6730769230769231,
+            "recall": 0.16921837228041903,
+            "f1-score": 0.27044430135222153,
+            "support": 1241.0
+          },
+          "accuracy": 0.3049705139005897,
+          "macro avg": {
+            "precision": 0.4205734707567605,
+            "recall": 0.3466046094602919,
+            "f1-score": 0.29375338916241217,
+            "support": 2374.0
+          },
+          "weighted avg": {
+            "precision": 0.5580620928961506,
+            "recall": 0.3049705139005897,
+            "f1-score": 0.3414634397065186,
+            "support": 2374.0
+          }
+        }
+      }
+    }
+  ],
+  "best_by_binary_f1_weighted": "xgboost",
+  "best_by_hybrid_f1_weighted": "xgboost"
+}

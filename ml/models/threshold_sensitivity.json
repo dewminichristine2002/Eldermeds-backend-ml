@@ -1,0 +1,748 @@
+{
+  "section": "13.2_threshold_sensitivity",
+  "objective": "O5_threshold_sensitivity",
+  "datasets": [
+    "FAERS"
+  ],
+  "rows_total": 11868,
+  "rows_heldout_test": 2374,
+  "validation": {
+    "method": "20% stratified held-out test set",
+    "hybrid_weights": {
+      "alpha": 0.6,
+      "beta": 0.4
+    },
+    "proposed_thresholds": {
+      "warning": 25,
+      "dangerous": 60
+    },
+    "sensitivity_deltas": [
+      -10,
+      -5,
+      0,
+      5,
+      10
+    ]
+  },
+  "evaluation_scope": {
+    "includes": [
+      "Tuned Logistic Regression Serious-class probability \u00d7 100 as mlDangerScore",
+      "Hybrid score: round(0.6 \u00d7 ruleScore + 0.4 \u00d7 mlDangerScore)",
+      "Threshold banding into Safe / Warning / Dangerous"
+    ],
+    "excludes_not_replayed_offline": [
+      "Live P1\u2013P16 clinical rule engine (P1 allergy short-circuit, DDI overrides, etc.)",
+      "allergyController.js score floors and ML downgrade blocks",
+      "Patient history / questionnaire context from the mobile app"
+    ],
+    "ground_truth": "risk_label_eval (FAERS proxy: adr_event=1 \u2192 Dangerous; DDI-only \u2192 Warning)",
+    "rule_score_source": "risk_score column if present, else FAERS feature-derived proxy (not live rule engine output)",
+    "interpretation": "Dangerous recall here measures offline hybrid+threshold alignment with proxy labels \u2014 NOT the same as binary severe-ADR detection (see baseline_metrics.json) and NOT full deployed-system recall with clinical overrides."
+  },
+  "ml_model_artifact": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S2\\R26-SE-028 (1)\\R26-SE-028\\backend\\ml\\models\\fda_serious_baselines\\logistic_regression_tuned.joblib",
+  "fda_feature_projection": {
+    "source_dataset": "FAERS/OMOP proxy hybrid-evaluation dataset",
+    "target_schema": "FDA serious vs non-serious Logistic Regression feature schema",
+    "numeric_caps": {
+      "num_reactions": 0.0,
+      "num_drugs": 23.0,
+      "report_age_days": 0.0
+    }
+  },
+  "configurations": [
+    {
+      "configuration": "delta_minus_10",
+      "delta_from_proposed": -10,
+      "warning_threshold": 15,
+      "dangerous_threshold": 50,
+      "f1_weighted": 0.6191006534073206,
+      "f1_macro": 0.5346209811620058,
+      "dangerous_recall": 0.25624496373892025,
+      "dangerous_precision": 1.0,
+      "dangerous_false_negative_rate": 0.7437550362610797,
+      "dangerous_false_negatives": 923,
+      "dangerous_support": 1241,
+      "clinical_impact": {
+        "primary_metric": "dangerous_false_negative_rate",
+        "description": "Fraction of true Dangerous cases misclassified as Safe or Warning (safety-critical misses).",
+        "false_negatives": 923,
+        "false_negative_rate": 0.7437550362610797
+      },
+      "per_class": {
+        "Safe": {
+          "precision": 0.9507537688442211,
+          "recall": 1.0,
+          "f1": 0.9747552807831015,
+          "support": 946
+        },
+        "Warning": {
+          "precision": 0.13006597549481622,
+          "recall": 0.7379679144385026,
+          "f1": 0.22115384615384615,
+          "support": 187
+        },
+        "Dangerous": {
+          "precision": 1.0,
+          "recall": 0.25624496373892025,
+          "f1": 0.4079538165490699,
+          "support": 1241
+        }
+      }
+    },
+    {
+      "configuration": "delta_minus_5",
+      "delta_from_proposed": -5,
+      "warning_threshold": 20,
+      "dangerous_threshold": 55,
+      "f1_weighted": 0.6027685319559033,
+      "f1_macro": 0.5203018953754129,
+      "dangerous_recall": 0.23529411764705882,
+      "dangerous_precision": 1.0,
+      "dangerous_false_negative_rate": 0.7647058823529411,
+      "dangerous_false_negatives": 949,
+      "dangerous_support": 1241,
+      "clinical_impact": {
+        "primary_metric": "dangerous_false_negative_rate",
+        "description": "Fraction of true Dangerous cases misclassified as Safe or Warning (safety-critical misses).",
+        "false_negatives": 949,
+        "false_negative_rate": 0.7647058823529411
+      },
+      "per_class": {
+        "Safe": {
+          "precision": 0.945054945054945,
+          "recall": 1.0,
+          "f1": 0.9717514124293786,
+          "support": 946
+        },
+        "Warning": {
+          "precision": 0.12210915818686402,
+          "recall": 0.7058823529411765,
+          "f1": 0.2082018927444795,
+          "support": 187
+        },
+        "Dangerous": {
+          "precision": 1.0,
+          "recall": 0.23529411764705882,
+          "f1": 0.38095238095238093,
+          "support": 1241
+        }
+      }
+    },
+    {
+      "configuration": "proposed",
+      "delta_from_proposed": 0,
+      "warning_threshold": 25,
+      "dangerous_threshold": 60,
+      "f1_weighted": 0.5728212231657643,
+      "f1_macro": 0.48898744186666177,
+      "dangerous_recall": 0.20386784850926673,
+      "dangerous_precision": 1.0,
+      "dangerous_false_negative_rate": 0.7961321514907332,
+      "dangerous_false_negatives": 988,
+      "dangerous_support": 1241,
+      "clinical_impact": {
+        "primary_metric": "dangerous_false_negative_rate",
+        "description": "Fraction of true Dangerous cases misclassified as Safe or Warning (safety-critical misses).",
+        "false_negatives": 988,
+        "false_negative_rate": 0.7961321514907332
+      },
+      "per_class": {
+        "Safe": {
+          "precision": 0.9229268292682927,
+          "recall": 1.0,
+          "f1": 0.9599188229325215,
+          "support": 946
+        },
+        "Warning": {
+          "precision": 0.09854014598540146,
+          "recall": 0.5775401069518716,
+          "f1": 0.16835541699142634,
+          "support": 187
+        },
+        "Dangerous": {
+          "precision": 1.0,
+          "recall": 0.20386784850926673,
+          "f1": 0.3386880856760375,
+          "support": 1241
+        }
+      }
+    },
+    {
+      "configuration": "delta_plus_5",
+      "delta_from_proposed": 5,
+      "warning_threshold": 30,
+      "dangerous_threshold": 65,
+      "f1_weighted": 0.5475100304167123,
+      "f1_macro": 0.4585443783052512,
+      "dangerous_recall": 0.18291700241740533,
+      "dangerous_precision": 1.0,
+      "dangerous_false_negative_rate": 0.8170829975825946,
+      "dangerous_false_negatives": 1014,
+      "dangerous_support": 1241,
+      "clinical_impact": {
+        "primary_metric": "dangerous_false_negative_rate",
+        "description": "Fraction of true Dangerous cases misclassified as Safe or Warning (safety-critical misses).",
+        "false_negatives": 1014,
+        "false_negative_rate": 0.8170829975825946
+      },
+      "per_class": {
+        "Safe": {
+          "precision": 0.8941398865784499,
+          "recall": 1.0,
+          "f1": 0.9441117764471058,
+          "support": 946
+        },
+        "Warning": {
+          "precision": 0.07162534435261708,
+          "recall": 0.41711229946524064,
+          "f1": 0.12225705329153605,
+          "support": 187
+        },
+        "Dangerous": {
+          "precision": 1.0,
+          "recall": 0.18291700241740533,
+          "f1": 0.30926430517711173,
+          "support": 1241
+        }
+      }
+    },
+    {
+      "configuration": "delta_plus_10",
+      "delta_from_proposed": 10,
+      "warning_threshold": 35,
+      "dangerous_threshold": 70,
+      "f1_weighted": 0.4783316349074599,
+      "f1_macro": 0.4019572394326325,
+      "dangerous_recall": 0.10717163577759871,
+      "dangerous_precision": 1.0,
+      "dangerous_false_negative_rate": 0.8928283642224013,
+      "dangerous_false_negatives": 1108,
+      "dangerous_support": 1241,
+      "clinical_impact": {
+        "primary_metric": "dangerous_false_negative_rate",
+        "description": "Fraction of true Dangerous cases misclassified as Safe or Warning (safety-critical misses).",
+        "false_negatives": 1108,
+        "false_negative_rate": 0.8928283642224013
+      },
+      "per_class": {
+        "Safe": {
+          "precision": 0.8694852941176471,
+          "recall": 1.0,
+          "f1": 0.9301868239921337,
+          "support": 946
+        },
+        "Warning": {
+          "precision": 0.047701647875108416,
+          "recall": 0.29411764705882354,
+          "f1": 0.08208955223880597,
+          "support": 187
+        },
+        "Dangerous": {
+          "precision": 1.0,
+          "recall": 0.10717163577759871,
+          "f1": 0.19359534206695778,
+          "support": 1241
+        }
+      }
+    }
+  ],
+  "grid_search": {
+    "warning_range": [
+      15,
+      20,
+      25,
+      30,
+      35
+    ],
+    "dangerous_range": "50\u201370 (step 1)",
+    "pairs_evaluated": 105,
+    "selection_constraint": "Precision_D >= 0.99",
+    "selection_objective": "minimize Dangerous FNR (equivalently maximize Dangerous recall)"
+  },
+  "selected_operating_point": {
+    "warning_threshold": 20,
+    "dangerous_threshold": 50,
+    "configuration": "grid_20_50",
+    "dangerous_false_negative_rate": 0.7437550362610797,
+    "dangerous_false_negatives": 923,
+    "dangerous_recall": 0.25624496373892025,
+    "dangerous_precision": 1.0,
+    "f1_weighted": 0.6172267543243973,
+    "selection_rule": {
+      "objective": "minimize Dangerous false-negative rate (FNR_D)",
+      "constraint": "Precision_D >= 0.99",
+      "latex": "T_D^* = \\arg\\min_T FNR_D(T) \\text{ s.t. } Precision_D(T) \\geq 0.99",
+      "warning_rationale": "After selecting T_D*=50, Warning threshold T_W=20 was set to preserve an interpretable intermediate-risk band (preferred T_W=20 when feasible)."
+    },
+    "production_defaults_updated": true
+  },
+  "comparison_legacy_proposed": {
+    "legacy_candidate_25_60": {
+      "warning_threshold": 25,
+      "dangerous_threshold": 60,
+      "dangerous_recall": 0.20386784850926673,
+      "dangerous_precision": 1.0,
+      "dangerous_false_negative_rate": 0.7961321514907332
+    },
+    "sensitivity_delta_minus_5_20_55": {
+      "warning_threshold": 20,
+      "dangerous_threshold": 55,
+      "dangerous_recall": 0.23529411764705882,
+      "dangerous_precision": 1.0,
+      "dangerous_false_negative_rate": 0.7647058823529411
+    }
+  },
+  "precision_recall_tradeoff": {
+    "dangerous_binary_curve": {
+      "task": "binary_dangerous_vs_not",
+      "score_axis": "hybrid_score_0_100",
+      "proposed_dangerous_threshold": 60,
+      "operating_point_at_proposed": {
+        "score_threshold": 60.0,
+        "precision": 1.0,
+        "recall": 0.1990330378726833
+      },
+      "curve_points": [
+        {
+          "score_threshold": 2.0,
+          "precision": 0.5240709459459459,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 3.0,
+          "precision": 0.5400348128807659,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 4.0,
+          "precision": 0.6289913836796757,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 5.0,
+          "precision": 0.703514739229025,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 6.0,
+          "precision": 0.789440203562341,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 7.0,
+          "precision": 0.8207671957671958,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 8.0,
+          "precision": 0.8396481732070366,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 9.0,
+          "precision": 0.8546831955922864,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 10.0,
+          "precision": 0.8745595489781536,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 11.0,
+          "precision": 0.8876967095851216,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 12.0,
+          "precision": 0.896028880866426,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 13.0,
+          "precision": 0.8973246565437455,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 14.0,
+          "precision": 0.8999274836838289,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 15.0,
+          "precision": 0.9005805515239478,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 16.0,
+          "precision": 0.9018895348837209,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 17.0,
+          "precision": 0.9025454545454545,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 19.0,
+          "precision": 0.9038601602330663,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 20.0,
+          "precision": 0.9084919472913616,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 21.0,
+          "precision": 0.9118295371050698,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 22.0,
+          "precision": 0.9131714495952906,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 23.0,
+          "precision": 0.9165435745937962,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 24.0,
+          "precision": 0.9199406968124537,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 25.0,
+          "precision": 0.9268110530246453,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 26.0,
+          "precision": 0.9302848575712144,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 27.0,
+          "precision": 0.932381667918858,
+          "recall": 1.0
+        },
+        {
+          "score_threshold": 28.0,
+          "precision": 0.9358490566037736,
+          "recall": 0.9991941982272361
+        },
+        {
+          "score_threshold": 29.0,
+          "precision": 0.9407294832826748,
+          "recall": 0.9975825946817083
+        },
+        {
+          "score_threshold": 30.0,
+          "precision": 0.9450381679389313,
+          "recall": 0.9975825946817083
+        },
+        {
+          "score_threshold": 31.0,
+          "precision": 0.9457186544342507,
+          "recall": 0.9967767929089444
+        },
+        {
+          "score_threshold": 32.0,
+          "precision": 0.9478927203065134,
+          "recall": 0.9967767929089444
+        },
+        {
+          "score_threshold": 33.0,
+          "precision": 0.9493476592478894,
+          "recall": 0.9967767929089444
+        },
+        {
+          "score_threshold": 34.0,
+          "precision": 0.9572317262830482,
+          "recall": 0.991941982272361
+        },
+        {
+          "score_threshold": 35.0,
+          "precision": 0.9697211155378486,
+          "recall": 0.9806607574536664
+        },
+        {
+          "score_threshold": 36.0,
+          "precision": 0.9726468222043443,
+          "recall": 0.9742143432715552
+        },
+        {
+          "score_threshold": 37.0,
+          "precision": 0.9725806451612903,
+          "recall": 0.9717969379532635
+        },
+        {
+          "score_threshold": 38.0,
+          "precision": 0.9684684684684685,
+          "recall": 0.6929895245769541
+        },
+        {
+          "score_threshold": 39.0,
+          "precision": 0.9542124542124543,
+          "recall": 0.41982272360999195
+        },
+        {
+          "score_threshold": 40.0,
+          "precision": 0.9574074074074074,
+          "recall": 0.41659951651893634
+        },
+        {
+          "score_threshold": 41.0,
+          "precision": 0.9596774193548387,
+          "recall": 0.3835616438356164
+        },
+        {
+          "score_threshold": 42.0,
+          "precision": 0.966903073286052,
+          "recall": 0.3295729250604351
+        },
+        {
+          "score_threshold": 43.0,
+          "precision": 0.9770408163265306,
+          "recall": 0.30862207896857374
+        },
+        {
+          "score_threshold": 44.0,
+          "precision": 0.9884393063583815,
+          "recall": 0.2755842062852538
+        },
+        {
+          "score_threshold": 45.0,
+          "precision": 0.9882352941176471,
+          "recall": 0.27074939564867045
+        },
+        {
+          "score_threshold": 46.0,
+          "precision": 0.9911504424778761,
+          "recall": 0.27074939564867045
+        },
+        {
+          "score_threshold": 47.0,
+          "precision": 0.996969696969697,
+          "recall": 0.26510878323932313
+        },
+        {
+          "score_threshold": 48.0,
+          "precision": 1.0,
+          "recall": 0.2586623690572119
+        },
+        {
+          "score_threshold": 49.0,
+          "precision": 1.0,
+          "recall": 0.25624496373892025
+        },
+        {
+          "score_threshold": 50.0,
+          "precision": 1.0,
+          "recall": 0.25302175664786464
+        },
+        {
+          "score_threshold": 51.0,
+          "precision": 1.0,
+          "recall": 0.25141015310233683
+        },
+        {
+          "score_threshold": 52.0,
+          "precision": 1.0,
+          "recall": 0.24899274778404512
+        },
+        {
+          "score_threshold": 53.0,
+          "precision": 1.0,
+          "recall": 0.23932312651087834
+        },
+        {
+          "score_threshold": 54.0,
+          "precision": 1.0,
+          "recall": 0.23529411764705882
+        },
+        {
+          "score_threshold": 55.0,
+          "precision": 1.0,
+          "recall": 0.23448831587429492
+        },
+        {
+          "score_threshold": 56.0,
+          "precision": 1.0,
+          "recall": 0.23207091055600323
+        },
+        {
+          "score_threshold": 57.0,
+          "precision": 1.0,
+          "recall": 0.22884770346494762
+        },
+        {
+          "score_threshold": 58.0,
+          "precision": 1.0,
+          "recall": 0.20467365028203063
+        },
+        {
+          "score_threshold": 59.0,
+          "precision": 1.0,
+          "recall": 0.20386784850926673
+        },
+        {
+          "score_threshold": 60.0,
+          "precision": 1.0,
+          "recall": 0.1990330378726833
+        },
+        {
+          "score_threshold": 61.0,
+          "precision": 1.0,
+          "recall": 0.19339242546333602
+        },
+        {
+          "score_threshold": 63.0,
+          "precision": 1.0,
+          "recall": 0.18694601128122482
+        },
+        {
+          "score_threshold": 64.0,
+          "precision": 1.0,
+          "recall": 0.18291700241740533
+        },
+        {
+          "score_threshold": 65.0,
+          "precision": 1.0,
+          "recall": 0.17647058823529413
+        },
+        {
+          "score_threshold": 66.0,
+          "precision": 1.0,
+          "recall": 0.1724415793714746
+        },
+        {
+          "score_threshold": 67.0,
+          "precision": 1.0,
+          "recall": 0.1587429492344883
+        },
+        {
+          "score_threshold": 68.0,
+          "precision": 1.0,
+          "recall": 0.10797743755036261
+        },
+        {
+          "score_threshold": 69.0,
+          "precision": 1.0,
+          "recall": 0.10717163577759871
+        },
+        {
+          "score_threshold": 70.0,
+          "precision": 1.0,
+          "recall": 0.10072522159548751
+        },
+        {
+          "score_threshold": 71.0,
+          "precision": 1.0,
+          "recall": 0.0821917808219178
+        },
+        {
+          "score_threshold": 72.0,
+          "precision": 1.0,
+          "recall": 0.08138597904915391
+        },
+        {
+          "score_threshold": 73.0,
+          "precision": 1.0,
+          "recall": 0.0781627719580983
+        },
+        {
+          "score_threshold": 74.0,
+          "precision": 1.0,
+          "recall": 0.05962933118452861
+        },
+        {
+          "score_threshold": 75.0,
+          "precision": 1.0,
+          "recall": 0.016116035455278
+        },
+        {
+          "score_threshold": 76.0,
+          "precision": 1.0,
+          "recall": 0.015310233682514102
+        },
+        {
+          "score_threshold": 78.0,
+          "precision": 1.0,
+          "recall": 0.007252215954875101
+        },
+        {
+          "score_threshold": 79.0,
+          "precision": 1.0,
+          "recall": 0.0064464141821112
+        },
+        {
+          "score_threshold": 80.0,
+          "precision": 1.0,
+          "recall": 0.0040290088638195
+        },
+        {
+          "score_threshold": 81.0,
+          "precision": 1.0,
+          "recall": 0.0008058017727639
+        },
+        {
+          "score_threshold": 82.0,
+          "precision": 1.0,
+          "recall": 0.0
+        }
+      ]
+    },
+    "operating_points_at_boundary_configs": [
+      {
+        "configuration": "delta_minus_10",
+        "delta": -10,
+        "dangerous_precision": 1.0,
+        "dangerous_recall": 0.25624496373892025,
+        "dangerous_false_negative_rate": 0.7437550362610797
+      },
+      {
+        "configuration": "delta_minus_5",
+        "delta": -5,
+        "dangerous_precision": 1.0,
+        "dangerous_recall": 0.23529411764705882,
+        "dangerous_false_negative_rate": 0.7647058823529411
+      },
+      {
+        "configuration": "proposed",
+        "delta": 0,
+        "dangerous_precision": 1.0,
+        "dangerous_recall": 0.20386784850926673,
+        "dangerous_false_negative_rate": 0.7961321514907332
+      },
+      {
+        "configuration": "delta_plus_5",
+        "delta": 5,
+        "dangerous_precision": 1.0,
+        "dangerous_recall": 0.18291700241740533,
+        "dangerous_false_negative_rate": 0.8170829975825946
+      },
+      {
+        "configuration": "delta_plus_10",
+        "delta": 10,
+        "dangerous_precision": 1.0,
+        "dangerous_recall": 0.10717163577759871,
+        "dangerous_false_negative_rate": 0.8928283642224013
+      }
+    ],
+    "clinical_primary_metric": "dangerous_false_negative_rate"
+  },
+  "proposed_operating_point": {
+    "warning_threshold": 25,
+    "dangerous_threshold": 60,
+    "dangerous_false_negative_rate": 0.7961321514907332,
+    "dangerous_false_negatives": 988,
+    "dangerous_recall": 0.20386784850926673,
+    "dangerous_precision": 1.0
+  },
+  "note": "Hybrid score = round(0.6 * ruleScore + 0.4 * mlDangerScore). Ground truth: risk_label_eval (FAERS) or risk_level (legacy). Rule scores: risk_score column or FAERS feature-derived proxy. mlDangerScore is the tuned Logistic Regression probability of the Serious class \u00d7 100 on a projected FDA-style feature frame. FNR = 1 \u2212 Dangerous recall (true Dangerous cases predicted Safe or Warning).",
+  "ground_truth_column": "risk_label_eval",
+  "rule_score_source": "faers_feature_proxy"
+}

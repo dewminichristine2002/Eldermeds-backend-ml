@@ -1,0 +1,141 @@
+label,text,source,domain,predicted_label,confidence,correct
+happiness,i woke up cheerful and ready for the day,project_authored_independent_v3,eldermeds_conversation,happiness,0.4217596979703573,True
+happiness,the visit from my grandson lifted my spirits,project_authored_independent_v3,eldermeds_conversation,happiness,0.37081217527547283,True
+happiness,i felt good after finishing my garden work,project_authored_independent_v3,eldermeds_conversation,happiness,0.3291170716941417,True
+happiness,i enjoyed our conversation very much,project_authored_independent_v3,eldermeds_conversation,happiness,0.7310036933817234,True
+happiness,today has given me several reasons to smile,project_authored_independent_v3,eldermeds_conversation,happiness,0.5085992628689416,True
+happiness,i am happier than i was yesterday,project_authored_independent_v3,eldermeds_conversation,happiness,0.30866562904515016,True
+happiness,sharing lunch with my neighbor was delightful,project_authored_independent_v3,eldermeds_conversation,happiness,0.47842410324814205,True
+happiness,the music brought back pleasant memories,project_authored_independent_v3,eldermeds_conversation,happiness,0.5214659525898457,True
+happiness,i feel content and pleased this evening,project_authored_independent_v3,eldermeds_conversation,happiness,0.8246456849670057,True
+happiness,that kind message brightened my morning,project_authored_independent_v3,eldermeds_conversation,happiness,0.49906515665190976,True
+sadness,i have felt low and tearful since breakfast,project_authored_independent_v3,eldermeds_conversation,sadness,0.6105457621370409,True
+sadness,the day seems heavy and nothing interests me,project_authored_independent_v3,eldermeds_conversation,loneliness,0.5906988722670322,False
+sadness,i miss how things used to be and it hurts,project_authored_independent_v3,eldermeds_conversation,sadness,0.8876266391965676,True
+sadness,i could not find much joy in anything today,project_authored_independent_v3,eldermeds_conversation,sadness,0.5128442025520146,True
+sadness,i have been feeling down all afternoon,project_authored_independent_v3,eldermeds_conversation,neutral,0.38807762806591956,False
+sadness,thinking about the loss made me cry again,project_authored_independent_v3,eldermeds_conversation,sadness,0.9394052786156176,True
+sadness,i feel discouraged and unhappy tonight,project_authored_independent_v3,eldermeds_conversation,sadness,0.5866408939825443,True
+sadness,my heart feels heavy even though i am not alone,project_authored_independent_v3,eldermeds_conversation,loneliness,0.6145729821930042,False
+sadness,i did not want to get out of bed because i felt so low,project_authored_independent_v3,eldermeds_conversation,sadness,0.44434889123052446,True
+sadness,there is a sadness i cannot seem to shake,project_authored_independent_v3,eldermeds_conversation,sadness,0.5940881964538668,True
+loneliness,no one has called and the silence feels difficult,project_authored_independent_v3,eldermeds_conversation,loneliness,0.8423010004040518,True
+loneliness,i wish there were somebody beside me this evening,project_authored_independent_v3,eldermeds_conversation,loneliness,0.9354685551404478,True
+loneliness,meals feel empty when i always eat by myself,project_authored_independent_v3,eldermeds_conversation,loneliness,0.43394804779422874,True
+loneliness,i have nobody nearby to share my news with,project_authored_independent_v3,eldermeds_conversation,loneliness,0.9190747744721186,True
+loneliness,the house became awfully quiet after the visitors left,project_authored_independent_v3,eldermeds_conversation,loneliness,0.6356234559132653,True
+loneliness,i miss having a companion to talk to each day,project_authored_independent_v3,eldermeds_conversation,loneliness,0.9811269932057346,True
+loneliness,i feel alone even in a room full of people,project_authored_independent_v3,eldermeds_conversation,loneliness,0.9848352722963801,True
+loneliness,i keep looking toward the door hoping someone will visit,project_authored_independent_v3,eldermeds_conversation,loneliness,0.3638938590110016,True
+loneliness,it has been days since i had a proper conversation,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.33747737785194243,False
+loneliness,i would love some company this afternoon,project_authored_independent_v3,eldermeds_conversation,neutral,0.48267400835287666,False
+anxiety,i feel uneasy and cannot settle my thoughts,project_authored_independent_v3,eldermeds_conversation,anxiety,0.7564830581096814,True
+anxiety,i have been worrying that something bad may happen,project_authored_independent_v3,eldermeds_conversation,anxiety,0.806509731941559,True
+anxiety,my nerves are on edge this morning,project_authored_independent_v3,eldermeds_conversation,anger,0.32653562732792574,False
+anxiety,i cannot relax because i keep imagining problems,project_authored_independent_v3,eldermeds_conversation,anxiety,0.7828160266272028,True
+anxiety,i feel tense whenever the telephone rings,project_authored_independent_v3,eldermeds_conversation,anxiety,0.22830532813839519,True
+anxiety,there is a nervous feeling in my stomach,project_authored_independent_v3,eldermeds_conversation,anxiety,0.822031027743323,True
+anxiety,i keep checking everything because i am worried,project_authored_independent_v3,eldermeds_conversation,anxiety,0.5637089672152638,True
+anxiety,i am restless and concerned about tomorrow,project_authored_independent_v3,eldermeds_conversation,anxiety,0.40706826430788684,True
+anxiety,small uncertainties are making me very uneasy,project_authored_independent_v3,eldermeds_conversation,anxiety,0.8785794010813661,True
+anxiety,my mind keeps circling around the same worry,project_authored_independent_v3,eldermeds_conversation,anxiety,0.7280007898210715,True
+anger,i am furious that they ignored my request again,project_authored_independent_v3,eldermeds_conversation,anger,0.6678412316282782,True
+anger,the constant interruptions are really irritating me,project_authored_independent_v3,eldermeds_conversation,anger,0.40041188971248864,True
+anger,i became annoyed when the appointment was cancelled,project_authored_independent_v3,eldermeds_conversation,anxiety,0.4102926257198781,False
+anger,i am frustrated by having to repeat this task,project_authored_independent_v3,eldermeds_conversation,neutral,0.24576335084763465,False
+anger,that rude comment made me angry,project_authored_independent_v3,eldermeds_conversation,anger,0.8722755533346812,True
+anger,i have had enough of this careless behavior,project_authored_independent_v3,eldermeds_conversation,anger,0.6487038641562805,True
+anger,the unnecessary delay is getting on my nerves,project_authored_independent_v3,eldermeds_conversation,anger,0.4395989610824119,True
+anger,i feel cross because nobody asked my opinion,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.42704009869964354,False
+anger,i lost my temper when the machine failed again,project_authored_independent_v3,eldermeds_conversation,sadness,0.4574174807573628,False
+anger,i am still irritated about what happened earlier,project_authored_independent_v3,eldermeds_conversation,anger,0.7182309252796226,True
+cognitive_fog,i cannot keep track of the steps while preparing breakfast,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.38476365700710263,True
+cognitive_fog,the words blur together when i try to follow a page,project_authored_independent_v3,eldermeds_conversation,neutral,0.25631749342370663,False
+cognitive_fog,i began a chore and then forgot what i was trying to finish,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.41661314516117703,True
+cognitive_fog,my thinking feels cloudy and slow this afternoon,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.4819332416596428,True
+cognitive_fog,i lose the thread halfway through a conversation,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.27425890274894454,True
+cognitive_fog,it is unusually hard to focus on one thing today,project_authored_independent_v3,eldermeds_conversation,sadness,0.28660661772246376,False
+cognitive_fog,i cannot organize my thoughts well enough to make a simple plan,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.5649192497011661,True
+cognitive_fog,i repeatedly forget the next step of familiar activities,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.3929019556359932,True
+cognitive_fog,following the plot of this program takes too much concentration today,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.43398166029781343,True
+cognitive_fog,my mind feels unclear despite being rested,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.43178522925689267,True
+neutral,i completed my regular errands this morning,project_authored_independent_v3,eldermeds_conversation,neutral,0.39654072284529995,True
+neutral,nothing out of the ordinary happened today,project_authored_independent_v3,eldermeds_conversation,neutral,0.3882798823257826,True
+neutral,i ate lunch at noon and read the newspaper,project_authored_independent_v3,eldermeds_conversation,neutral,0.5812281803634192,True
+neutral,everything is about the same as it normally is,project_authored_independent_v3,eldermeds_conversation,cognitive_fog,0.6682280820474267,False
+neutral,i followed my standard schedule,project_authored_independent_v3,eldermeds_conversation,neutral,0.5378123739689354,True
+neutral,the morning passed without any notable events,project_authored_independent_v3,eldermeds_conversation,neutral,0.40353640186512124,True
+neutral,i am sitting in the living room now,project_authored_independent_v3,eldermeds_conversation,neutral,0.39181214333019915,True
+neutral,i took a walk and returned home before dinner,project_authored_independent_v3,eldermeds_conversation,neutral,0.33067175911532215,True
+neutral,my routine has been unchanged this week,project_authored_independent_v3,eldermeds_conversation,neutral,0.5121242308880919,True
+neutral,there is nothing special to mention about today,project_authored_independent_v3,eldermeds_conversation,loneliness,0.32355717116184707,False
+happiness,i felt cheerful while listening to the birds this morning,project_authored_independent,eldermeds_conversation,happiness,0.38054181674190657,True
+happiness,finishing the puzzle left me pleased with myself,project_authored_independent,eldermeds_conversation,happiness,0.40685559782040176,True
+happiness,my sisters letter made the whole afternoon brighter,project_authored_independent,eldermeds_conversation,neutral,0.3480158968429286,False
+happiness,i had a lovely time talking with the nurse today,project_authored_independent,eldermeds_conversation,happiness,0.43620690891931,True
+happiness,seeing the flowers open put me in a very good mood,project_authored_independent,eldermeds_conversation,happiness,0.6804240000677261,True
+happiness,i am feeling hopeful and content after our chat,project_authored_independent,eldermeds_conversation,happiness,0.5927538678001915,True
+happiness,the family photographs brought me a lot of joy,project_authored_independent,eldermeds_conversation,happiness,0.7810294833817337,True
+happiness,i was delighted to hear that everyone is doing well,project_authored_independent,eldermeds_conversation,happiness,0.6352999257190893,True
+happiness,my walk went well and i came home feeling refreshed,project_authored_independent,eldermeds_conversation,happiness,0.4530191177296165,True
+happiness,i have been smiling since my friend surprised me,project_authored_independent,eldermeds_conversation,happiness,0.5362345854555801,True
+sadness,i feel sorrowful when i think about the empty chair,project_authored_independent,eldermeds_conversation,sadness,0.3518992910027998,True
+sadness,i have been close to tears for most of the morning,project_authored_independent,eldermeds_conversation,sadness,0.5727584539146421,True
+sadness,even my favorite program could not lift my low mood,project_authored_independent,eldermeds_conversation,sadness,0.38950130373900055,True
+sadness,i am disappointed and feeling rather miserable today,project_authored_independent,eldermeds_conversation,sadness,0.7355275680271344,True
+sadness,the memories have left me with a heavy feeling,project_authored_independent,eldermeds_conversation,sadness,0.44593538420070744,True
+sadness,i feel gloomy and do not want to do very much,project_authored_independent,eldermeds_conversation,loneliness,0.35313922794834396,False
+sadness,today has been painful since i heard the bad news,project_authored_independent,eldermeds_conversation,sadness,0.7648983001294546,True
+sadness,i am unhappy even though people have tried to comfort me,project_authored_independent,eldermeds_conversation,sadness,0.4029509968437978,True
+sadness,i lost interest in my usual hobbies because i feel so down,project_authored_independent,eldermeds_conversation,sadness,0.5053821182385859,True
+sadness,there is an aching sadness with me this evening,project_authored_independent,eldermeds_conversation,sadness,0.55603845111829,True
+loneliness,i have spent the whole weekend without seeing another person,project_authored_independent,eldermeds_conversation,loneliness,0.9343537187852845,True
+loneliness,the rooms seem empty when there is nobody to share them,project_authored_independent,eldermeds_conversation,loneliness,0.8828406542203706,True
+loneliness,i miss having someone across the table at breakfast,project_authored_independent,eldermeds_conversation,loneliness,0.5595072302582411,True
+loneliness,i wish a relative would come and keep me company,project_authored_independent,eldermeds_conversation,loneliness,0.6592074049534721,True
+loneliness,not having anyone to speak with makes the hours drag,project_authored_independent,eldermeds_conversation,loneliness,0.34807940077037614,True
+loneliness,everyone has gone back to their own homes and i feel alone,project_authored_independent,eldermeds_conversation,loneliness,0.9720777816179355,True
+loneliness,i would like to hear a familiar voice on the telephone,project_authored_independent,eldermeds_conversation,loneliness,0.33094418842677475,True
+loneliness,the quiet is hardest at night when i am by myself,project_authored_independent,eldermeds_conversation,loneliness,0.30130332985117425,True
+loneliness,i miss regular visits and the companionship they brought,project_authored_independent,eldermeds_conversation,loneliness,0.871630354741061,True
+loneliness,it feels like nobody has time to sit with me anymore,project_authored_independent,eldermeds_conversation,loneliness,0.8252245249212845,True
+anxiety,i feel apprehensive about the appointment and cannot settle,project_authored_independent,eldermeds_conversation,anxiety,0.3065814810428175,True
+anxiety,my thoughts keep racing through everything that might go wrong,project_authored_independent,eldermeds_conversation,cognitive_fog,0.45712570363666766,False
+anxiety,i have a nervous feeling that will not ease,project_authored_independent,eldermeds_conversation,anxiety,0.8414993363578517,True
+anxiety,i am worried about the results and keep watching the clock,project_authored_independent,eldermeds_conversation,anxiety,0.6198414081597146,True
+anxiety,uncertainty about tomorrow is making me restless,project_authored_independent,eldermeds_conversation,anxiety,0.5640667321893662,True
+anxiety,i feel tense and keep expecting unwelcome news,project_authored_independent,eldermeds_conversation,sadness,0.2611517224913693,False
+anxiety,my concern has grown until it is difficult to relax,project_authored_independent,eldermeds_conversation,anxiety,0.7489123898973818,True
+anxiety,i keep going over the same fearful possibility in my mind,project_authored_independent,eldermeds_conversation,anxiety,0.9434445620663531,True
+anxiety,there is a sense of unease that i cannot explain,project_authored_independent,eldermeds_conversation,anxiety,0.8733380146161384,True
+anxiety,i am on edge whenever i think about leaving the house,project_authored_independent,eldermeds_conversation,loneliness,0.20043204108046359,False
+anger,i am angry that my concerns were dismissed so quickly,project_authored_independent,eldermeds_conversation,anger,0.4662391193506436,True
+anger,their repeated lateness has made me thoroughly annoyed,project_authored_independent,eldermeds_conversation,anger,0.4497851800746923,True
+anger,i feel irritated each time the alarm sounds for no reason,project_authored_independent,eldermeds_conversation,anxiety,0.3473050713494776,False
+anger,it frustrates me when people decide things without including me,project_authored_independent,eldermeds_conversation,anger,0.640387532451192,True
+anger,i am still furious about the disrespectful way they behaved,project_authored_independent,eldermeds_conversation,anger,0.8207866306868665,True
+anger,this broken equipment is making me lose my patience,project_authored_independent,eldermeds_conversation,anger,0.3455176677428467,True
+anger,i resent being told the same excuse yet again,project_authored_independent,eldermeds_conversation,anger,0.3592018684613703,True
+anger,i became cross when they moved my belongings without permission,project_authored_independent,eldermeds_conversation,neutral,0.2842585315206014,False
+anger,the unfair decision has left me simmering with anger,project_authored_independent,eldermeds_conversation,anger,0.417338943549115,True
+anger,i am fed up with asking for the problem to be fixed,project_authored_independent,eldermeds_conversation,anger,0.5281347601133073,True
+cognitive_fog,i cannot follow the instructions because each step slips from my mind,project_authored_independent,eldermeds_conversation,cognitive_fog,0.3138445817937159,True
+cognitive_fog,i keep losing my place while trying to complete this form,project_authored_independent,eldermeds_conversation,neutral,0.24901688906329614,False
+cognitive_fog,my thoughts are so hazy that i cannot arrange them in order,project_authored_independent,eldermeds_conversation,cognitive_fog,0.42802169455643885,True
+cognitive_fog,i forget what i am saying halfway through the sentence today,project_authored_independent,eldermeds_conversation,neutral,0.4010634779001052,False
+cognitive_fog,i started dressing and became confused about what came next,project_authored_independent,eldermeds_conversation,cognitive_fog,0.5744821709592245,True
+cognitive_fog,concentrating on this simple conversation is unusually difficult,project_authored_independent,eldermeds_conversation,cognitive_fog,0.45861782669669643,True
+cognitive_fog,i cannot remember the task i was doing only a moment ago,project_authored_independent,eldermeds_conversation,cognitive_fog,0.6480681324220309,True
+cognitive_fog,my mind feels fogged and familiar decisions take too much effort,project_authored_independent,eldermeds_conversation,cognitive_fog,0.4293112501662628,True
+cognitive_fog,i repeatedly lose the sequence while following the recipe,project_authored_independent,eldermeds_conversation,cognitive_fog,0.3181962353695125,True
+cognitive_fog,reading is difficult because i cannot hold onto the meaning,project_authored_independent,eldermeds_conversation,cognitive_fog,0.2954810856208898,True
+neutral,i watered the plants before making a sandwich for lunch,project_authored_independent,eldermeds_conversation,cognitive_fog,0.34531806018317224,False
+neutral,i have an appointment scheduled for tuesday afternoon,project_authored_independent,eldermeds_conversation,neutral,0.6706124098066354,True
+neutral,the newspaper arrived at the usual time this morning,project_authored_independent,eldermeds_conversation,neutral,0.6972220432419368,True
+neutral,i folded the towels and placed them in the cupboard,project_authored_independent,eldermeds_conversation,cognitive_fog,0.3257459155384381,False
+neutral,i watched one program and then turned off the television,project_authored_independent,eldermeds_conversation,cognitive_fog,0.31900621076501257,False
+neutral,my medication box is on the kitchen counter,project_authored_independent,eldermeds_conversation,neutral,0.3002828984685516,True
+neutral,i had soup for dinner and washed the bowl afterward,project_authored_independent,eldermeds_conversation,neutral,0.36775370783883976,True
+neutral,the weather report says it may rain later,project_authored_independent,eldermeds_conversation,neutral,0.5587357683395298,True
+neutral,i changed the calendar page at the start of the month,project_authored_independent,eldermeds_conversation,neutral,0.28658601499102737,True
+neutral,i went to bed at my regular time last night,project_authored_independent,eldermeds_conversation,neutral,0.41121752986364385,True

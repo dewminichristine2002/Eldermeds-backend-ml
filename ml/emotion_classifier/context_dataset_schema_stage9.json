@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eldermeds.local/schemas/context-emotion-1.1.json",
+  "title": "ElderMeds Stage 9 Context Emotion Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "sample_id", "participant_group_id", "session_id", "turn_index",
+    "question_id", "question_bank_version", "current_question", "current_answer", "previous_turns",
+    "consent_or_use_authorization_reference", "data_origin", "source_provenance", "dataset_split"
+  ],
+  "properties": {
+    "schema_version": {"const": "eldermeds-context-emotion-1.1"},
+    "sample_id": {"$ref": "#/$defs/id"},
+    "participant_group_id": {"$ref": "#/$defs/id", "description": "Pseudonymous ID; never use a name or invent a participant group."},
+    "session_id": {"$ref": "#/$defs/id"},
+    "turn_index": {"type": "integer", "minimum": 1},
+    "question_id": {"$ref": "#/$defs/id"},
+    "question_bank_version": {"type": "string", "pattern": "^sha256:[a-f0-9]{64}$"},
+    "current_question": {"type": "string", "minLength": 1, "maxLength": 2000},
+    "current_answer": {"type": "string", "minLength": 1, "maxLength": 2000},
+    "previous_turns": {"type": "array", "maxItems": 2, "items": {"$ref": "#/$defs/turn"}},
+    "consent_or_use_authorization_reference": {"$ref": "#/$defs/id", "description": "Opaque reference only; keep approval documents separately access-controlled."},
+    "data_origin": {"enum": ["consented_participant", "synthetic_test", "public_single_turn", "project_single_turn", "unknown"]},
+    "dataset_split": {"enum": ["unassigned", "development", "fit", "calibration", "validation", "test", "independent_test"]},
+    "source_provenance": {"type": "string", "maxLength": 500},
+    "emotion_label": {"enum": ["happiness", "sadness", "loneliness", "anxiety", "anger", "cognitive_fog", "neutral"]},
+    "annotation_source": {"enum": ["human_single_review", "human_double_review", "human_adjudication"]},
+    "annotation_status": {"enum": ["pending", "reviewed", "adjudicated", "ambiguous", "needs_context", "rejected"]},
+    "annotation_guideline_version": {"type": "string", "maxLength": 100},
+    "annotation_reviewers": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+    "annotation_reason": {"type": "string", "maxLength": 300}
+  },
+  "allOf": [
+    {
+      "if": {"required": ["emotion_label"]},
+      "then": {"required": ["annotation_source", "annotation_status", "annotation_guideline_version", "annotation_reviewers"]}
+    }
+  ],
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,199}$"},
+    "turn": {
+      "type": "object", "additionalProperties": false,
+      "required": ["participant_group_id", "session_id", "turn_index", "question", "answer"],
+      "properties": {
+        "participant_group_id": {"$ref": "#/$defs/id"},
+        "session_id": {"$ref": "#/$defs/id"},
+        "turn_index": {"type": "integer", "minimum": 1},
+        "question": {"type": "string", "minLength": 1, "maxLength": 2000},
+        "answer": {"type": "string", "minLength": 1, "maxLength": 2000}
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "rows": 2620,
+  "exact_duplicates": 0,
+  "conflicting_texts_removed": 0,
+  "near_final_test_candidates_removed": 4,
+  "short_le_2_tokens": 34,
+  "note": "Cognitive-fog and loneliness targets were not padded from semantically unsafe external mappings."
+}

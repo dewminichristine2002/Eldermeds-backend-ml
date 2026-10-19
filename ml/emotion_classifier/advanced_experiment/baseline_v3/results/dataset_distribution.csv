@@ -1,0 +1,15 @@
+stage,label,count
+before,anger,310
+before,anxiety,293
+before,cognitive_fog,305
+before,happiness,310
+before,loneliness,58
+before,neutral,310
+before,sadness,318
+after,anger,322
+after,anxiety,293
+after,cognitive_fog,320
+after,happiness,310
+after,loneliness,78
+after,neutral,322
+after,sadness,318

@@ -1,0 +1,13 @@
+# Direct pins observed in the active v4 virtual environment (Python 3.12.1).
+# This is not a hash-locked transitive requirements export.
+fastapi==0.141.1
+uvicorn==0.52.4
+sentence-transformers==5.7.0
+transformers==5.15.1
+torch==2.13.0
+scikit-learn==1.9.0
+numpy==2.5.2
+scipy==1.18.1
+joblib==1.5.3
+pandas==3.0.5
+httpx==0.28.1

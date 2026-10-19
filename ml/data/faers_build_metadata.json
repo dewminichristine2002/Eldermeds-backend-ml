@@ -1,0 +1,98 @@
+{
+  "section": "FAERS_training_pipeline",
+  "output": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\ElderMeds\\backend\\ml\\data\\faers_adrs_20260623_122246.csv",
+  "rows": 11868,
+  "adr_event_positive": 6203,
+  "adr_event_negative": 5665,
+  "rxnorm_match_rate": 0.9091675092686216,
+  "chronic_flag_positive_counts": {
+    "has_renal_disease": 250,
+    "has_hepatic_disease": 236,
+    "has_diabetes": 302,
+    "has_cardiovascular": 1491,
+    "has_epilepsy": 136
+  },
+  "ddi_rows_with_signal": 2813,
+  "ddi_signal_rate": 0.237,
+  "risk_label_eval_distribution": {
+    "Dangerous": 6203,
+    "Safe": 4728,
+    "Warning": 937
+  },
+  "queries": [
+    {
+      "reaction": "anaphylaxis",
+      "adr_event": 1,
+      "allergy_severity_max": 3,
+      "category": "severe_allergy"
+    },
+    {
+      "reaction": "angioedema",
+      "adr_event": 1,
+      "allergy_severity_max": 3,
+      "category": "severe_allergy"
+    },
+    {
+      "reaction": "hypersensitivity",
+      "adr_event": 0,
+      "allergy_severity_max": 2,
+      "category": "allergy"
+    },
+    {
+      "reaction": "rash",
+      "adr_event": 0,
+      "allergy_severity_max": 1,
+      "category": "allergic_skin"
+    },
+    {
+      "reaction": "hepatotoxicity",
+      "adr_event": 1,
+      "allergy_severity_max": 0,
+      "category": "hepatotoxicity"
+    },
+    {
+      "reaction": "acute kidney injury",
+      "adr_event": 1,
+      "allergy_severity_max": 0,
+      "category": "nephrotoxicity"
+    },
+    {
+      "reaction": "stevens-johnson syndrome",
+      "adr_event": 1,
+      "allergy_severity_max": 0,
+      "category": "critical_adr"
+    },
+    {
+      "reaction": "drug interaction",
+      "adr_event": 1,
+      "allergy_severity_max": 0,
+      "category": "drug_interaction"
+    },
+    {
+      "reaction": "seizure",
+      "adr_event": 1,
+      "allergy_severity_max": 0,
+      "category": "neurological_adr"
+    },
+    {
+      "reaction": "haemorrhage",
+      "adr_event": 1,
+      "allergy_severity_max": 0,
+      "category": "bleeding"
+    }
+  ],
+  "negative_control_query": "serious:2",
+  "limit_per_query": 100,
+  "skip_pages": 20,
+  "dataset_root": "C:\\Users\\thyag\\OneDrive\\Desktop\\Y4S1\\Research\\Datasets",
+  "architecture": {
+    "labels": "OpenFDA FAERS binary adr_event (severe vs not severe)",
+    "chronic_flags": "keyword extraction from FAERS drugindication + narrative",
+    "risk_label_eval": "evaluation-only Safe/Warning/Dangerous \u2014 not RF training target",
+    "normalization": "RxNorm RXNCONSO",
+    "features": "DDInter all-pair co-administration + SIDER side-effect counts + patient/drug flags",
+    "model": "RandomForest (train_baseline.py)",
+    "runtime_risk": "hybrid 0.6 rule + 0.4 ML -> thresholds 25/60",
+    "rules": "clinical rule engine (not trained)"
+  }
+}

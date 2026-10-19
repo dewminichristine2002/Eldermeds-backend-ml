@@ -1,0 +1,71 @@
+expected_emotion,text
+happiness,I woke up cheerful and ready for the day.
+happiness,The visit from my grandson lifted my spirits.
+happiness,I felt good after finishing my garden work.
+happiness,I enjoyed our conversation very much.
+happiness,Today has given me several reasons to smile.
+happiness,I am happier than I was yesterday.
+happiness,Sharing lunch with my neighbor was delightful.
+happiness,The music brought back pleasant memories.
+happiness,I feel content and pleased this evening.
+happiness,That kind message brightened my morning.
+sadness,I have felt low and tearful since breakfast.
+sadness,The day seems heavy and nothing interests me.
+sadness,I miss how things used to be and it hurts.
+sadness,I could not find much joy in anything today.
+sadness,I have been feeling down all afternoon.
+sadness,Thinking about the loss made me cry again.
+sadness,I feel discouraged and unhappy tonight.
+sadness,My heart feels heavy even though I am not alone.
+sadness,I did not want to get out of bed because I felt so low.
+sadness,There is a sadness I cannot seem to shake.
+loneliness,No one has called and the silence feels difficult.
+loneliness,I wish there were somebody beside me this evening.
+loneliness,Meals feel empty when I always eat by myself.
+loneliness,I have nobody nearby to share my news with.
+loneliness,The house became awfully quiet after the visitors left.
+loneliness,I miss having a companion to talk to each day.
+loneliness,I feel alone even in a room full of people.
+loneliness,I keep looking toward the door hoping someone will visit.
+loneliness,It has been days since I had a proper conversation.
+loneliness,I would love some company this afternoon.
+anxiety,I feel uneasy and cannot settle my thoughts.
+anxiety,I have been worrying that something bad may happen.
+anxiety,My nerves are on edge this morning.
+anxiety,I cannot relax because I keep imagining problems.
+anxiety,I feel tense whenever the telephone rings.
+anxiety,There is a nervous feeling in my stomach.
+anxiety,I keep checking everything because I am worried.
+anxiety,I am restless and concerned about tomorrow.
+anxiety,Small uncertainties are making me very uneasy.
+anxiety,My mind keeps circling around the same worry.
+anger,I am furious that they ignored my request again.
+anger,The constant interruptions are really irritating me.
+anger,I became annoyed when the appointment was cancelled.
+anger,I am frustrated by having to repeat this task.
+anger,That rude comment made me angry.
+anger,I have had enough of this careless behavior.
+anger,The unnecessary delay is getting on my nerves.
+anger,I feel cross because nobody asked my opinion.
+anger,I lost my temper when the machine failed again.
+anger,I am still irritated about what happened earlier.
+cognitive_fog,I cannot keep track of the steps while preparing breakfast.
+cognitive_fog,The words blur together when I try to follow a page.
+cognitive_fog,I began a chore and then forgot what I was trying to finish.
+cognitive_fog,My thinking feels cloudy and slow this afternoon.
+cognitive_fog,I lose the thread halfway through a conversation.
+cognitive_fog,It is unusually hard to focus on one thing today.
+cognitive_fog,I cannot organize my thoughts well enough to make a simple plan.
+cognitive_fog,I repeatedly forget the next step of familiar activities.
+cognitive_fog,Following the plot of this program takes too much concentration today.
+cognitive_fog,My mind feels unclear despite being rested.
+neutral,I completed my regular errands this morning.
+neutral,Nothing out of the ordinary happened today.
+neutral,I ate lunch at noon and read the newspaper.
+neutral,Everything is about the same as it normally is.
+neutral,I followed my standard schedule.
+neutral,The morning passed without any notable events.
+neutral,I am sitting in the living room now.
+neutral,I took a walk and returned home before dinner.
+neutral,My routine has been unchanged this week.
+neutral,There is nothing special to mention about today.

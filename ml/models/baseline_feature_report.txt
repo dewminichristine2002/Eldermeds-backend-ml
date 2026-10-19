@@ -1,0 +1,13 @@
+Production XGBoost training complete (GridSearchCV + SMOTE + 5-fold CV + sigmoid calibration).
+Dataset: FAERS
+Rows: 11868
+Target: adr_event (binary severe ADR)
+Best CV F1 (weighted): 0.9441
+Hold-out accuracy (20%): 0.9351
+Hold-out F1 (weighted): 0.9350
+Hold-out ROC-AUC: 0.9843
+Youden's J optimal threshold: 0.4896
+Brier score (hold-out, calibrated): 0.0474
+Best params: {'learning_rate': 0.05, 'max_depth': 8, 'n_estimators': 200, 'subsample': 0.8}
+
+Hybrid inference: 0.6 * ruleScore + 0.4 * (P(ADR) * 100); thresholds 25/60.

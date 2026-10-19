@@ -1,0 +1,16 @@
+# Stage 6 Model Promotion Report
+
+Candidate: `minilm_logistic_regression_v5_answer_only` (experimental artifact in `v5_experiments/20261008T175725Z/`). Decision: **not eligible for controlled production rollout**.
+
+1. **Did v5 improve validation Macro F1?** Not established. v5 scored 0.6599 on its text-family-disjoint model-selection partition, but all 316 validation texts were included in the v4 model's training corpus, making v4's score there resubstitution performance.
+2. **Did v5 improve or maintain important class-level performance?** Not established on a comparable validation split. The previously exposed locked benchmark has mixed class changes; v5 declines on happiness, loneliness, and anger.
+3. **Did v5 generalize adequately to available benchmarks?** Not established. The available locked benchmark is previously exposed and was scored during procedural reruns; its values did not influence model selection. Its small v5 improvement cannot serve as fresh evidence.
+4. **Was calibration properly evaluated?** A sigmoid calibrator was fit only on a distinct 317-record calibration partition; probability sums, log loss, Brier score, top-label ECE, and a reliability plot were computed on the 316-record model-selection partition. The observed ECE is 0.1400 and log loss 1.1458; calibration quality is not sufficient to justify rollout, and the score is not an independent post-selection estimate.
+5. **Are predictions compatible with existing APIs?** Yes in the direct Python API smoke check. Health and prediction endpoints returned 200; the existing seven-class response shape is intact and reports `context_aware: false`.
+6. **Do integration tests pass?** The Python classifier suite passed 21 tests and Node backend suites passed 263. The Jest ML HTTP dependency is mocked, and a separate live loopback smoke passed through the existing Node client to the actual Python API with v5 selected.
+7. **Is latency acceptable?** v5 measured 17.38 ms/record versus 17.28 for v4 in a local batch CPU measurement. No deployment latency target was provided, so production acceptability is not established.
+8. **Is rollback available?** Yes. `tfidf_linear_svm_calibrated_v3` remains explicitly selectable; unset version continues to use v4.
+9. **Are artifacts integrity-verified?** Yes. The v5 artifact SHA-256 is recorded in adjacent metadata and checked on load, along with label mapping, embedding checkpoint, normalization, input contract, and exact library versions. The v4 checksum was also verified.
+10. **Are there unresolved privacy/security concerns?** No private conversation data was used or exported. No participant/session identifiers are present, so participant-level independence cannot be claimed. The prepared GoEmotions corpus has extensive duplicate and conflicting-label families and was excluded. A runtime packaging mismatch remains: the experiment used Sentence Transformers 6.0.0 while the checked-in requirement excludes 6.0.0.
+
+**Decision:** keep v4 active, preserve v3 rollback, and retain v5 for research only. Do not activate or deploy v5. Reconsider only after a dependency-compatible retraining run improves validation and performs adequately on a fresh, appropriately governed benchmark.

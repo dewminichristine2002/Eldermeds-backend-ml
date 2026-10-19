@@ -1,0 +1,8 @@
+model,label,precision,recall,f1,support,note
+v3_production_preserved,happiness,0.7272727272727273,0.7741935483870968,0.75,62,No new candidate evaluated; promotion gate failed
+v3_production_preserved,sadness,0.6875,0.6875,0.6875,64,No new candidate evaluated; promotion gate failed
+v3_production_preserved,loneliness,0.8333333333333334,0.9090909090909092,0.8695652173913043,11,No new candidate evaluated; promotion gate failed
+v3_production_preserved,anxiety,0.7333333333333333,0.7457627118644068,0.7394957983193278,59,No new candidate evaluated; promotion gate failed
+v3_production_preserved,anger,0.532258064516129,0.532258064516129,0.532258064516129,62,No new candidate evaluated; promotion gate failed
+v3_production_preserved,cognitive_fog,0.4516129032258064,0.4590163934426229,0.4552845528455284,61,No new candidate evaluated; promotion gate failed
+v3_production_preserved,neutral,0.4909090909090909,0.4354838709677419,0.4615384615384615,62,No new candidate evaluated; promotion gate failed

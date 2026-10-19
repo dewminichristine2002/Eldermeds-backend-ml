@@ -1,0 +1,6 @@
+metric,v3_original_test,v4_original_test,difference,note
+accuracy,0.6141732283464567,,,No v4 final-test evaluation: transformer rejected on development
+macro_precision,0.6366027789414886,,,No v4 final-test evaluation: transformer rejected on development
+macro_recall,0.6490436426098437,,,No v4 final-test evaluation: transformer rejected on development
+macro_f1,0.642234584944393,,,No v4 final-test evaluation: transformer rejected on development
+weighted_f1,0.6117669601866313,,,No v4 final-test evaluation: transformer rejected on development

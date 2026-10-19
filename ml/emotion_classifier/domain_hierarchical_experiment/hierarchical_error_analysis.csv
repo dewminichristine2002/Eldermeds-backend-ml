@@ -1,0 +1,13 @@
+text,label,source,domain,predicted_label,error_stage,error_category
+the sunshine made my morning feel pleasant,happiness,project_authored_domain_development,eldermeds_checkin,neutral,end_to_end_path,happiness_as_neutral
+nothing seems enjoyable while i feel this down,sadness,project_authored_domain_development,eldermeds_checkin,loneliness,end_to_end_path,sadness_as_loneliness
+i feel gloomy despite having people around me,sadness,project_authored_domain_development,eldermeds_checkin,loneliness,end_to_end_path,sadness_as_loneliness
+i have gone all day without a real conversation,loneliness,project_authored_domain_development,eldermeds_checkin,neutral,end_to_end_path,loneliness_as_neutral
+i am tense because something may go wrong,anxiety,project_authored_domain_development,eldermeds_checkin,neutral,end_to_end_path,anxiety_as_neutral
+i feel irritated but not worried about the problem,anger,project_authored_domain_development,eldermeds_checkin,anxiety,end_to_end_path,anger_as_anxiety
+i am fed up with having to ask repeatedly,anger,project_authored_domain_development,eldermeds_checkin,cognitive_fog,end_to_end_path,anger_as_cognitive_fog
+following this conversation is unusually difficult today,cognitive_fog,project_authored_domain_development,eldermeds_checkin,sadness,end_to_end_path,cognitive_fog_as_sadness
+my thoughts feel disorganized even though i am calm,cognitive_fog,project_authored_domain_development,eldermeds_checkin,anxiety,end_to_end_path,cognitive_fog_as_anxiety
+i started making breakfast and forgot which step came next,cognitive_fog,project_authored_domain_development,eldermeds_checkin,neutral,end_to_end_path,cognitive_fog_as_neutral
+i misplaced one spoon but found it in the drawer,neutral,project_authored_domain_development,eldermeds_checkin,cognitive_fog,end_to_end_path,neutral_as_cognitive_fog
+the nurse is expected at three oclock,neutral,project_authored_domain_development,eldermeds_checkin,anxiety,end_to_end_path,neutral_as_anxiety

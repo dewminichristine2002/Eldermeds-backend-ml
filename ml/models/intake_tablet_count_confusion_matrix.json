@@ -1,0 +1,159 @@
+{
+  "task": "intake_tablet_count_classification",
+  "model": "D:\\Document\\SLIIT\\Research\\Project\\ElderMeds\\backend\\ml\\models\\tablet_count_classifier.pt",
+  "manifest": "D:\\Document\\SLIIT\\Research\\Project\\ElderMeds\\backend\\ml\\data\\public\\pills-detection-count-manifest-dose.csv",
+  "split": "val",
+  "rows": 860,
+  "labels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "accuracy": 0.7058139534883721,
+  "confusion_matrix": {
+    "rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "values": [
+      [
+        46,
+        2,
+        2,
+        1,
+        1,
+        4,
+        0
+      ],
+      [
+        0,
+        71,
+        18,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        8,
+        113,
+        12,
+        6,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        13,
+        82,
+        41,
+        9,
+        0
+      ],
+      [
+        2,
+        1,
+        4,
+        11,
+        121,
+        16,
+        9
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        21,
+        79,
+        20
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        20,
+        22,
+        95
+      ]
+    ]
+  },
+  "classification_report": {
+    "0 tablets": {
+      "precision": 0.8846153846153846,
+      "recall": 0.8214285714285714,
+      "f1-score": 0.8518518518518519,
+      "support": 56.0
+    },
+    "1 tablet": {
+      "precision": 0.8554216867469879,
+      "recall": 0.7717391304347826,
+      "f1-score": 0.8114285714285714,
+      "support": 92.0
+    },
+    "2 tablets": {
+      "precision": 0.7533333333333333,
+      "recall": 0.7902097902097902,
+      "f1-score": 0.7713310580204779,
+      "support": 143.0
+    },
+    "3 tablets": {
+      "precision": 0.7592592592592593,
+      "recall": 0.5655172413793104,
+      "f1-score": 0.6482213438735178,
+      "support": 145.0
+    },
+    "4 tablets": {
+      "precision": 0.5734597156398105,
+      "recall": 0.7378048780487805,
+      "f1-score": 0.6453333333333333,
+      "support": 164.0
+    },
+    "5 tablets": {
+      "precision": 0.5984848484848485,
+      "recall": 0.6528925619834711,
+      "f1-score": 0.6245059288537549,
+      "support": 121.0
+    },
+    "6 tablets": {
+      "precision": 0.7661290322580645,
+      "recall": 0.6834532374100719,
+      "f1-score": 0.7224334600760456,
+      "support": 139.0
+    },
+    "accuracy": 0.7058139534883721,
+    "macro avg": {
+      "precision": 0.7415290371910983,
+      "recall": 0.7175779158421112,
+      "f1-score": 0.7250150782053647,
+      "support": 860.0
+    },
+    "weighted avg": {
+      "precision": 0.719781990109198,
+      "recall": 0.7058139534883721,
+      "f1-score": 0.7075182598165839,
+      "support": 860.0
+    }
+  }
+}
