@@ -1,0 +1,2 @@
+# Render installs from the repository root.
+-r ml/requirements-render.txt
